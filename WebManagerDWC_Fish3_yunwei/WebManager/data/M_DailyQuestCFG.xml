@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data ID="1" Group="1" CannonFold="12,38" Name="每日签到" CompleteType="5" CompleteParam="0" CompleteCount="1" AwardItemIDs="4,1" AwardItemCounts="5,1000" GoType="2" ShowChangeType="0" />
+	<Data ID="2" Group="1" CannonFold="12,38" Name="使用锁定10次" CompleteType="1" CompleteParam="5" CompleteCount="10" AwardItemIDs="4,1" AwardItemCounts="5,1000" GoType="1" ShowChangeType="0" />
+	<Data ID="3" Group="1" CannonFold="12,38" Name="捕获100条任意鱼" CompleteType="4" CompleteParam="0" CompleteCount="100" AwardItemIDs="4,1" AwardItemCounts="10,1000" GoType="1" ShowChangeType="0" />
+	<Data ID="4" Group="1" CannonFold="12,38" Name="使用1次普通鱼雷" CompleteType="1" CompleteParam="23" CompleteCount="1" AwardItemIDs="4,1" AwardItemCounts="5,1000" GoType="1" ShowChangeType="0" />
+	<Data ID="5" Group="1" CannonFold="12,38" Name="捕获8条黄金鱼" CompleteType="22" CompleteParam="0" CompleteCount="8" AwardItemIDs="4,1" AwardItemCounts="5,2000" GoType="1" ShowChangeType="0" />
+	<Data ID="6" Group="1" CannonFold="12,38" Name="深海巨鳄场捕获2次深海巨鳄" CompleteType="3" CompleteParam="702" CompleteCount="2" AwardItemIDs="4,1" AwardItemCounts="5,2000" GoType="6" ShowChangeType="0" />
+	<Data ID="7" Group="1" CannonFold="12,38" Name="深海巨鳄场进行10次花色兑换" CompleteType="14" CompleteParam="0" CompleteCount="10" AwardItemIDs="4,1" AwardItemCounts="5,1000" GoType="6" ShowChangeType="0" />
+	<Data ID="8" Group="1" CannonFold="12,38" Name="在捕鱼时长达到30分钟" CompleteType="13" CompleteParam="1" CompleteCount="30" AwardItemIDs="4,1" AwardItemCounts="5,1000" GoType="1" ShowChangeType="0" />
+	<Data ID="9" Group="1" CannonFold="12,38" Name="龙王传说场进行1次魔石兑换" CompleteType="50" CompleteParam="0" CompleteCount="1" AwardItemIDs="4,1" AwardItemCounts="5,1000" GoType="8" ShowChangeType="0" />
+	<Data ID="10" Group="1" CannonFold="12,38" Name="龙王传说场累计魔石达到500个" CompleteType="53" CompleteParam="28" CompleteCount="300" AwardItemIDs="4,1" AwardItemCounts="10,3000" GoType="8" ShowChangeType="0" />
+	<Data ID="11" Group="1" CannonFold="12,38" Name="武装巨鲨场捕获1次武装巨鲨" CompleteType="3" CompleteParam="706" CompleteCount="1" AwardItemIDs="4,1" AwardItemCounts="10,2000" GoType="9" ShowChangeType="0" />
+	<Data ID="12" Group="1" CannonFold="12,38" Name="魔鲲降世场捕获1次魔鲲" CompleteType="3" CompleteParam="707" CompleteCount="1" AwardItemIDs="4,1" AwardItemCounts="15,3000" GoType="11" ShowChangeType="0" />
+	<Data ID="13" Group="1" CannonFold="12,38" Name="圣兽宝藏场捕获1次圣兽朱雀" CompleteType="3" CompleteParam="708" CompleteCount="1" AwardItemIDs="4,1" AwardItemCounts="10,3000" GoType="12" ShowChangeType="0" />
+	<Data ID="14" Group="1" CannonFold="12,38" Name="完成任意一笔充值" CompleteType="12" CompleteParam="0" CompleteCount="1" AwardItemIDs="4,1" AwardItemCounts="20,3000" GoType="4" ShowChangeType="0" />
+</Root>

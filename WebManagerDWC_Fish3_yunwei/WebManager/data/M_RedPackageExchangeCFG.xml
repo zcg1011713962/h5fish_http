@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data ID="20" ItemName="50元京东卡" ItemDesc="获得50元京东卡" ExchangeType="1" ItemIcon="Card_50jingdong" VipCondition="2" ExchangeItem="1025" RedemptionQuantity="1" Consumption="107" ConsumptionItem="500" />
+	<Data ID="21" ItemName="100元游戏礼包" ItemDesc="打开后可以100万金币和100个升级石" ExchangeType="0" ItemIcon="vip_baoxiang" VipCondition="0" ExchangeItem="1,16" RedemptionQuantity="1000000,100" Consumption="107" ConsumptionItem="500" />
+</Root>

@@ -1,0 +1,229 @@
+﻿ <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">游戏台账<span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="/appaspx/stat/StatServerEarnings.aspx">游戏金币流动统计</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">运营相关数据<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/appaspx/operation/OperationStatChannelTalkingDataWeek.aspx">数据查询</a></li>
+            <li class="divider"></li>
+            <li><a href="/appaspx/operation/OperationAdPutInStat.aspx">广告投放统计</a></li>
+            <li class="divider"></li>
+            <li><a href="/appaspx/operation/OperationMoneyQueryDetail.aspx">金币变化详细</a></li>
+            <li><a href="/appaspx/operation/PlayerItemRecord.aspx">玩家道具获取详情</a></li>
+            <li><a href="/appaspx/stat/StatTurretItemsOnPlayer.aspx">玩家平均携带物品</a></li>
+            <li class="divider"></li>
+            <li><a href="/appaspx/stat/StatAirdropSysPub.aspx">系统空投发布</a></li>
+            <li><a href="/appaspx/stat/StatAirdropSys.aspx">系统空投</a></li>
+            <li class="divider"></li>
+            <li><a href="/appaspx/stat/StatOnlineReward.aspx">在线奖励</a></li>
+            <li><a href="/appaspx/stat/StatNewGuildLosePoint.aspx">流失点统计</a></li>
+            <li><a href="/appaspx/stat/StatNewPlayerOpenRate.aspx">新手炮倍完成率</a></li>
+            <li class="divider"></li>
+            <li><a href="/appaspx/td/TdNewPlayerRechargeMonitor.aspx">新进玩家监控</a></li>
+            <li><a href="/appaspx/td/TdActivation.aspx">留存相关</a></li>
+            <li><a href="/appaspx/td/TdActivationOfOldPlayer.aspx">老用户留存相关</a></li>
+            <!--<li><a href="/appaspx/operationNew/OperationNewGameIncome.aspx">收益数据</a></li>-->
+            <!--<li><a href="/appaspx/operationNew/OperationNewGameActive.aspx">活跃数据</a></li>-->
+            <li><a href="/appaspx/td/TdLTV.aspx">LTV统计</a></li>
+            <li class="divider"></li>
+            <!--<li><a href="/appaspx/operationNew/OperationNewPlayerRecharge.aspx">玩家充值信息</a></li>-->
+            <li><a href="/appaspx/td/TdRechargePlayer.aspx">玩家充值信息</a></li>
+            <li><a href="/appaspx/operation/OperationRechargePoint.aspx">付费点统计</a></li>
+            <li><a href="/appaspx/operation/OperationRank.aspx">排行榜</a></li>
+            <li><a href="/appaspx/operation/OperationRankCheat.aspx">排行榜作弊</a></li>
+            <li><a href="/appaspx/operation/OperationRankRecharge.aspx">充值排行榜</a></li>
+            <li class="divider"></li>
+            <li><a href="/appaspx/operationNew/OperationNewTurretTimes.aspx">炮倍相关</a></li>
+            <li><a href="/appaspx/operation/OperationPlayerActTurret.aspx">炮数成长分布</a></li>
+            <li><a href="/appaspx/operation/OperationPlayerActTurretBySingle.aspx">玩家炮数成长分布</a></li>
+            <li class="divider"></li>
+            <li><a href="/appaspx/operation/OperationMaxOnline.aspx">最高在线</a></li>
+            <li><a href="/appaspx/td/TdRechargePerHour.aspx">实时付费</a></li>
+            <li><a href="/appaspx/td/TdOnlinePerHour.aspx">实时在线</a></li>
+            <li><a href="/appaspx/td/TdGameTimePlayerFavor.aspx">平均在线游戏时间</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">运营相关<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/appaspx/operation/OperationFishlordRobotRankCFG.aspx">机器人积分管理</a></li>
+              <!--<li><a href="/appaspx/operation/OperationActivityCfg.aspx">活动表时间设置</a></li>-->
+			        <li><a href="/appaspx/operation/OperationActivityCFGNew.aspx">活动时间设置</a></li>
+              <li><a href="/appaspx/operation/OperationAdPutInSet.aspx">广告投放设置</a></li>
+              <li><a href="/appaspx/stat/StatInnerPlayer.aspx">内部库</a></li>
+              <li><a href="/appaspx/operation/OperationNotify.aspx">运营公告</a></li>
+              <li><a href="/appaspx/operation/OperationSpeaker.aspx">通告消息</a></li>
+              <li class="divider"></li>
+              <li><a href="/appaspx/operation/OperationRecharge.aspx">后台充值</a></li>
+              <li><a href="/appaspx/operation/OperationGameCtrl.aspx">游戏控制</a></li>
+              <li class="divider"></li>
+              <li><a href="/appaspx/cdkey.aspx">批次cdkey</a></li>
+              <li><a href="/appaspx/cdkeyNew.aspx">重用cdkey</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">经典捕鱼<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="/appaspx/stat/StatFishlordControlNew.aspx">大水池参数控制</a></li>
+              <li><a href="/appaspx/stat/StatFIshlordCtrolNewSingle.aspx">个人后台管理</a></li>
+              <li><a href="/appaspx/stat/fish/FishPlayerScorePool.aspx">捕鱼点杀点送</a></li>
+              <li class="divider"></li>
+              <li><a href="/appaspx/stat/StatPumpFish.aspx">玩法鱼统计</a></li>
+              <li><a href="/appaspx/stat/StatFishlordLotteryExchange.aspx">话费鱼统计</a></li>
+              <li><a href="/appaspx/stat/fish/FishlordBulletHeadStat.aspx">鱼雷统计</a></li>
+              <li><a href="/appaspx/stat/StatGoldOnPlayer.aspx">玩家携带金币</a></li>
+              <li class="divider"></li>
+              <li><a href="/appaspx/stat/fish/FishBoss.aspx">BOSS消耗</a></li>
+              <li><a href="/appaspx/operation/OperationPlayerBankrupt.aspx">破产统计</a></li>
+              <li><a href="/appaspx/operation/OperationPlayerOpenRateBankruptList.aspx">破产炮倍详情</a></li>
+              <li><a href="/appaspx/stat/StatFish.aspx">鱼统计</a></li>
+              <li class="divider"></li>
+              <li><a href="/appaspx/stat/StatFishlordDragonPalaceData.aspx">龙宫场数据统计</a></li>
+              <li><a href="/appaspx/stat/StatFishlordDeskEarningsRate.aspx">经典捕鱼桌子盈利率查询</a></li>
+              <li class="divider"></li>
+              <li><a href="/appaspx/fishing/fishingRoomInfo.aspx">场次情况</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">数据统计<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu" style="height:600px;overflow:hidden; overflow-y:scroll;">
+              <li><a href="/appaspx/stat/StatFishlordArena.aspx">竞技赛</a></li>
+              <li><a href="/appaspx/stat/StatFishlordArenaFree.aspx">自由赛</a></li>
+              <li><a href="/appaspx/RobotCheat.aspx">积分修改作弊</a></li>
+              <li><a href="/appaspx/stat/StatSummerPlan.aspx">夏日计划统计</a></li>
+              <li><a href="/appaspx/stat/StatSurpriseBoxActivity.aspx">惊喜盒统计</a></li>
+              <li><a href="/appaspx/stat/StatActivityLingBao.aspx">灵宝抽奖统计</a></li>
+              <li class="divider"></li>
+              <li><a href="/appaspx/stat/StatExchangeActivity.aspx">炮台兑换活动</a></li>
+              <li><a href="/appaspx/stat/StatTurretlotteryActivity.aspx">炮台抽奖活动</a></li>
+              <li><a href="/appaspx/stat/StatLimitTimeBuy.aspx">限时购活动</a></li>
+              <li><a href="/appaspx/stat/StatIntScoreSendAward.aspx">积分送大奖</a></li>
+              <li><a href="/appaspx/stat/StatActivityBreakEgg.aspx">砸蛋活动统计</a></li>
+              <li><a href="/appaspx/stat/StatActivitySummerCarnival.aspx">冬季大狂欢活动统计</a></li>
+              <li><a href="/appaspx/stat/StatDanGrading.aspx">段位赛活动统计</a></li>
+              <li><a href="/appaspx/stat/StatKillDemonsActivity.aspx">猎妖塔活动统计</a></li>
+              <li><a href="/appaspx/stat/StatSailingFestival.aspx">启航盛典</a></li>
+              <li><a href="/appaspx/stat/StatD11Activity.aspx">狂欢双11</a></li>
+              <li><a href="/appaspx/stat/StatKingCraftActivity.aspx">王者争霸</a></li>
+              <li><a href="/appaspx/stat/StatActivityTouchFish.aspx">一起来摸鱼</a></li>
+              <li><a href="/appaspx/stat/StatActivityFishingCelebration.aspx">庆典活动统计</a></li>
+              <li><a href="/appaspx/stat/StatActivityNiuYearFeedBack.aspx">牛年大回馈活动统计</a></li>
+              <li class="divider"></li>
+			        <li><a href="/appaspx/stat/StatFishlordTicketRoomAct.aspx">奖券场活动统计</a></li>
+              <li><a href="/appaspx/stat/StatRoomPoint.aspx">场次打点统计</a></li>
+			        <li><a href="/appaspx/stat/StatPumpDimensitySlayer.aspx">魔石达人统计</a></li>
+              <li class="divider"></li>
+              <li><a href="/appaspx/stat/StatWelFareLottery.aspx">幸运转盘统计</a></li>
+              <li><a href="/appaspx/stat/StatGrowthQuest.aspx">捕鱼王统计</a></li>
+              <li><a href="/appaspx/stat/StatPumpWuyiAct.aspx">冬季嘉年华</a></li>
+              <li class="divider"></li>
+              <li><a href="/appaspx/stat/StatFishlordGrandPrixActivity.aspx">捕鱼大奖赛排行榜</a></li>
+              <li><a href="/appaspx/stat/StatFishlordGrandPrixActCheat.aspx">捕鱼大奖赛作弊</a></li>
+              <li class="divider"></li>
+              <li><a href="/appaspx/stat/StatPumpRedEnvelop.aspx">红包方案</a></li>
+              <li><a href="/appaspx/stat/StatPumpRedEnvelopExchange.aspx">红包方案兑换</a></li>
+              <li><a href="/appaspx/stat/StatPumpNp7DayRechargeAct.aspx">七日连充</a></li>
+              <li><a href="/appaspx/stat/StatWechatBenifit.aspx">公众号统计</a></li>
+              <li><a href="/appaspx/stat/StatPlayerItemRecharge.aspx">背包购买</a></li>
+              <li><a href="/appaspx/stat/StatRebateGift.aspx">返利礼包</a></li>
+              <li><a href="/appaspx/stat/StatMonthCard.aspx">月卡统计</a></li>
+              <li><a href="/appaspx/stat/StatPumpGrowFund.aspx">成长基金统计</a></li>
+              <li><a href="/appaspx/stat/StatTurretChip.aspx">鱼雷碎片统计</a></li>
+              <li><a href="/appaspx/stat/StatPlayerMail.aspx">玩家邮件统计</a></li>
+              <li><a href="/appaspx/stat/StatPlayAd.aspx">激励视频统计</a></li>
+              <li class="divider"></li>
+              <li><a href="/appaspx/stat/StatVipExclusive.aspx">VIP专属</a></li>
+              <li><a href="/appaspx/stat/StatDailyHourMaxOnlinePlayer.aspx">时段在线人数</a></li>
+              <li><a href="/appaspx/stat/StatJinQiuRechargeLottery.aspx">幸运转转转</a></li>
+              <li><a href="/appaspx/stat/StatKillCrabAct.aspx">追击年兽</a></li>
+              <li><a href="/appaspx/stat/StatNationalDayAct.aspx">十一活动统计</a></li>
+              <li><a href="/appaspx/stat/StatSdAct.aspx">开服活动统计</a></li>
+              <li><a href="/appaspx/stat/StatSdActLottery.aspx">开服抽奖统计</a></li>
+              <li><a href="/appaspx/stat/StatYuanDanAct.aspx">春节活动统计</a></li>
+              <li class="divider"></li>
+              <li><a href="/appaspx/stat/StatGoldFishLottery.aspx">幸运抽奖</a></li>
+              <li><a href="/appaspx/stat/StatPlayerOpenRateTask.aspx">炮倍任务</a></li>
+              <li><a href="/appaspx/stat/StatNewPlayerTask.aspx">新手任务</a></li>
+              <li><a href="/appaspx/stat/StatMainlyTask.aspx">主线任务</a></li>
+              <li><a href="/appaspx/stat/StatDailySign.aspx">每日签到</a></li>
+              <li><a href="/appaspx/stat/StatPumpVipGift.aspx">VIP特权打点</a></li>
+              <li><a href="/appaspx/stat/StatPumpVipRecord.aspx">VIP特权统计</a></li>
+              <li><a href="/appaspx/stat/StatDailySignReward.aspx">签到奖励领取</a></li>
+              <li class="divider"></li>
+              <li><a href="/appaspx/stat/StatNewSevenDay.aspx">七日礼包</a></li>
+              <li><a href="/appaspx/stat/StatTomorrowGift.aspx">明日礼包</a></li>
+              <li><a href="/appaspx/stat/StatDailyGift.aspx">每日礼包</a></li>
+              <li class="divider"></li>
+              <li><a href="/appaspx/stat/StatTreasureHunt.aspx">南海寻宝</a></li>
+              <li><a href="/appaspx/stat/StatBulletHeadRank.aspx">欢乐/衰神炸炸炸</a></li>
+              <li><a href="/appaspx/stat/StatBulletHeadRankCheat.aspx">欢乐/衰神炸炸炸作弊</a></li>
+              <li class="divider"></li>
+              <li><a href="/appaspx/stat/StatDragonScaleRank.aspx">龙宫场排行统计</a></li>
+              <li><a href="/appaspx/stat/StatDragonScaleControl.aspx">修改魔石积分</a></li>
+              <li class="divider"></li>
+              <li><a href="/appaspx/stat/StatPumpHuntFishRechargeAct.aspx">场次活动</a></li>
+              <li><a href="/appaspx/stat/StatFishlordLegendaryFishRoom.aspx">巨鲲场玩法</a></li>
+              <li><a href="/appaspx/stat/StatFishlordLegendaryRank.aspx">巨鲲降世/定海神针排行榜</a></li>
+              <li><a href="/appaspx/stat/StatFishlordLegendaryRankCheat.aspx">巨鲲降世/定海神针积分修改</a></li>
+              <li class="divider"></li>
+              <li><a href="/appaspx/stat/StatMiddleRoomExchange.aspx">中级场礼包统计</a></li>
+              <li><a href="/appaspx/stat/StatFishlordMiddleRoomCtrl.aspx">中级场作弊</a></li>
+              <li><a href="/appaspx/stat/StatFishlordMiddleRoomAct.aspx">中级场奖池统计</a></li>
+              <!-- <li><a href="/appaspx/stat/StatFishlordAdvancedRoomCheatCtrl.aspx">高级场作弊</a></li>
+              <li><a href="/appaspx/stat/StatFishlordAdvancedRoomCtrl.aspx">高级场控制管理</a></li> -->
+              <li><a href="/appaspx/stat/StatFishlordAdvancedRoomAct.aspx">高级场奖池统计</a></li>
+              <li><a href="/appaspx/stat/StatFishlordSharkRoomAct.aspx">巨鲨场功能统计</a></li>
+              <li><a href="/appaspx/stat/StatFishlordSharkRoomCheatCtrl.aspx">巨鲨场作弊</a></li>
+              <li><a href="/appaspx/stat/StatPumpMythicalRoomAct.aspx">圣兽场玩法统计</a></li>
+              <li><a href="/appaspx/stat/StatPumpMythicalRoomActRankCheat.aspx">圣兽场排行榜作弊</a></li>
+              <li class="divider"></li>
+              <li><a href="/appaspx/stat/StatDailyWeekTask.aspx">每日周任务及奖励统计</a></li>
+              <li class="divider"></li>
+              <li><a href="/appaspx/stat/fish/StatFishlordConsume.aspx">捕鱼消耗</a></li>
+              <li><a href="/appaspx/stat/StatTotalConsume.aspx">消耗收入总计</a></li>
+              <li class="divider"></li>
+              <li><a href="/appaspx/stat/StatReloadTable.aspx">重新加载表格</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">客服相关<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="/appaspx/player/PlayerBasicInfo.aspx">玩家基础信息</a></li>
+				<li><a href="/appaspx/player/PlayerVipInfo.aspx">VIP玩家信息</a></li>
+                <li class="divider"></li>
+                <li><a href="/appaspx/service/ServiceRechargeQueryNew.aspx">充值记录查询</a></li>
+                <li><a href="/appaspx/service/ServiceAccountQuery.aspx">账号查询</a></li>
+                <li class="divider"></li>
+                <li><a href="/appaspx/service/ServiceExchangeAudit.aspx">实物审核管理</a></li>
+                <li><a href="/appaspx/service/ServiceExchange.aspx">兑换管理</a></li>
+                <li><a href="/appaspx/service/ServiceBlockId.aspx">停封玩家</a></li>
+                <li><a href="/appaspx/service/ServiceUnBlockId.aspx">解封玩家</a></li>
+                <li><a href="/appaspx/service/ServiceBindOrUnbindPhone.aspx">绑定解绑玩家手机</a></li>
+                <li><a href="/appaspx/operation/OperationPlayerOp.aspx">玩家相关操作</a></li>
+                <li><a href="/appaspx/service/ServiceModifyPwd.aspx">重置密码</a></li>
+                <li><a href="/appaspx/service/ServiceMail.aspx">发邮件</a></li>
+                <li><a href="/appaspx/service/ServiceRobotInfo.aspx">机器人信息</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">其他<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <!--<li><a href="/appaspx/stat/StatServiceDumpTime.aspx">服务器宕机记录</a></li>-->
+            <li><a href="/appaspx/LogViewer.aspx">查看操作日志</a></li>
+            <li><a href="/appaspx/service/ServiceExcelDownLoad.aspx">Excel下载</a></li>
+            <li class="divider"></li>
+            <li><a href="/appaspx/GmTypeEdit.aspx">GM类型编辑</a></li>
+            <li><a href="/appaspx/Right.aspx">编辑权限</a></li>
+            <li><a href="/appaspx/AddAccount.aspx">添加账号</a></li>
+            <li class="divider"></li>
+            <li><a href="/appaspx/ModifyLoginPwd.aspx">修改密码</a></li>
+          </ul>
+        </li>
+        <li class=""><a href="/appaspx/Exit.aspx">退出</a></li>
+    </ul>
+</div>

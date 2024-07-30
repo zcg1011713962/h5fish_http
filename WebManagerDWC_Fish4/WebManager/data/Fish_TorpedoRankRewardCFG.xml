@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data ID="1" RankType="0" StartRank="1" EndRank="1" RewardList="25,3" RewardCount="1,300" Type="1" />
+	<Data ID="2" RankType="0" StartRank="2" EndRank="2" RewardList="24,3" RewardCount="3,200" Type="1" />
+	<Data ID="3" RankType="0" StartRank="3" EndRank="3" RewardList="24,3" RewardCount="2,100" Type="1" />
+	<Data ID="4" RankType="0" StartRank="4" EndRank="6" RewardList="24" RewardCount="1" Type="1" />
+	<Data ID="5" RankType="0" StartRank="7" EndRank="10" RewardList="43" RewardCount="30" Type="1" />
+	<Data ID="6" RankType="1" StartRank="1" EndRank="1" RewardList="25,3" RewardCount="2,600" Type="1" />
+	<Data ID="7" RankType="1" StartRank="2" EndRank="2" RewardList="25,3" RewardCount="1,400" Type="1" />
+	<Data ID="8" RankType="1" StartRank="3" EndRank="3" RewardList="44,3" RewardCount="40,200" Type="1" />
+	<Data ID="9" RankType="1" StartRank="4" EndRank="6" RewardList="44" RewardCount="30" Type="1" />
+	<Data ID="10" RankType="1" StartRank="7" EndRank="10" RewardList="44" RewardCount="20" Type="1" />
+	<Data ID="11" RankType="2" StartRank="1" EndRank="1" RewardList="26,3" RewardCount="2,1000" Type="1" />
+	<Data ID="12" RankType="2" StartRank="2" EndRank="2" RewardList="26,3" RewardCount="1,600" Type="1" />
+	<Data ID="13" RankType="2" StartRank="3" EndRank="3" RewardList="45,3" RewardCount="40,400" Type="1" />
+	<Data ID="14" RankType="2" StartRank="4" EndRank="6" RewardList="45" RewardCount="20" Type="1" />
+	<Data ID="15" RankType="2" StartRank="7" EndRank="10" RewardList="45" RewardCount="10" Type="1" />
+	<Data ID="16" RankType="3" StartRank="1" EndRank="1" RewardList="27,3" RewardCount="2,2000" Type="1" />
+	<Data ID="17" RankType="3" StartRank="2" EndRank="2" RewardList="27,3" RewardCount="1,1300" Type="1" />
+	<Data ID="18" RankType="3" StartRank="3" EndRank="3" RewardList="46,3" RewardCount="35,700" Type="1" />
+	<Data ID="19" RankType="3" StartRank="4" EndRank="6" RewardList="46" RewardCount="25" Type="1" />
+	<Data ID="20" RankType="3" StartRank="7" EndRank="10" RewardList="46" RewardCount="10" Type="1" />
+	<Data ID="21" RankType="0" StartRank="1" EndRank="1" RewardList="25,2" RewardCount="1,30" Type="2" />
+	<Data ID="22" RankType="0" StartRank="2" EndRank="2" RewardList="24,2" RewardCount="3,20" Type="2" />
+	<Data ID="23" RankType="0" StartRank="3" EndRank="3" RewardList="24,2" RewardCount="2,10" Type="2" />
+	<Data ID="24" RankType="0" StartRank="4" EndRank="6" RewardList="24" RewardCount="1" Type="2" />
+	<Data ID="25" RankType="0" StartRank="7" EndRank="10" RewardList="43" RewardCount="30" Type="2" />
+	<Data ID="26" RankType="1" StartRank="1" EndRank="1" RewardList="25,2" RewardCount="2,60" Type="2" />
+	<Data ID="27" RankType="1" StartRank="2" EndRank="2" RewardList="25,2" RewardCount="1,40" Type="2" />
+	<Data ID="28" RankType="1" StartRank="3" EndRank="3" RewardList="44,2" RewardCount="40,20" Type="2" />
+	<Data ID="29" RankType="1" StartRank="4" EndRank="6" RewardList="44" RewardCount="30" Type="2" />
+	<Data ID="30" RankType="1" StartRank="7" EndRank="10" RewardList="44" RewardCount="20" Type="2" />
+	<Data ID="31" RankType="2" StartRank="1" EndRank="1" RewardList="26,2" RewardCount="2,100" Type="2" />
+	<Data ID="32" RankType="2" StartRank="2" EndRank="2" RewardList="26,2" RewardCount="1,60" Type="2" />
+	<Data ID="33" RankType="2" StartRank="3" EndRank="3" RewardList="45,2" RewardCount="40,40" Type="2" />
+	<Data ID="34" RankType="2" StartRank="4" EndRank="6" RewardList="45" RewardCount="20" Type="2" />
+	<Data ID="35" RankType="2" StartRank="7" EndRank="10" RewardList="45" RewardCount="10" Type="2" />
+	<Data ID="36" RankType="3" StartRank="1" EndRank="1" RewardList="27,2" RewardCount="2,200" Type="2" />
+	<Data ID="37" RankType="3" StartRank="2" EndRank="2" RewardList="27,2" RewardCount="1,130" Type="2" />
+	<Data ID="38" RankType="3" StartRank="3" EndRank="3" RewardList="46,2" RewardCount="35,70" Type="2" />
+	<Data ID="39" RankType="3" StartRank="4" EndRank="6" RewardList="46" RewardCount="25" Type="2" />
+	<Data ID="40" RankType="3" StartRank="7" EndRank="10" RewardList="46" RewardCount="10" Type="2" />
+</Root>

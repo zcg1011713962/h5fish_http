@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>G:\h5fish\fishlord\Http\HttpRecharge\bin\app.publish\</_PublishTargetUrl>
+    <History>True|2022-06-01T07:22:19.4660333Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AliQRPay.aspx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="AliWebPay.aspx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="AliWebPayResult.aspx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="bin/BeeCloud.dll">
+      <publishTime>04/26/2022 04:22:19</publishTime>
+    </File>
+    <File Include="bin/Common.dll">
+      <publishTime>06/01/2022 14:56:31</publishTime>
+    </File>
+    <File Include="bin/Common.pdb">
+      <publishTime>06/01/2022 14:56:31</publishTime>
+    </File>
+    <File Include="bin/HttpRecharge.dll">
+      <publishTime>06/01/2022 15:22:19</publishTime>
+    </File>
+    <File Include="bin/HttpRecharge.pdb">
+      <publishTime>06/01/2022 15:22:19</publishTime>
+    </File>
+    <File Include="bin/LitJson.dll">
+      <publishTime>04/26/2022 04:22:19</publishTime>
+    </File>
+    <File Include="bin/MongoDB.Bson.dll">
+      <publishTime>04/26/2022 04:22:19</publishTime>
+    </File>
+    <File Include="bin/MongoDB.Driver.dll">
+      <publishTime>04/26/2022 04:22:19</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/26/2022 04:22:19</publishTime>
+    </File>
+    <File Include="bin/OpenApiV3.dll">
+      <publishTime>06/01/2022 14:56:31</publishTime>
+    </File>
+    <File Include="bin/OpenApiV3.pdb">
+      <publishTime>06/01/2022 14:56:31</publishTime>
+    </File>
+    <File Include="bin/PayCommon.dll">
+      <publishTime>06/01/2022 14:56:32</publishTime>
+    </File>
+    <File Include="bin/PayCommon.pdb">
+      <publishTime>06/01/2022 14:56:32</publishTime>
+    </File>
+    <File Include="data/M_RechangeCFG.xml">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="DuoyouPay.aspx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="DuoyouPayAndroid.aspx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="HuaWeiPay.aspx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="HuaWeiPay2.aspx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="OppoPay.aspx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="QQgameSendgoods.ashx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="QQMiniPay.aspx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="QuicksdkPay.aspx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="QuicksdkPay2.aspx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="QuicksdkPay3.aspx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="QuicksdkPay4.aspx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="TianWangYuLePay.aspx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="WeixinQRPay.aspx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="WeixinWebPay.aspx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="XiaomiMiniPay.aspx">
+      <publishTime>04/26/2022 04:22:17</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

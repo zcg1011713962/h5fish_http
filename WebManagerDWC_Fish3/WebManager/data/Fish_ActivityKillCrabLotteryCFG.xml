@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data ID="1" CostItemCount="100" AwardItemIDs="1,1,1,1,25,26" AwardItemCounts="40000,80000,200000,800000,1,1" AwardWeight="444,500,50,2,3,1" HarmValueMin="3900" HarmValueMax="4100" DisplayLabel="0,0,0,1,1,1,0,0,0" ShowAwardItemIDs="1,25,1,27,96,94,1,26,1" ShowAwardItemCounts="40000,1,200000,1,1,1,800000,1,80000" DisplayICON="M_X_Gold1,M_SilverTorpedo,M_X_Gold3,M_DiamondsTorpedo,M_dinghaishenzhen,icon_lingzhu,M_X_Gold4,M_GoldTorpedo,M_X_Gold2" />
+	<Data ID="2" CostItemCount="1000" AwardItemIDs="1,1,1,1,25,26,27,94" AwardItemCounts="40000,80000,200000,800000,1,1,1,1" AwardWeight="20,40,150,500,110,150,10,20" HarmValueMin="39000" HarmValueMax="41000" DisplayLabel="" ShowAwardItemIDs="" ShowAwardItemCounts="" DisplayICON="" />
+</Root>

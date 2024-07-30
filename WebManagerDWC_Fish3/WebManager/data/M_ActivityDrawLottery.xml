@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data ID="1" DrawType="1" ItemId="25" Number="1" Weight="1" DisplayLabel="1" />
+	<Data ID="2" DrawType="1" ItemId="1" Number="2888" Weight="121" DisplayLabel="0" />
+	<Data ID="3" DrawType="1" ItemId="5" Number="3" Weight="114" DisplayLabel="0" />
+	<Data ID="4" DrawType="1" ItemId="3" Number="100" Weight="1" DisplayLabel="0" />
+	<Data ID="5" DrawType="1" ItemId="16" Number="3" Weight="140" DisplayLabel="0" />
+	<Data ID="6" DrawType="1" ItemId="55" Number="1" Weight="1" DisplayLabel="1" />
+	<Data ID="7" DrawType="1" ItemId="1" Number="500" Weight="155" DisplayLabel="0" />
+	<Data ID="8" DrawType="1" ItemId="23" Number="1" Weight="24" DisplayLabel="0" />
+	<Data ID="9" DrawType="1" ItemId="1" Number="888" Weight="200" DisplayLabel="0" />
+	<Data ID="10" DrawType="1" ItemId="43" Number="1" Weight="135" DisplayLabel="0" />
+	<Data ID="11" DrawType="2" ItemId="26" Number="1" Weight="1" DisplayLabel="1" />
+	<Data ID="12" DrawType="2" ItemId="1" Number="5888" Weight="100" DisplayLabel="0" />
+	<Data ID="13" DrawType="2" ItemId="16" Number="10" Weight="104" DisplayLabel="0" />
+	<Data ID="14" DrawType="2" ItemId="3" Number="300" Weight="15" DisplayLabel="0" />
+	<Data ID="15" DrawType="2" ItemId="1" Number="18888" Weight="110" DisplayLabel="0" />
+	<Data ID="16" DrawType="2" ItemId="56" Number="1" Weight="6" DisplayLabel="1" />
+	<Data ID="17" DrawType="2" ItemId="41" Number="1" Weight="100" DisplayLabel="0" />
+	<Data ID="18" DrawType="2" ItemId="5" Number="5" Weight="50" DisplayLabel="0" />
+	<Data ID="19" DrawType="2" ItemId="1" Number="38888" Weight="9" DisplayLabel="0" />
+	<Data ID="20" DrawType="2" ItemId="45" Number="1" Weight="14" DisplayLabel="0" />
+</Root>

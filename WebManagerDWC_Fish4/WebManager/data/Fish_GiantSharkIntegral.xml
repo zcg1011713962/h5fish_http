@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data ID="1" Name="豹子A" MinimumIntegral="3600" MaximumIntegral="3620" Weight="45" DolphinGold="2000000" CrabGold="3000000" AdditionalRewards="78" RewardCard="50" DisplaySort="10" DisplayCardType="hjt_a,zjt_a,fjt_a" />
+	<Data ID="2" Name="豹子K" MinimumIntegral="3580" MaximumIntegral="3600" Weight="45" DolphinGold="1000000" CrabGold="1500000" AdditionalRewards="78" RewardCard="30" DisplaySort="9" DisplayCardType="hjt_k,zjt_k,fjt_k" />
+	<Data ID="3" Name="豹子Q" MinimumIntegral="3550" MaximumIntegral="3570" Weight="90" DolphinGold="500000" CrabGold="750000" AdditionalRewards="78" RewardCard="20" DisplaySort="8" DisplayCardType="hjt_q,zjt_q,fjt_q" />
+	<Data ID="4" Name="豹子J" MinimumIntegral="3500" MaximumIntegral="3520" Weight="135" DolphinGold="400000" CrabGold="600000" AdditionalRewards="78" RewardCard="15" DisplaySort="7" DisplayCardType="hjt_j,zjt_j,fjt_j" />
+	<Data ID="5" Name="豹子10" MinimumIntegral="3450" MaximumIntegral="3470" Weight="225" DolphinGold="300000" CrabGold="450000" AdditionalRewards="78" RewardCard="10" DisplaySort="6" DisplayCardType="hjt_10,zjt_10,fjt_10" />
+	<Data ID="6" Name="三元素" MinimumIntegral="2800" MaximumIntegral="3000" Weight="450" DolphinGold="200000" CrabGold="300000" AdditionalRewards="78" RewardCard="4" DisplaySort="5" DisplayCardType="hjt_k,hjt_q,hjt_j" />
+	<Data ID="7" Name="同元素" MinimumIntegral="2000" MaximumIntegral="2400" Weight="3153" DolphinGold="100000" CrabGold="150000" AdditionalRewards="78" RewardCard="3" DisplaySort="4" DisplayCardType="fjt_a,fjt_j,fjt_10" />
+	<Data ID="8" Name="元素顺" MinimumIntegral="1600" MaximumIntegral="1800" Weight="4505" DolphinGold="90000" CrabGold="135000" AdditionalRewards="78" RewardCard="2" DisplaySort="3" DisplayCardType="zjt_q,fjt_j,fjt_10" />
+	<Data ID="9" Name="双元素" MinimumIntegral="800" MaximumIntegral="1200" Weight="901" DolphinGold="80000" CrabGold="120000" AdditionalRewards="78" RewardCard="1" DisplaySort="2" DisplayCardType="fjt_j,fjt_j,fjt_10" />
+	<Data ID="10" Name="单元素" MinimumIntegral="500" MaximumIntegral="800" Weight="450" DolphinGold="60000" CrabGold="90000" AdditionalRewards="78" RewardCard="0" DisplaySort="1" DisplayCardType="zjt_k,hjt_q,fjt_j" />
+</Root>

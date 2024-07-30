@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data Index="1" StarLvl="0" ItemType="1" ItemCount="500" NormalProb="500" NoChipProb="500" />
+	<Data Index="2" StarLvl="0" ItemType="1" ItemCount="1000" NormalProb="666" NoChipProb="666" />
+	<Data Index="3" StarLvl="0" ItemType="1" ItemCount="3000" NormalProb="666" NoChipProb="666" />
+	<Data Index="4" StarLvl="0" ItemType="16" ItemCount="5" NormalProb="100" NoChipProb="100" />
+	<Data Index="5" StarLvl="0" ItemType="16" ItemCount="10" NormalProb="80" NoChipProb="80" />
+	<Data Index="6" StarLvl="0" ItemType="3" ItemCount="30" NormalProb="150" NoChipProb="0" />
+	<Data Index="7" StarLvl="1" ItemType="1" ItemCount="20000" NormalProb="300" NoChipProb="300" />
+	<Data Index="8" StarLvl="1" ItemType="1" ItemCount="50000" NormalProb="700" NoChipProb="700" />
+	<Data Index="9" StarLvl="1" ItemType="1" ItemCount="100000" NormalProb="600" NoChipProb="600" />
+	<Data Index="10" StarLvl="1" ItemType="16" ItemCount="15" NormalProb="130" NoChipProb="130" />
+	<Data Index="11" StarLvl="1" ItemType="16" ItemCount="20" NormalProb="55" NoChipProb="55" />
+	<Data Index="12" StarLvl="1" ItemType="3" ItemCount="150" NormalProb="150" NoChipProb="0" />
+	<Data Index="13" StarLvl="2" ItemType="1" ItemCount="50000" NormalProb="500" NoChipProb="650" />
+	<Data Index="14" StarLvl="2" ItemType="1" ItemCount="100000" NormalProb="1000" NoChipProb="1000" />
+	<Data Index="15" StarLvl="2" ItemType="1" ItemCount="200000" NormalProb="325" NoChipProb="325" />
+	<Data Index="16" StarLvl="2" ItemType="2" ItemCount="40" NormalProb="180" NoChipProb="180" />
+	<Data Index="17" StarLvl="2" ItemType="24" ItemCount="1" NormalProb="5" NoChipProb="5" />
+	<Data Index="18" StarLvl="2" ItemType="3" ItemCount="350" NormalProb="150" NoChipProb="0" />
+	<Data Index="19" StarLvl="3" ItemType="1" ItemCount="150000" NormalProb="400" NoChipProb="550" />
+	<Data Index="20" StarLvl="3" ItemType="1" ItemCount="350000" NormalProb="1000" NoChipProb="1000" />
+	<Data Index="21" StarLvl="3" ItemType="1" ItemCount="1000000" NormalProb="103" NoChipProb="103" />
+	<Data Index="22" StarLvl="3" ItemType="2" ItemCount="350" NormalProb="120" NoChipProb="120" />
+	<Data Index="23" StarLvl="3" ItemType="25" ItemCount="1" NormalProb="5" NoChipProb="5" />
+	<Data Index="24" StarLvl="3" ItemType="3" ItemCount="1000" NormalProb="150" NoChipProb="0" />
+	<Data Index="25" StarLvl="4" ItemType="1" ItemCount="300000" NormalProb="300" NoChipProb="450" />
+	<Data Index="26" StarLvl="4" ItemType="1" ItemCount="700000" NormalProb="687" NoChipProb="687" />
+	<Data Index="27" StarLvl="4" ItemType="1" ItemCount="2000000" NormalProb="100" NoChipProb="100" />
+	<Data Index="28" StarLvl="4" ItemType="2" ItemCount="700" NormalProb="12" NoChipProb="12" />
+	<Data Index="29" StarLvl="4" ItemType="26" ItemCount="1" NormalProb="5" NoChipProb="5" />
+	<Data Index="30" StarLvl="4" ItemType="3" ItemCount="2000" NormalProb="150" NoChipProb="0" />
+	<Data Index="31" StarLvl="5" ItemType="1" ItemCount="900000" NormalProb="450" NoChipProb="480" />
+	<Data Index="32" StarLvl="5" ItemType="1" ItemCount="2100000" NormalProb="600" NoChipProb="600" />
+	<Data Index="33" StarLvl="5" ItemType="1" ItemCount="6000000" NormalProb="110" NoChipProb="100" />
+	<Data Index="34" StarLvl="5" ItemType="2" ItemCount="2100" NormalProb="12" NoChipProb="12" />
+	<Data Index="35" StarLvl="5" ItemType="27" ItemCount="1" NormalProb="5" NoChipProb="5" />
+	<Data Index="36" StarLvl="5" ItemType="3" ItemCount="6000" NormalProb="30" NoChipProb="0" />
+</Root>

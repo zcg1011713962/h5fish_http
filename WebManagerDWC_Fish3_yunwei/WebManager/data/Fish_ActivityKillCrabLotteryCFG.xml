@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data ID="1" CostItemCount="50" AwardItemIDs="23,1,24" AwardItemCounts="1,40000,1" AwardWeight="100,200,50" HarmValueMin="2250" HarmValueMax="2500" DisplayLabel="0,0,0,1,1,0,0,0,0" ShowAwardItemIDs="23,1,24,26,27,1,1007,1,25" ShowAwardItemCounts="1,40000,1,1,1,800000,1,400000,1" DisplayICON="M_OrdinaryTorpedo,M_Gold3,M_BronzeTorpedo,M_GoldTorpedo,M_DiamondsTorpedo,M_Gold5,jincaidan,M_Gold4,M_SilverTorpedo" />
+	<Data ID="2" CostItemCount="500" AwardItemIDs="1,1,26,25" AwardItemCounts="400000,800000,1,1" AwardWeight="252,74,30,40" HarmValueMin="22500" HarmValueMax="25000" DisplayLabel="" ShowAwardItemIDs="" ShowAwardItemCounts="" DisplayICON="" />
+</Root>

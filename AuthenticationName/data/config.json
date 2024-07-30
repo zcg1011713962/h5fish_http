@@ -1,0 +1,11 @@
+﻿{
+  "addr" : "http://*:4676/",
+  
+  "notifyUrl" : "http://localhost:11002/",
+ 
+	"isTest":"true",
+	
+	"testCode":"aaa"
+}
+
+

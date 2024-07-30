@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data ID="10" ItemName="50元话费" ItemDesc="获得50元话费" ItemIcon="Card_50huafei" ExchangeType="1" VipCondition="2" ExchangeItem="3" RedemptionQuantity="5000" Consumption="106" ConsumptionItem="48" />
+	<Data ID="11" ItemName="50元京东卡" ItemDesc="获得50元京东卡" ItemIcon="Card_50jingdong" ExchangeType="1" VipCondition="2" ExchangeItem="1025" RedemptionQuantity="1" Consumption="106" ConsumptionItem="48" />
+	<Data ID="12" ItemName="50万金币" ItemDesc="获得50万金币" ItemIcon="M_X_Gold5" ExchangeType="0" VipCondition="0" ExchangeItem="1" RedemptionQuantity="500000" Consumption="106" ConsumptionItem="48" />
+	<Data ID="13" ItemName="500钻石" ItemDesc="获得500钻石" ItemIcon="M_X_Diamond5" ExchangeType="0" VipCondition="0" ExchangeItem="2" RedemptionQuantity="500" Consumption="106" ConsumptionItem="48" />
+</Root>

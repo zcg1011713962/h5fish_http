@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4FD9B7D6-4DEA-4328-B939-0386E25911D3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HttpRecharge</RootNamespace>
+    <AssemblyName>HttpRecharge</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BeeCloud">
+      <HintPath>..\Mongodb\BeeCloud.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MongoDB.Bson, Version=0.0.0.0, Culture=neutral, PublicKeyToken=f686731cfb9cc103, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Mongodb\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=0.0.0.0, Culture=neutral, PublicKeyToken=f686731cfb9cc103, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Mongodb\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AliQRPay.aspx" />
+    <Content Include="AliWebPay.aspx" />
+    <Content Include="AliWebPayResult.aspx" />
+    <Content Include="data\M_RechangeCFG.xml" />
+    <Content Include="DuoyouPay.aspx" />
+    <Content Include="DuoyouPayAndroid.aspx" />
+    <Content Include="HuaWeiPay.aspx" />
+    <Content Include="HuaWeiPay2.aspx" />
+    <Content Include="OppoPay.aspx" />
+    <Content Include="QQMiniPay.aspx" />
+    <Content Include="QuicksdkPay.aspx" />
+    <Content Include="QuicksdkPay2.aspx" />
+    <Content Include="QuicksdkPay3.aspx" />
+    <Content Include="QuicksdkPay4.aspx" />
+    <Content Include="TianWangYuLePay.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WeixinQRPay.aspx" />
+    <Content Include="WeixinWebPay.aspx" />
+    <Content Include="XiaomiMiniPay.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AliQRPay.aspx.cs">
+      <DependentUpon>AliQRPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AliQRPay.aspx.designer.cs">
+      <DependentUpon>AliQRPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AliWebPay.aspx.cs">
+      <DependentUpon>AliWebPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AliWebPay.aspx.designer.cs">
+      <DependentUpon>AliWebPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AliWebPayResult.aspx.cs">
+      <DependentUpon>AliWebPayResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AliWebPayResult.aspx.designer.cs">
+      <DependentUpon>AliWebPayResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="code\pay.cs" />
+    <Compile Include="code\PayCommon.cs" />
+    <Compile Include="code\Mongodb.cs" />
+    <Compile Include="DuoyouPay.aspx.cs">
+      <DependentUpon>DuoyouPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DuoyouPay.aspx.designer.cs">
+      <DependentUpon>DuoyouPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DuoyouPayAndroid.aspx.cs">
+      <DependentUpon>DuoyouPayAndroid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DuoyouPayAndroid.aspx.designer.cs">
+      <DependentUpon>DuoyouPayAndroid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HuaWeiPay.aspx.cs">
+      <DependentUpon>HuaWeiPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HuaWeiPay.aspx.designer.cs">
+      <DependentUpon>HuaWeiPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HuaWeiPay2.aspx.cs">
+      <DependentUpon>HuaWeiPay2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HuaWeiPay2.aspx.designer.cs">
+      <DependentUpon>HuaWeiPay2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OppoPay.aspx.cs">
+      <DependentUpon>OppoPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OppoPay.aspx.designer.cs">
+      <DependentUpon>OppoPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QQgameSendgoods.ashx.cs">
+      <DependentUpon>QQgameSendgoods.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="QQMiniPay.aspx.cs">
+      <DependentUpon>QQMiniPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QQMiniPay.aspx.designer.cs">
+      <DependentUpon>QQMiniPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QuicksdkPay.aspx.cs">
+      <DependentUpon>QuicksdkPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuicksdkPay.aspx.designer.cs">
+      <DependentUpon>QuicksdkPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QuicksdkPay2.aspx.cs">
+      <DependentUpon>QuicksdkPay2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuicksdkPay2.aspx.designer.cs">
+      <DependentUpon>QuicksdkPay2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QuicksdkPay3.aspx.cs">
+      <DependentUpon>QuicksdkPay3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuicksdkPay3.aspx.designer.cs">
+      <DependentUpon>QuicksdkPay3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QuicksdkPay4.aspx.cs">
+      <DependentUpon>QuicksdkPay4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuicksdkPay4.aspx.designer.cs">
+      <DependentUpon>QuicksdkPay4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TianWangYuLePay.aspx.cs">
+      <DependentUpon>TianWangYuLePay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TianWangYuLePay.aspx.designer.cs">
+      <DependentUpon>TianWangYuLePay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WeixinQRPay.aspx.cs">
+      <DependentUpon>WeixinQRPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeixinQRPay.aspx.designer.cs">
+      <DependentUpon>WeixinQRPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WeixinWebPay.aspx.cs">
+      <DependentUpon>WeixinWebPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeixinWebPay.aspx.designer.cs">
+      <DependentUpon>WeixinWebPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XiaomiMiniPay.aspx.cs">
+      <DependentUpon>XiaomiMiniPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XiaomiMiniPay.aspx.designer.cs">
+      <DependentUpon>XiaomiMiniPay.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\httprecharge.pubxml" />
+    <None Include="Properties\PublishProfiles\publish.pubxml" />
+    <Content Include="QQgameSendgoods.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{ea3d98dd-533c-4a9a-93a3-39f3035ed717}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenApiV3\OpenApiV3.csproj">
+      <Project>{f7013ee7-1728-45ab-977f-cad9627683f5}</Project>
+      <Name>OpenApiV3</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PayCommon\PayCommon.csproj">
+      <Project>{d40f03a7-d466-482d-a814-472dccea998d}</Project>
+      <Name>PayCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>7087</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

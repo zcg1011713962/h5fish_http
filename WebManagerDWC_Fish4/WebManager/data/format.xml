@@ -1,0 +1,53 @@
+﻿<?xml version="1.0"?>
+
+<configuration>
+  <add opid="0" opname="发邮件" fmt="向[{0}]发送了邮件&lt;br /&gt; 标题[{1}]&lt;br /&gt; 发送者[{2}]&lt;br /&gt; 内容[{3}] &lt;br /&gt; 道具列表[{4}] &lt;br /&gt; 有效时间[{5}]天" class="LogSendMail" />
+
+  <add opid="1" opname="解/封IP" fmt="[{0}]了IP[{1}]" class="LogBlockIP" />
+  
+  <add opid="2" opname="解/封账号" fmt="[{0}]了账号[{1}]" class="LogBlockAcc" />
+
+  <add opid="3" opname="重置密码" fmt="账号[{0}],手机号[{1}]" class="LogResetPwd" />
+
+  <add opid="4" opname="后台充值" fmt="给玩家[{0}]充值了[{1}],金额[{2}]" class="LogGmRecharge" />
+
+  <add opid="5" opname="解/封玩家ID" fmt="[{0}]了玩家ID[{1}]" class="LogBlockId" />
+
+  <add opid="7" opname="重置盈利率" fmt="重置了房间[{0}]的盈利率-{1}" class="LogResetFishlordRoomExpRate" />
+
+  <add opid="8" opname="冻结头像" fmt="冻结了玩家[{0}]的头像，截止到[{1}]" class="LogFreezeHead" />
+
+  <add opid="11" opname="玩家操作" fmt="玩家[{0}][{1}][{2}][{3}]" class="LogPlayerOp" />
+
+  <add opid="12" opname="重载表格" fmt="重载了[{0}]的表格" class="LogReloadTable" />
+
+  <add opid="18" opname="绑定解绑玩家手机号码" fmt="{0}玩家手机，{0}了ID为[{1}]的玩家手机号码{2}" class="LogBindPlayerPhone"/>
+
+  <add opid="23" opname="点杀点送设置" fmt="{0}" class="LogSetScorePool"/>
+  
+  <add opid="27" opname="捕鱼弹头统计区间修正系数修改" fmt="修改了ID为[{0}]的[{2}]系数为[{1}]" class="LogBulletHeadRangeCorrectParamEdit"/>
+  
+  <add opid="28" opname="修改机器人最高积分" fmt="将机器人最高积分修改为[{0}]" class="LogFishlordRobotMaxScoreEdit"/>
+
+  <add opid="29" opname="添加账号(游客快速开始)" fmt="修改了ID为[{0}]的玩家账号信息" class="LogFasterStartForVisitor"/>
+  
+  <add opid="32" opname="客服补单/大户随访/换包福利-系统" fmt="{0}，相关邮件内容可查询发邮件记录" class="LogServiceRepairOrder" />
+
+  <add opid="33" opname="玩家魔石数量修改" fmt="将ID为[{0}]玩家的魔石数量由[{1}]修改为[{2}]" class="LogDragonScaleNumAlter"/>
+  
+  <add opid="34" opname="流失大户引导完成添加记录" fmt="[{0}]时间点添加了ID为[{1}]流失大户引导记录，备注为[{2}]" class="LogGuideLostPlayer"/>
+
+  <add opid="36" opname="系统空投操作" fmt="系统空投操作，[{0}]了ID为[{1}]的空投" class="LogAirDropSysPublish"/>
+
+  <add opid="37" opname="个人后台管理新算法参数修改" fmt="修改了新算法参数，将参数改为基数：[{0}]，误差值：[{1}]，系数：[{2}]" class="LogModifyFishlordSingleCtrlParam"/>
+
+  <add opid="38" opname="大水池参数调整" fmt="修改了[ {0} ]新算法参数，{1}" class="LogModifyFishlordCtrlNewParam"/>
+
+  <add opid="39" opname="场次作弊" fmt="[{0}]作弊， 将ID为[{1}]玩家的[{2}]改为[{3}]" class="LogFishlordRoomCheat"/>
+
+  <add opid="40" opname="高级场玩法管理" fmt="操作了高级场玩法参数， {0}" class="LogFishlordAdvancedRoomCtrl"/>
+  
+  <add opid="41" opname="炸弹乐园玩家积分作弊" fmt="操作了ID为[{0}]玩家的[{1}]，将积分改为[{2}]" class="LogStatBulletHeadPlayerScoreAlter"/>
+</configuration>
+
+

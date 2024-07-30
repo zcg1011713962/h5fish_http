@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data ID="1" MinimumIntegral="9999" MaximumIntegral="9999" RewardList="1,3" RewardCount="1500000,5000" Weight="0" />
+	<Data ID="2" MinimumIntegral="9990" MaximumIntegral="9998" RewardList="1,3" RewardCount="800000,3000" Weight="0" />
+	<Data ID="3" MinimumIntegral="9900" MaximumIntegral="9989" RewardList="1,16" RewardCount="200000,25" Weight="4" />
+	<Data ID="4" MinimumIntegral="9000" MaximumIntegral="9899" RewardList="1,16" RewardCount="50000,20" Weight="4000" />
+	<Data ID="5" MinimumIntegral="5000" MaximumIntegral="8999" RewardList="1,16" RewardCount="10000,10" Weight="500" />
+	<Data ID="6" MinimumIntegral="1000" MaximumIntegral="4999" RewardList="1,16" RewardCount="5000,5" Weight="10" />
+</Root>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data Level="1" Name="累计赢取金币20万" Type="1" Reward1="1" Reward2="0.6" />
+	<Data Level="2" Name="累计赢取金币500万" Type="1" Reward1="1" Reward2="0.6" />
+	<Data Level="3" Name="累计赢取金币2000万" Type="1" Reward1="1" Reward2="0.6" />
+	<Data Level="4" Name="累计赢取金币5000万" Type="1" Reward1="1" Reward2="0.6" />
+	<Data Level="5" Name="累计赢取金币2亿" Type="1" Reward1="2" Reward2="1.2" />
+	<Data Level="6" Name="累计赢取金币6亿" Type="1" Reward1="3" Reward2="1.8" />
+	<Data Level="7" Name="累计赢取金币9亿" Type="1" Reward1="30" Reward2="18" />
+	<Data Level="8" Name="累计赢取金币15亿" Type="1" Reward1="45" Reward2="30" />
+	<Data Level="9" Name="累计赢取金币30亿" Type="1" Reward1="60" Reward2="48" />
+	<Data Level="10" Name="累计赢取金币50亿" Type="1" Reward1="90" Reward2="60" />
+	<Data Level="11" Name="累计赢取金币80亿" Type="1" Reward1="45" Reward2="30" />
+	<Data Level="12" Name="累计赢取金币140亿" Type="1" Reward1="360" Reward2="240" />
+	<Data Level="13" Name="累计赢取金币260亿" Type="1" Reward1="540" Reward2="360" />
+	<Data Level="14" Name="累计赢取金币450亿" Type="1" Reward1="720" Reward2="480" />
+	<Data Level="15" Name="累计赢取金币800亿" Type="1" Reward1="900" Reward2="600" />
+	<Data Level="16" Name="累计赢取金币1500亿" Type="1" Reward1="1800" Reward2="1200" />
+	<Data Level="17" Name="累计充值6元" Type="2" Reward1="3" Reward2="2" />
+	<Data Level="18" Name="累计充值30元" Type="2" Reward1="18" Reward2="12" />
+	<Data Level="19" Name="累计充值98元" Type="2" Reward1="24" Reward2="16" />
+	<Data Level="20" Name="累计充值198元" Type="2" Reward1="30" Reward2="20" />
+	<Data Level="21" Name="累计充值398元" Type="2" Reward1="36" Reward2="24" />
+	<Data Level="22" Name="累计充值998元" Type="2" Reward1="72" Reward2="48" />
+	<Data Level="23" Name="累计充值1588元" Type="2" Reward1="120" Reward2="80" />
+	<Data Level="24" Name="累计充值3288元" Type="2" Reward1="240" Reward2="160" />
+	<Data Level="25" Name="累计充值6488元" Type="2" Reward1="450" Reward2="300" />
+	<Data Level="26" Name="累计充值10000元" Type="2" Reward1="720" Reward2="480" />
+	<Data Level="27" Name="累计充值15000元" Type="2" Reward1="1020" Reward2="680" />
+	<Data Level="28" Name="累计充值20000元" Type="2" Reward1="1320" Reward2="880" />
+</Root>

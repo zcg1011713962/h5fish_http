@@ -1,0 +1,12 @@
+F:\DM\fishlord_h5\trunk\Http\HttpApi\obj\Debug\HttpApi.csprojResolveAssemblyReference.cache
+F:\DM\fishlord_h5\trunk\Http\HttpApi\bin\HttpApi.dll
+F:\DM\fishlord_h5\trunk\Http\HttpApi\bin\HttpApi.pdb
+F:\DM\fishlord_h5\trunk\Http\HttpApi\bin\Common.dll
+F:\DM\fishlord_h5\trunk\Http\HttpApi\bin\MongoDB.Bson.dll
+F:\DM\fishlord_h5\trunk\Http\HttpApi\bin\MongoDB.Driver.dll
+F:\DM\fishlord_h5\trunk\Http\HttpApi\bin\Newtonsoft.Json.dll
+F:\DM\fishlord_h5\trunk\Http\HttpApi\bin\PayCommon.dll
+F:\DM\fishlord_h5\trunk\Http\HttpApi\bin\Common.pdb
+F:\DM\fishlord_h5\trunk\Http\HttpApi\bin\PayCommon.pdb
+F:\DM\fishlord_h5\trunk\Http\HttpApi\obj\Debug\HttpApi.dll
+F:\DM\fishlord_h5\trunk\Http\HttpApi\obj\Debug\HttpApi.pdb

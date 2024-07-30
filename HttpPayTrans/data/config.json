@@ -1,0 +1,11 @@
+﻿{
+  "addr" : "http://localhost:4656/",
+  
+  "notifyUrl" : "http://localhost:11002/",
+  
+   "isNotify": false,
+   
+   "mongoPayment" : "127.0.0.1"
+}
+
+

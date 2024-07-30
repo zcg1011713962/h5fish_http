@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+
+<configuration>
+	<!-- 玩家数据库 -->
+	<add key="mongodbPlayer" value="192.168.1.49" type="string" />
+	
+	<add key="mongodbLog" value="192.168.1.49" type="string" />
+	
+	<add key="title" value="捕鱼3" type="string" />
+	
+	<!-- 毫秒 隔一定时间查看是否需要统计 -->
+	<add key="statInterval" value="1000" type="int" />
+</configuration>
+

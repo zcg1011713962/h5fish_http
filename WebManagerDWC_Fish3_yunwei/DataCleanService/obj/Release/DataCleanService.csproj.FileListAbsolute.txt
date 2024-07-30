@@ -1,0 +1,17 @@
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\DataCleanService\bin\DataCleanService.exe.config
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\DataCleanService\bin\DataCleanService.exe
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\DataCleanService\bin\DataCleanService.pdb
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\DataCleanService\bin\Common.dll
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\DataCleanService\bin\libcommon.dll
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\DataCleanService\bin\log4net.dll
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\DataCleanService\bin\MongoDB.Bson.dll
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\DataCleanService\bin\MongoDB.Driver.dll
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\DataCleanService\bin\Newtonsoft.Json.dll
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\DataCleanService\bin\Common.pdb
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\DataCleanService\bin\libcommon.pdb
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\DataCleanService\obj\Release\DataCleanService.csprojResolveAssemblyReference.cache
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\DataCleanService\obj\Release\DataStatService.Form1.resources
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\DataCleanService\obj\Release\DataCleanService.Properties.Resources.resources
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\DataCleanService\obj\Release\DataCleanService.csproj.GenerateResource.Cache
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\DataCleanService\obj\Release\DataCleanService.exe
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\DataCleanService\obj\Release\DataCleanService.pdb

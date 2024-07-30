@@ -1,0 +1,12 @@
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\libRRD\bin\Release\libRRD.dll
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\libRRD\bin\Release\libRRD.pdb
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\libRRD\bin\Release\libcommon.dll
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\libRRD\bin\Release\VSWinNHawk.dll
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\libRRD\bin\Release\Newtonsoft.Json.dll
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\libRRD\bin\Release\MongoDB.Driver.dll
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\libRRD\bin\Release\MongoDB.Bson.dll
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\libRRD\bin\Release\libcommon.pdb
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\libRRD\bin\Release\VSWinNHawk.pdb
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\libRRD\obj\Release\libRRD.csprojResolveAssemblyReference.cache
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\libRRD\obj\Release\libRRD.dll
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\libRRD\obj\Release\libRRD.pdb

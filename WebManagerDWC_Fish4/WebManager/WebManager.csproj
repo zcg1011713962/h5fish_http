@@ -1,0 +1,3566 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{618BF724-E80D-46EF-B30A-ABF409F6950C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebManager</RootNamespace>
+    <AssemblyName>WebManager</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Enyim.Caching">
+      <HintPath>dll\Enyim.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="ExitGamesLibs">
+      <HintPath>dll\ExitGamesLibs.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MongoDB.Bson, Version=1.9.1.221, Culture=neutral, PublicKeyToken=f686731cfb9cc103, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Mongodb\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=1.9.1.221, Culture=neutral, PublicKeyToken=f686731cfb9cc103, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Mongodb\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Mongodb\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="appaspx\cdkey.aspx" />
+    <Content Include="appaspx\cdkeyNew.aspx" />
+    <Content Include="appaspx\fishing\fishingRoomInfo.aspx" />
+    <Content Include="appaspx\GameStandingBook.aspx" />
+    <Content Include="appaspx\GmTypeEdit.aspx" />
+    <Content Include="appaspx\Login.aspx" />
+    <Content Include="appaspx\ModifyLoginPwd.aspx" />
+    <Content Include="appaspx\AddAccount.aspx" />
+    <Content Include="appaspx\Error.aspx" />
+    <Content Include="appaspx\Exit.aspx" />
+    <Content Include="appaspx\LogViewer.aspx" />
+    <Content Include="appaspx\operationNew\OperationNewGameActive.aspx" />
+    <Content Include="appaspx\operationNew\OperationNewGameIncome.aspx" />
+    <Content Include="appaspx\operationNew\OperationNewPlayerRecharge.aspx" />
+    <Content Include="appaspx\operationNew\OperationNewTurretTimes.aspx" />
+    <Content Include="appaspx\operation\Error.aspx" />
+    <Content Include="appaspx\operation\OperationChannelEdit.aspx" />
+    <Content Include="appaspx\operation\OperationForceUpdateReward.aspx" />
+    <Content Include="appaspx\operation\OperationFreezeHead.aspx" />
+    <Content Include="appaspx\operation\OperationGameCtrl.aspx" />
+    <Content Include="appaspx\operation\OperationGameDailyTotalLoseWinRank.aspx" />
+    <Content Include="appaspx\operation\OperationGamesRealTimeLoseWinList.aspx" />
+    <Content Include="appaspx\operation\OperationGetPlayerIdByOrderId.aspx" />
+    <Content Include="appaspx\operation\OperationMaintenanceNotice.aspx" />
+    <Content Include="appaspx\operation\OperationMaxOnline.aspx" />
+    <Content Include="appaspx\operation\OperationMoneyQueryDetail.aspx" />
+    <Content Include="appaspx\operation\OperationMoneyWarn.aspx" />
+    <Content Include="appaspx\operation\OperationNotify.aspx" />
+    <Content Include="appaspx\operation\OperationOnlinePlayerCount.aspx" />
+    <Content Include="appaspx\operation\OperationPlayerActTurret.aspx" />
+    <Content Include="appaspx\operation\OperationPlayerActTurretBySingle.aspx" />
+    <Content Include="appaspx\operation\OperationPlayerBankrupt.aspx" />
+    <Content Include="appaspx\operation\OperationPlayerBankruptDetail.aspx" />
+    <Content Include="appaspx\operation\OperationPlayerMoneyRep.aspx" />
+    <Content Include="appaspx\operation\OperationPlayerOp.aspx" />
+    <Content Include="appaspx\operation\OperationPlayerOpenRateBankruptList.aspx" />
+    <Content Include="appaspx\operation\OperationPlayerRichesRank.aspx" />
+    <Content Include="appaspx\operation\OperationPlayerTotalMoney.aspx" />
+    <Content Include="appaspx\operation\OperationPolarLightsPush.aspx" />
+    <Content Include="appaspx\operation\OperationRank.aspx" />
+    <Content Include="appaspx\operation\OperationRecharge.aspx" />
+    <Content Include="appaspx\operation\OperationRechargePoint.aspx" />
+    <Content Include="appaspx\operation\OperationSpeaker.aspx" />
+    <Content Include="appaspx\operation\OperationViewInformHead.aspx" />
+    <Content Include="appaspx\operation\OperationWeekChampionSetting.aspx" />
+    <Content Include="appaspx\operation\OperationWishCurse.aspx" />
+    <Content Include="appaspx\operation\PlayerItemRecord.aspx" />
+    <Content Include="appaspx\operation\word2LogicItemError.aspx" />
+    <Content Include="appaspx\player\PlayerBasicInfo.aspx" />
+    <Content Include="appaspx\Right.aspx" />
+    <Content Include="appaspx\SelectMachine.aspx" />
+    <Content Include="appaspx\service\Error.aspx" />
+    <Content Include="appaspx\service\ServiceAccountBeibao.aspx" />
+    <Content Include="appaspx\service\ServiceBindOrUnbindPhone.aspx" />
+    <Content Include="appaspx\service\ServiceBlockId.aspx" />
+    <Content Include="appaspx\service\ServiceChannelOpenCloseGame.aspx" />
+    <Content Include="appaspx\service\ServiceCheckMail.aspx" />
+    <Content Include="appaspx\service\ServiceExcelDownLoad.aspx" />
+    <Content Include="appaspx\service\ServiceAccountQuery.aspx" />
+    <Content Include="appaspx\service\ServiceExchange.aspx" />
+    <Content Include="appaspx\service\ServiceGuideLostPlayers.aspx" />
+    <Content Include="appaspx\service\ServiceInfo.aspx" />
+    <Content Include="appaspx\service\ServiceMail.aspx" />
+    <Content Include="appaspx\service\ServiceMainQuery.aspx" />
+    <Content Include="appaspx\service\ServiceModifyPwd.aspx" />
+    <Content Include="appaspx\service\ServicePlayerChatQuery.aspx" />
+    <Content Include="appaspx\service\ServiceRechargeQuery.aspx" />
+    <Content Include="appaspx\service\ServiceRechargeQueryNew.aspx" />
+    <Content Include="appaspx\service\ServiceReplacementOrder.aspx" />
+    <Content Include="appaspx\service\ServiceSelectTheLossOfPlayers.aspx" />
+    <Content Include="appaspx\service\ServiceUnBlockId.aspx" />
+    <Content Include="appaspx\stat\5dragons\DragonControl.aspx" />
+    <Content Include="appaspx\stat\5dragons\DragonViewGameModeEarning.aspx" />
+    <Content Include="appaspx\stat\5dragons\Error.aspx" />
+    <Content Include="appaspx\stat\ActivityPanicBuyingCFG.aspx" />
+    <Content Include="appaspx\stat\baccarat\BaccaratControl.aspx" />
+    <Content Include="appaspx\stat\baccarat\BaccaratPlayerBanker.aspx" />
+    <Content Include="appaspx\stat\baccarat\BaccaratResult.aspx" />
+    <Content Include="appaspx\stat\baccarat\Error.aspx" />
+    <Content Include="appaspx\stat\bz\bzResult.aspx" />
+    <Content Include="appaspx\stat\bz\BzSpecilListSet.aspx" />
+    <Content Include="appaspx\stat\bz\StatBz.aspx" />
+    <Content Include="appaspx\stat\bz\StatIndependentBz.aspx" />
+    <Content Include="appaspx\stat\calfroping\CalfRopingClass.aspx" />
+    <Content Include="appaspx\stat\calfroping\CalfRopingControl.aspx" />
+    <Content Include="appaspx\stat\calfroping\CalfRopingIndependent.aspx" />
+    <Content Include="appaspx\stat\calfroping\CalfRopingLevel.aspx" />
+    <Content Include="appaspx\stat\cows\CowsCardCtrlList.aspx" />
+    <Content Include="appaspx\stat\cows\CowsCardsDetail.aspx" />
+    <Content Include="appaspx\stat\cows\CowsCardSpecilListSet.aspx" />
+    <Content Include="appaspx\stat\cows\CowsCardsPlayerList.aspx" />
+    <Content Include="appaspx\stat\cows\CowsCardsQuery.aspx" />
+    <Content Include="appaspx\stat\cows\CowsCardType.aspx" />
+    <Content Include="appaspx\stat\cows\CowsControl.aspx" />
+    <Content Include="appaspx\stat\cows\CowsPlayerBanker.aspx" />
+    <Content Include="appaspx\stat\cows\Error.aspx" />
+    <Content Include="appaspx\stat\cows\StatIndependentCows.aspx" />
+    <Content Include="appaspx\stat\crocodile\CrocodileResult.aspx" />
+    <Content Include="appaspx\stat\crocodile\CrocodileSpecilListSet.aspx" />
+    <Content Include="appaspx\stat\crocodile\Error.aspx" />
+    <Content Include="appaspx\stat\dice\DiceResult.aspx" />
+    <Content Include="appaspx\stat\dice\Error.aspx" />
+    <Content Include="appaspx\stat\Error.aspx" />
+    <Content Include="appaspx\stat\fish\Error.aspx" />
+    <Content Include="appaspx\stat\fish\FishBoss.aspx" />
+    <Content Include="appaspx\stat\fish\FishBossControl.aspx" />
+    <Content Include="appaspx\stat\fish\FishlordBaojinRankDetail.aspx" />
+    <Content Include="appaspx\stat\fish\FishlordBulletHeadStat.aspx" />
+    <Content Include="appaspx\stat\fish\FishPlayerScorePool.aspx" />
+    <Content Include="appaspx\stat\fish\GrandPrixMatchDay.aspx" />
+    <Content Include="appaspx\stat\fish\GrandPrixWeekChampion.aspx" />
+    <Content Include="appaspx\stat\fish\StatFishlordConsume.aspx" />
+    <Content Include="appaspx\stat\fruit\fruitResult.aspx" />
+    <Content Include="appaspx\stat\fruit\FruitSpecilListSet.aspx" />
+    <Content Include="appaspx\stat\fruit\StatFruit.aspx" />
+    <Content Include="appaspx\stat\fruit\StatIndependentFruit.aspx" />
+    <Content Include="appaspx\stat\gamedetail\GameDetailBaccarat.aspx" />
+    <Content Include="appaspx\stat\gamedetail\GameDetailBz.aspx" />
+    <Content Include="appaspx\stat\gamedetail\GameDetailCows.aspx" />
+    <Content Include="appaspx\stat\gamedetail\GameDetailCrocodile.aspx" />
+    <Content Include="appaspx\stat\gamedetail\GameDetailDice.aspx" />
+    <Content Include="appaspx\stat\gamedetail\GameDetailDragon.aspx" />
+    <Content Include="appaspx\stat\gamedetail\GameDetailFishPark.aspx" />
+    <Content Include="appaspx\stat\gamedetail\GameDetailFruit.aspx" />
+    <Content Include="appaspx\stat\gamedetail\GameDetailJewel.aspx" />
+    <Content Include="appaspx\stat\gamedetail\GameDetailShcd.aspx" />
+    <Content Include="appaspx\stat\gamedetail\GameDetailShuihz.aspx" />
+    <Content Include="appaspx\stat\gamedetail\GameDetailViewer.aspx" />
+    <Content Include="appaspx\stat\PumpNewGuide.aspx" />
+    <Content Include="appaspx\stat\shcd\Error.aspx" />
+    <Content Include="appaspx\stat\shcd\ShcdCardsCtrlList.aspx" />
+    <Content Include="appaspx\stat\shcd\ShcdCardsDetail.aspx" />
+    <Content Include="appaspx\stat\shcd\ShcdCardsPlayerList.aspx" />
+    <Content Include="appaspx\stat\shcd\ShcdCardsQuery.aspx" />
+    <Content Include="appaspx\stat\shcd\ShcdCardsSpecilListSet.aspx" />
+    <Content Include="appaspx\stat\shcd\ShcdControl.aspx" />
+    <Content Include="appaspx\stat\shcd\ShcdIndependent.aspx" />
+    <Content Include="appaspx\stat\shcd\ShcdResult.aspx" />
+    <Content Include="appaspx\stat\shuihz\ShuihzDailyState.aspx" />
+    <Content Include="appaspx\stat\shuihz\ShuihzPlayerScorePool.aspx" />
+    <Content Include="appaspx\stat\shuihz\ShuihzReachLimit.aspx" />
+    <Content Include="appaspx\stat\shuihz\ShuihzSingleEarning.aspx" />
+    <Content Include="appaspx\stat\shuihz\ShuihzTotalEarning.aspx" />
+    <Content Include="appaspx\stat\StatAirdropSys.aspx" />
+    <Content Include="appaspx\stat\StatBulletHeadGift.aspx" />
+    <Content Include="appaspx\stat\StatBulletHeadGiftPlayer.aspx" />
+    <Content Include="appaspx\stat\StatBulletHeadRank.aspx" />
+    <Content Include="appaspx\stat\StatBulletHeadRankCheat.aspx" />
+    <Content Include="appaspx\stat\StatBuyuLog.aspx" />
+    <Content Include="appaspx\stat\StatChristmasAndYuandan.aspx" />
+    <Content Include="appaspx\stat\StatCollectPuppet.aspx" />
+    <Content Include="appaspx\stat\StatCrocodile.aspx" />
+    <Content Include="appaspx\stat\StatDailyGift.aspx" />
+    <Content Include="appaspx\stat\StatDailyGiftDetail.aspx" />
+    <Content Include="appaspx\stat\StatDailyMaterialGiftRecharge.aspx" />
+    <Content Include="appaspx\stat\StatDailySign.aspx" />
+    <Content Include="appaspx\stat\StatDailySignReward.aspx" />
+    <Content Include="appaspx\stat\StatDailyTask.aspx" />
+    <Content Include="appaspx\stat\StatDailyWeekTask.aspx" />
+    <Content Include="appaspx\stat\StatDialLottery.aspx" />
+    <Content Include="appaspx\stat\StatDice.aspx" />
+    <Content Include="appaspx\stat\StatDragonScaleControl.aspx" />
+    <Content Include="appaspx\stat\StatDragonScaleRank.aspx" />
+    <Content Include="appaspx\stat\StatExchange.aspx" />
+    <Content Include="appaspx\stat\StatFestivalActivity.aspx" />
+    <Content Include="appaspx\stat\StatFish.aspx" />
+    <Content Include="appaspx\stat\StatFishlordAdvancedRoomAct.aspx" />
+    <Content Include="appaspx\stat\StatFishlordAdvancedRoomActDetail.aspx" />
+    <Content Include="appaspx\stat\StatFishlordAdvancedRoomCheatCtrl.aspx" />
+    <Content Include="appaspx\stat\StatFishlordAdvancedRoomCtrl.aspx" />
+    <Content Include="appaspx\stat\StatFishLordBaojin.aspx" />
+    <Content Include="appaspx\stat\StatFishlordBaojinControl.aspx" />
+    <Content Include="appaspx\stat\StatFishlordBaojinScoreControl.aspx" />
+    <Content Include="appaspx\stat\StatFishlordControl.aspx" />
+    <Content Include="appaspx\stat\StatFishlordControlNew.aspx" />
+    <Content Include="appaspx\stat\StatFishlordControlNewDetail.aspx" />
+    <Content Include="appaspx\stat\StatFIshlordCtrolNewSingle.aspx" />
+    <Content Include="appaspx\stat\StatFishlordDeskEarningsRate.aspx" />
+    <Content Include="appaspx\stat\StatFishlordDragonPalaceData.aspx" />
+    <Content Include="appaspx\stat\StatFishlordFeastBasicData.aspx" />
+    <Content Include="appaspx\stat\StatFishLordJingjiData.aspx" />
+    <Content Include="appaspx\stat\StatFishlordLotteryExchange.aspx" />
+    <Content Include="appaspx\stat\StatFishlordMiddleRoomAct.aspx" />
+    <Content Include="appaspx\stat\StatFishlordMiddleRoomActExchangeDetail.aspx" />
+    <Content Include="appaspx\stat\StatFishlordMiddleRoomCtrl.aspx" />
+    <Content Include="appaspx\stat\StatFishlordSharkRoomAct.aspx" />
+    <Content Include="appaspx\stat\StatFishlordSharkRoomCheatCtrl.aspx" />
+    <Content Include="appaspx\stat\StatFishlordSharkRoomIncomeDetail.aspx" />
+    <Content Include="appaspx\stat\StatFishlordSharkRoomLotteryDetail.aspx" />
+    <Content Include="appaspx\stat\StatFishlordStage.aspx" />
+    <Content Include="appaspx\stat\StatGeneralPlayerLost.aspx" />
+    <Content Include="appaspx\stat\StatGoldFishLottery.aspx" />
+    <Content Include="appaspx\stat\StatGoldFishLotteryDetail.aspx" />
+    <Content Include="appaspx\stat\StatGoldOnPlayer.aspx" />
+    <Content Include="appaspx\stat\StatHallowmasActivity.aspx" />
+    <Content Include="appaspx\stat\StatIncomeExpensesError.aspx" />
+    <Content Include="appaspx\stat\StatIndependentCrocodile.aspx" />
+    <Content Include="appaspx\stat\StatIndependentDice.aspx" />
+    <Content Include="appaspx\stat\StatIndependentFishlord.aspx" />
+    <Content Include="appaspx\stat\StatJinQiuNationalDayAct.aspx" />
+    <Content Include="appaspx\stat\StatJinQiuNationalDayActCtrl.aspx" />
+    <Content Include="appaspx\stat\StatJinQiuNationalDayActDetail.aspx" />
+    <Content Include="appaspx\stat\StatJinQiuNationalDayActTask.aspx" />
+    <Content Include="appaspx\stat\StatJinQiuRechargeLottery.aspx" />
+    <Content Include="appaspx\stat\StatKdActivityRank.aspx" />
+    <Content Include="appaspx\stat\StatKdActivityRankEdit.aspx" />
+    <Content Include="appaspx\stat\StatKillCrabAct.aspx" />
+    <Content Include="appaspx\stat\StatKillCrabActLotteryDetail.aspx" />
+    <Content Include="appaspx\stat\StatLabaLottery.aspx" />
+    <Content Include="appaspx\stat\StatLobby.aspx" />
+    <Content Include="appaspx\stat\StatMainlyTask.aspx" />
+    <Content Include="appaspx\stat\StatMiddleRoomExchange.aspx" />
+    <Content Include="appaspx\stat\StatMonthCard.aspx" />
+    <Content Include="appaspx\stat\StatNationalDayAct.aspx" />
+    <Content Include="appaspx\stat\StatNationalDayActivity.aspx" />
+    <Content Include="appaspx\stat\StatNationalDayActLotteryDetail.aspx" />
+    <Content Include="appaspx\stat\StatNewGuildLosePoint.aspx" />
+    <Content Include="appaspx\stat\StatNewPlayerOpenRate.aspx" />
+    <Content Include="appaspx\stat\StatNewPlayerTask.aspx" />
+    <Content Include="appaspx\stat\StatNewSevenDay.aspx" />
+    <Content Include="appaspx\stat\StatNYAccRecharge.aspx" />
+    <Content Include="appaspx\stat\StatNYAdventure.aspx" />
+    <Content Include="appaspx\stat\StatNYGift.aspx" />
+    <Content Include="appaspx\stat\StatOldEarningsRate.aspx" />
+    <Content Include="appaspx\stat\StatOnlineReward.aspx" />
+    <Content Include="appaspx\stat\StatPanicBox.aspx" />
+    <Content Include="appaspx\stat\StatPanicBoxPlayer.aspx" />
+    <Content Include="appaspx\stat\StatPlayAd.aspx" />
+    <Content Include="appaspx\stat\StatPlayerBw.aspx" />
+    <Content Include="appaspx\stat\StatPlayerFavor.aspx" />
+    <Content Include="appaspx\stat\StatPlayerGameBet.aspx" />
+    <Content Include="appaspx\stat\StatPlayerIconCustom.aspx" />
+    <Content Include="appaspx\stat\StatPlayerItemRecharge.aspx" />
+    <Content Include="appaspx\stat\StatPlayerMail.aspx" />
+    <Content Include="appaspx\stat\StatPlayerOpenRateTask.aspx" />
+    <Content Include="appaspx\stat\StatPumpChipFish.aspx" />
+    <Content Include="appaspx\stat\StatPumpGrowFund.aspx" />
+    <Content Include="appaspx\stat\StatPumpVipGift.aspx" />
+    <Content Include="appaspx\stat\StatPumpVipRecord.aspx" />
+    <Content Include="appaspx\stat\StatRebateGift.aspx" />
+    <Content Include="appaspx\stat\StatReloadTable.aspx" />
+    <Content Include="appaspx\stat\StatScratchAct.aspx" />
+    <Content Include="appaspx\stat\StatSdAct.aspx" />
+    <Content Include="appaspx\stat\StatSdActLottery.aspx" />
+    <Content Include="appaspx\stat\StatSdLotteryActDetail.aspx" />
+    <Content Include="appaspx\stat\StatServerEarnings.aspx" />
+    <Content Include="appaspx\stat\StatServiceDumpTime.aspx" />
+    <Content Include="appaspx\stat\StatSevenDayActivity.aspx" />
+    <Content Include="appaspx\stat\StatSpittorSnatchActivity.aspx" />
+    <Content Include="appaspx\stat\StatStarLottery.aspx" />
+    <Content Include="appaspx\stat\StatTomorrowGift.aspx" />
+    <Content Include="appaspx\stat\StatTotalConsume.aspx" />
+    <Content Include="appaspx\stat\StatGameRecharge.aspx" />
+    <Content Include="appaspx\stat\StatTreasureHunt.aspx" />
+    <Content Include="appaspx\stat\StatTreasureHuntDetail.aspx" />
+    <Content Include="appaspx\stat\StatTurnTableFishAct.aspx" />
+    <Content Include="appaspx\stat\StatTurnTableFishDetail.aspx" />
+    <Content Include="appaspx\stat\StatTurretChip.aspx" />
+    <Content Include="appaspx\stat\StatTurretItemsOnPlayer.aspx" />
+    <Content Include="appaspx\stat\StatWjlwDefRechargeReward.aspx" />
+    <Content Include="appaspx\stat\StatWjlwGoldBetPlayerList.aspx" />
+    <Content Include="appaspx\stat\StatWjlwGoldEarn.aspx" />
+    <Content Include="appaspx\stat\StatWjlwGoldEarnTurnInfo.aspx" />
+    <Content Include="appaspx\stat\StatWjlwRechargeBetPlayer.aspx" />
+    <Content Include="appaspx\stat\StatWjlwRechargeEarn.aspx" />
+    <Content Include="appaspx\stat\StatWjlwRechargeWinInfo.aspx" />
+    <Content Include="appaspx\stat\StatWorldCup.aspx" />
+    <Content Include="appaspx\stat\StatWorldCupMatchPlayerJoin.aspx" />
+    <Content Include="appaspx\stat\StatWpActivity.aspx" />
+    <Content Include="appaspx\stat\StatWuyiRewardResult.aspx" />
+    <Content Include="appaspx\td\Error.aspx" />
+    <Content Include="appaspx\td\TdActivation.aspx" />
+    <Content Include="appaspx\td\TdDragonBallDaily.aspx" />
+    <Content Include="appaspx\td\TdFirstRechargeGameTimeDistribution.aspx" />
+    <Content Include="appaspx\td\TdFirstRechargePointDistribution.aspx" />
+    <Content Include="appaspx\td\TdGameTimeDistribution.aspx" />
+    <Content Include="appaspx\td\TdGameTimePlayerFavor.aspx" />
+    <Content Include="appaspx\td\TdLose.aspx" />
+    <Content Include="appaspx\td\TdLTV.aspx" />
+    <Content Include="appaspx\td\TdNewPlayerAnalyze.aspx" />
+    <Content Include="appaspx\td\TdNewPlayerRechargeMonitor.aspx" />
+    <Content Include="appaspx\td\TdOnlinePerHour.aspx" />
+    <Content Include="appaspx\td\TdPlayerDragonBall.aspx" />
+    <Content Include="appaspx\td\TdPlayerIncomeExpenses.aspx" />
+    <Content Include="appaspx\td\TdRechargePerHour.aspx" />
+    <Content Include="appaspx\td\TdRechargePlayer.aspx" />
+    <Content Include="appaspx\td\TdRechargePlayerMonitor.aspx" />
+    <Content Include="appaspx\WechatRecvRewardStat.aspx" />
+    <Content Include="data\Fish_ActivityKillCrabLotteryCFG.xml" />
+    <Content Include="data\Fish_BaseInfo.xml" />
+    <Content Include="data\Fish_FishCFG.xml" />
+    <Content Include="data\Fish_GiantSharkIntegral.xml" />
+    <Content Include="data\Fish_GiantSharkTurntable.xml" />
+    <Content Include="data\Fish_LuckyDrawCFG.xml" />
+    <Content Include="data\Fish_SquamaRankRewardCFG.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="data\Fish_TorpedoRankRewardCFG.xml" />
+    <Content Include="data\Fish_TurretLevelCFG.xml" />
+    <Content Include="data\image\bz\bet_Red.png" />
+    <Content Include="data\image\bz\bet_Green.png" />
+    <Content Include="data\image\bz\bet_Yellow.png" />
+    <Content Include="data\image\bz\biao_aodi.png" />
+    <Content Include="data\image\bz\biao_baoma.png" />
+    <Content Include="data\image\bz\biao_bc.png" />
+    <Content Include="data\image\bz\biao_dazhong.png" />
+    <Content Include="data\image\dragon\Dragons_item_id_1.png" />
+    <Content Include="data\image\dragon\Dragons_item_id_10.png" />
+    <Content Include="data\image\dragon\Dragons_item_id_11.png" />
+    <Content Include="data\image\dragon\Dragons_item_id_12.png" />
+    <Content Include="data\image\dragon\Dragons_item_id_13.png" />
+    <Content Include="data\image\dragon\Dragons_item_id_2.png" />
+    <Content Include="data\image\dragon\Dragons_item_id_3.png" />
+    <Content Include="data\image\dragon\Dragons_item_id_4.png" />
+    <Content Include="data\image\dragon\Dragons_item_id_5.png" />
+    <Content Include="data\image\dragon\Dragons_item_id_6.png" />
+    <Content Include="data\image\dragon\Dragons_item_id_7.png" />
+    <Content Include="data\image\dragon\Dragons_item_id_8.png" />
+    <Content Include="data\image\dragon\Dragons_item_id_9.png" />
+    <Content Include="data\image\fruit\77.png" />
+    <Content Include="data\image\fruit\772.png" />
+    <Content Include="data\image\fruit\bar.png" />
+    <Content Include="data\image\fruit\bar2.png" />
+    <Content Include="data\image\fruit\lucky.png" />
+    <Content Include="data\image\fruit\lucky2.png" />
+    <Content Include="data\image\fruit\star1.png" />
+    <Content Include="data\image\fruit\star2.png" />
+    <Content Include="data\image\fruit\yapple1.png" />
+    <Content Include="data\image\fruit\yapple2.png" />
+    <Content Include="data\image\fruit\ylenmon1.png" />
+    <Content Include="data\image\fruit\ylenmon2.png" />
+    <Content Include="data\image\fruit\yling1.png" />
+    <Content Include="data\image\fruit\yling2.png" />
+    <Content Include="data\image\fruit\yxigua1.png" />
+    <Content Include="data\image\fruit\yxigua2.png" />
+    <Content Include="data\image\fruit\zorangle.png" />
+    <Content Include="data\image\fruit\zorangle2.png" />
+    <Content Include="data\image\poker\joker.png" />
+    <Content Include="data\image\shuihz\head_image010.png" />
+    <Content Include="data\image\shuihz\head_image02.png" />
+    <Content Include="data\image\shuihz\head_image03.png" />
+    <Content Include="data\image\shuihz\head_image04.png" />
+    <Content Include="data\image\shuihz\head_image05.png" />
+    <Content Include="data\image\shuihz\head_image06.png" />
+    <Content Include="data\image\shuihz\head_image07.png" />
+    <Content Include="data\image\shuihz\head_image08.png" />
+    <Content Include="data\image\shuihz\head_image09.png" />
+    <Content Include="data\MenuGroup1.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="data\M_ActivityDrawLottery.xml" />
+    <Content Include="data\M_ActivityNationalDayMission.xml" />
+    <Content Include="data\M_CDKEY_GiftCFG.xml" />
+    <Content Include="data\M_DailyQuestCFG.xml" />
+    <Content Include="data\M_ExchangeCFG.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="data\M_ItemCFG.xml" />
+    <Content Include="data\M_MainTaskCFG.xml" />
+    <Content Include="data\M_NewPlayerQuestCFG.xml" />
+    <Content Include="data\M_RechangeCFG.xml" />
+    <Content Include="data\M_RechangeNew.xml" />
+    <Content Include="data\M_WeekQuestCFG.xml" />
+    <Content Include="data\Navigation.xml" />
+    <Content Include="data\pay_sdk.xml" />
+    <Content Include="data\td_channel.xml" />
+    <Content Include="data\MenuGroup2.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="data\td_channel_except.xml" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\cdkeyNew.js" />
+    <Content Include="Scripts\ckeditor\adapters\jquery.js" />
+    <Content Include="Scripts\ckeditor\build-config.js" />
+    <Content Include="Scripts\ckeditor\ckeditor.js" />
+    <Content Include="Scripts\ckeditor\config.js" />
+    <Content Include="Scripts\ckeditor\contents.css" />
+    <Content Include="Scripts\ckeditor\lang\af.js" />
+    <Content Include="Scripts\ckeditor\lang\ar.js" />
+    <Content Include="Scripts\ckeditor\lang\az.js" />
+    <Content Include="Scripts\ckeditor\lang\bg.js" />
+    <Content Include="Scripts\ckeditor\lang\bn.js" />
+    <Content Include="Scripts\ckeditor\lang\bs.js" />
+    <Content Include="Scripts\ckeditor\lang\ca.js" />
+    <Content Include="Scripts\ckeditor\lang\cs.js" />
+    <Content Include="Scripts\ckeditor\lang\cy.js" />
+    <Content Include="Scripts\ckeditor\lang\da.js" />
+    <Content Include="Scripts\ckeditor\lang\de-ch.js" />
+    <Content Include="Scripts\ckeditor\lang\de.js" />
+    <Content Include="Scripts\ckeditor\lang\el.js" />
+    <Content Include="Scripts\ckeditor\lang\en-au.js" />
+    <Content Include="Scripts\ckeditor\lang\en-ca.js" />
+    <Content Include="Scripts\ckeditor\lang\en-gb.js" />
+    <Content Include="Scripts\ckeditor\lang\en.js" />
+    <Content Include="Scripts\ckeditor\lang\eo.js" />
+    <Content Include="Scripts\ckeditor\lang\es-mx.js" />
+    <Content Include="Scripts\ckeditor\lang\es.js" />
+    <Content Include="Scripts\ckeditor\lang\et.js" />
+    <Content Include="Scripts\ckeditor\lang\eu.js" />
+    <Content Include="Scripts\ckeditor\lang\fa.js" />
+    <Content Include="Scripts\ckeditor\lang\fi.js" />
+    <Content Include="Scripts\ckeditor\lang\fo.js" />
+    <Content Include="Scripts\ckeditor\lang\fr-ca.js" />
+    <Content Include="Scripts\ckeditor\lang\fr.js" />
+    <Content Include="Scripts\ckeditor\lang\gl.js" />
+    <Content Include="Scripts\ckeditor\lang\gu.js" />
+    <Content Include="Scripts\ckeditor\lang\he.js" />
+    <Content Include="Scripts\ckeditor\lang\hi.js" />
+    <Content Include="Scripts\ckeditor\lang\hr.js" />
+    <Content Include="Scripts\ckeditor\lang\hu.js" />
+    <Content Include="Scripts\ckeditor\lang\id.js" />
+    <Content Include="Scripts\ckeditor\lang\is.js" />
+    <Content Include="Scripts\ckeditor\lang\it.js" />
+    <Content Include="Scripts\ckeditor\lang\ja.js" />
+    <Content Include="Scripts\ckeditor\lang\ka.js" />
+    <Content Include="Scripts\ckeditor\lang\km.js" />
+    <Content Include="Scripts\ckeditor\lang\ko.js" />
+    <Content Include="Scripts\ckeditor\lang\ku.js" />
+    <Content Include="Scripts\ckeditor\lang\lt.js" />
+    <Content Include="Scripts\ckeditor\lang\lv.js" />
+    <Content Include="Scripts\ckeditor\lang\mk.js" />
+    <Content Include="Scripts\ckeditor\lang\mn.js" />
+    <Content Include="Scripts\ckeditor\lang\ms.js" />
+    <Content Include="Scripts\ckeditor\lang\nb.js" />
+    <Content Include="Scripts\ckeditor\lang\nl.js" />
+    <Content Include="Scripts\ckeditor\lang\no.js" />
+    <Content Include="Scripts\ckeditor\lang\oc.js" />
+    <Content Include="Scripts\ckeditor\lang\pl.js" />
+    <Content Include="Scripts\ckeditor\lang\pt-br.js" />
+    <Content Include="Scripts\ckeditor\lang\pt.js" />
+    <Content Include="Scripts\ckeditor\lang\ro.js" />
+    <Content Include="Scripts\ckeditor\lang\ru.js" />
+    <Content Include="Scripts\ckeditor\lang\si.js" />
+    <Content Include="Scripts\ckeditor\lang\sk.js" />
+    <Content Include="Scripts\ckeditor\lang\sl.js" />
+    <Content Include="Scripts\ckeditor\lang\sq.js" />
+    <Content Include="Scripts\ckeditor\lang\sr-latn.js" />
+    <Content Include="Scripts\ckeditor\lang\sr.js" />
+    <Content Include="Scripts\ckeditor\lang\sv.js" />
+    <Content Include="Scripts\ckeditor\lang\th.js" />
+    <Content Include="Scripts\ckeditor\lang\tr.js" />
+    <Content Include="Scripts\ckeditor\lang\tt.js" />
+    <Content Include="Scripts\ckeditor\lang\ug.js" />
+    <Content Include="Scripts\ckeditor\lang\uk.js" />
+    <Content Include="Scripts\ckeditor\lang\vi.js" />
+    <Content Include="Scripts\ckeditor\lang\zh-cn.js" />
+    <Content Include="Scripts\ckeditor\lang\zh.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\af.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\ar.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\az.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\bg.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\ca.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\cs.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\cy.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\da.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\de-ch.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\de.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\el.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\en-gb.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\en.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\eo.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\es-mx.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\es.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\et.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\eu.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\fa.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\fi.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\fo.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\fr-ca.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\fr.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\gl.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\gu.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\he.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\hi.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\hr.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\hu.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\id.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\it.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\ja.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\km.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\ko.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\ku.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\lt.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\lv.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\mk.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\mn.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\nb.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\nl.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\no.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\oc.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\pl.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\pt-br.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\pt.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\ro.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\ru.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\si.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\sk.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\sl.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\sq.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\sr-latn.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\sr.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\sv.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\th.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\tr.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\tt.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\ug.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\uk.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\vi.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\zh-cn.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\zh.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\_translationstatus.txt" />
+    <Content Include="Scripts\ckeditor\plugins\about\dialogs\about.js" />
+    <Content Include="Scripts\ckeditor\plugins\about\dialogs\hidpi\logo_ckeditor.png" />
+    <Content Include="Scripts\ckeditor\plugins\about\dialogs\logo_ckeditor.png" />
+    <Content Include="Scripts\ckeditor\plugins\colordialog\dialogs\colordialog.css" />
+    <Content Include="Scripts\ckeditor\plugins\colordialog\dialogs\colordialog.js" />
+    <Content Include="Scripts\ckeditor\plugins\copyformatting\cursors\cursor-disabled.svg" />
+    <Content Include="Scripts\ckeditor\plugins\copyformatting\cursors\cursor.svg" />
+    <Content Include="Scripts\ckeditor\plugins\copyformatting\styles\copyformatting.css" />
+    <Content Include="Scripts\ckeditor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="Scripts\ckeditor\plugins\div\dialogs\div.js" />
+    <Content Include="Scripts\ckeditor\plugins\find\dialogs\find.js" />
+    <Content Include="Scripts\ckeditor\plugins\flash\dialogs\flash.js" />
+    <Content Include="Scripts\ckeditor\plugins\flash\images\placeholder.png" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\button.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\checkbox.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\form.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\hiddenfield.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\radio.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\select.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\textarea.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\textfield.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\images\hiddenfield.gif" />
+    <Content Include="Scripts\ckeditor\plugins\icons.png" />
+    <Content Include="Scripts\ckeditor\plugins\icons_hidpi.png" />
+    <Content Include="Scripts\ckeditor\plugins\iframe\dialogs\iframe.js" />
+    <Content Include="Scripts\ckeditor\plugins\iframe\images\placeholder.png" />
+    <Content Include="Scripts\ckeditor\plugins\image\dialogs\image.js" />
+    <Content Include="Scripts\ckeditor\plugins\image\images\noimage.png" />
+    <Content Include="Scripts\ckeditor\plugins\link\dialogs\anchor.js" />
+    <Content Include="Scripts\ckeditor\plugins\link\dialogs\link.js" />
+    <Content Include="Scripts\ckeditor\plugins\link\images\anchor.png" />
+    <Content Include="Scripts\ckeditor\plugins\link\images\hidpi\anchor.png" />
+    <Content Include="Scripts\ckeditor\plugins\liststyle\dialogs\liststyle.js" />
+    <Content Include="Scripts\ckeditor\plugins\magicline\images\hidpi\icon-rtl.png" />
+    <Content Include="Scripts\ckeditor\plugins\magicline\images\hidpi\icon.png" />
+    <Content Include="Scripts\ckeditor\plugins\magicline\images\icon-rtl.png" />
+    <Content Include="Scripts\ckeditor\plugins\magicline\images\icon.png" />
+    <Content Include="Scripts\ckeditor\plugins\pagebreak\images\pagebreak.gif" />
+    <Content Include="Scripts\ckeditor\plugins\pastefromword\filter\default.js" />
+    <Content Include="Scripts\ckeditor\plugins\preview\preview.html" />
+    <Content Include="Scripts\ckeditor\plugins\scayt\dialogs\dialog.css" />
+    <Content Include="Scripts\ckeditor\plugins\scayt\dialogs\options.js" />
+    <Content Include="Scripts\ckeditor\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="Scripts\ckeditor\plugins\scayt\skins\moono-lisa\scayt.css" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_address.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_blockquote.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_div.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h1.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h2.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h3.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h4.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h5.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h6.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_p.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_pre.png" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\dialogs\smiley.js" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\angel_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\angel_smile.png" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\angry_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\angry_smile.png" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\broken_heart.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\broken_heart.png" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\confused_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\confused_smile.png" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\cry_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\cry_smile.png" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\devil_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\devil_smile.png" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\embaressed_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\embarrassed_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\embarrassed_smile.png" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\envelope.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\envelope.png" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\heart.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\heart.png" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\kiss.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\kiss.png" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\lightbulb.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\lightbulb.png" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\omg_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\omg_smile.png" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\regular_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\regular_smile.png" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\sad_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\sad_smile.png" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\shades_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\shades_smile.png" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\teeth_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\teeth_smile.png" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\thumbs_down.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\thumbs_down.png" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\thumbs_up.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\thumbs_up.png" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\tongue_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\tongue_smile.png" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\tounge_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\whatchutalkingabout_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\whatchutalkingabout_smile.png" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\wink_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\wink_smile.png" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\af.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\ar.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\az.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\bg.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\ca.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\cs.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\cy.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\da.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\de-ch.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\de.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\el.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\en-au.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\en-ca.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\en-gb.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\en.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\eo.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\es-mx.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\es.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\et.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\eu.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\fa.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\fi.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\fr-ca.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\fr.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\gl.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\he.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\hr.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\hu.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\id.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\it.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\ja.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\km.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\ko.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\ku.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\lt.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\lv.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\nb.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\nl.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\no.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\oc.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\pl.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\pt-br.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\pt.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\ru.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\si.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\sk.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\sl.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\sq.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\sv.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\th.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\tr.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\tt.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\ug.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\uk.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\vi.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\zh-cn.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\zh.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\_translationstatus.txt" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="Scripts\ckeditor\plugins\tableselection\styles\tableselection.css" />
+    <Content Include="Scripts\ckeditor\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="Scripts\ckeditor\plugins\table\dialogs\table.js" />
+    <Content Include="Scripts\ckeditor\plugins\templates\dialogs\templates.css" />
+    <Content Include="Scripts\ckeditor\plugins\templates\dialogs\templates.js" />
+    <Content Include="Scripts\ckeditor\plugins\templates\templates\default.js" />
+    <Content Include="Scripts\ckeditor\plugins\templates\templates\images\template1.gif" />
+    <Content Include="Scripts\ckeditor\plugins\templates\templates\images\template2.gif" />
+    <Content Include="Scripts\ckeditor\plugins\templates\templates\images\template3.gif" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\dialogs\ciframe.html" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\dialogs\tmpFrameset.html" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\dialogs\wsc.css" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\dialogs\wsc.js" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\dialogs\wsc_ie.js" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\skins\moono-lisa\wsc.css" />
+    <Content Include="Scripts\ckeditor\samples\css\samples.css" />
+    <Content Include="Scripts\ckeditor\samples\img\github-top.png" />
+    <Content Include="Scripts\ckeditor\samples\img\header-bg.png" />
+    <Content Include="Scripts\ckeditor\samples\img\header-separator.png" />
+    <Content Include="Scripts\ckeditor\samples\img\logo.png" />
+    <Content Include="Scripts\ckeditor\samples\img\navigation-tip.png" />
+    <Content Include="Scripts\ckeditor\samples\index.html" />
+    <Content Include="Scripts\ckeditor\samples\js\sample.js" />
+    <Content Include="Scripts\ckeditor\samples\js\sf.js" />
+    <Content Include="Scripts\ckeditor\samples\old\ajax.html" />
+    <Content Include="Scripts\ckeditor\samples\old\api.html" />
+    <Content Include="Scripts\ckeditor\samples\old\appendto.html" />
+    <Content Include="Scripts\ckeditor\samples\old\assets\inlineall\logo.png" />
+    <Content Include="Scripts\ckeditor\samples\old\assets\outputxhtml\outputxhtml.css" />
+    <Content Include="Scripts\ckeditor\samples\old\assets\sample.jpg" />
+    <Content Include="Scripts\ckeditor\samples\old\assets\uilanguages\languages.js" />
+    <Content Include="Scripts\ckeditor\samples\old\datafiltering.html" />
+    <Content Include="Scripts\ckeditor\samples\old\dialog\assets\my_dialog.js" />
+    <Content Include="Scripts\ckeditor\samples\old\dialog\dialog.html" />
+    <Content Include="Scripts\ckeditor\samples\old\divreplace.html" />
+    <Content Include="Scripts\ckeditor\samples\old\enterkey\enterkey.html" />
+    <Content Include="Scripts\ckeditor\samples\old\htmlwriter\assets\outputforflash\outputforflash.swf" />
+    <Content Include="Scripts\ckeditor\samples\old\htmlwriter\assets\outputforflash\swfobject.js" />
+    <Content Include="Scripts\ckeditor\samples\old\htmlwriter\outputforflash.html" />
+    <Content Include="Scripts\ckeditor\samples\old\htmlwriter\outputhtml.html" />
+    <Content Include="Scripts\ckeditor\samples\old\index.html" />
+    <Content Include="Scripts\ckeditor\samples\old\inlineall.html" />
+    <Content Include="Scripts\ckeditor\samples\old\inlinebycode.html" />
+    <Content Include="Scripts\ckeditor\samples\old\inlinetextarea.html" />
+    <Content Include="Scripts\ckeditor\samples\old\jquery.html" />
+    <Content Include="Scripts\ckeditor\samples\old\magicline\magicline.html" />
+    <Content Include="Scripts\ckeditor\samples\old\readonly.html" />
+    <Content Include="Scripts\ckeditor\samples\old\replacebyclass.html" />
+    <Content Include="Scripts\ckeditor\samples\old\replacebycode.html" />
+    <Content Include="Scripts\ckeditor\samples\old\sample.css" />
+    <Content Include="Scripts\ckeditor\samples\old\sample.js" />
+    <Content Include="Scripts\ckeditor\samples\old\tabindex.html" />
+    <Content Include="Scripts\ckeditor\samples\old\toolbar\toolbar.html" />
+    <Content Include="Scripts\ckeditor\samples\old\uicolor.html" />
+    <Content Include="Scripts\ckeditor\samples\old\uilanguages.html" />
+    <Content Include="Scripts\ckeditor\samples\old\wysiwygarea\fullpage.html" />
+    <Content Include="Scripts\ckeditor\samples\old\xhtmlstyle.html" />
+    <Content Include="Scripts\ckeditor\samples\toolbarconfigurator\css\fontello.css" />
+    <Content Include="Scripts\ckeditor\samples\toolbarconfigurator\font\fontello.svg" />
+    <Content Include="Scripts\ckeditor\samples\toolbarconfigurator\font\LICENSE.txt" />
+    <Content Include="Scripts\ckeditor\samples\toolbarconfigurator\index.html" />
+    <Content Include="Scripts\ckeditor\samples\toolbarconfigurator\js\abstracttoolbarmodifier.js" />
+    <Content Include="Scripts\ckeditor\samples\toolbarconfigurator\js\fulltoolbareditor.js" />
+    <Content Include="Scripts\ckeditor\samples\toolbarconfigurator\js\toolbarmodifier.js" />
+    <Content Include="Scripts\ckeditor\samples\toolbarconfigurator\js\toolbartextmodifier.js" />
+    <Content Include="Scripts\ckeditor\samples\toolbarconfigurator\lib\codemirror\codemirror.css" />
+    <Content Include="Scripts\ckeditor\samples\toolbarconfigurator\lib\codemirror\codemirror.js" />
+    <Content Include="Scripts\ckeditor\samples\toolbarconfigurator\lib\codemirror\javascript.js" />
+    <Content Include="Scripts\ckeditor\samples\toolbarconfigurator\lib\codemirror\neo.css" />
+    <Content Include="Scripts\ckeditor\samples\toolbarconfigurator\lib\codemirror\show-hint.css" />
+    <Content Include="Scripts\ckeditor\samples\toolbarconfigurator\lib\codemirror\show-hint.js" />
+    <Content Include="Scripts\ckeditor\skins\moono-lisa\dialog.css" />
+    <Content Include="Scripts\ckeditor\skins\moono-lisa\dialog_ie.css" />
+    <Content Include="Scripts\ckeditor\skins\moono-lisa\dialog_ie8.css" />
+    <Content Include="Scripts\ckeditor\skins\moono-lisa\dialog_iequirks.css" />
+    <Content Include="Scripts\ckeditor\skins\moono-lisa\editor.css" />
+    <Content Include="Scripts\ckeditor\skins\moono-lisa\editor_gecko.css" />
+    <Content Include="Scripts\ckeditor\skins\moono-lisa\editor_ie.css" />
+    <Content Include="Scripts\ckeditor\skins\moono-lisa\editor_ie8.css" />
+    <Content Include="Scripts\ckeditor\skins\moono-lisa\editor_iequirks.css" />
+    <Content Include="Scripts\ckeditor\skins\moono-lisa\icons.png" />
+    <Content Include="Scripts\ckeditor\skins\moono-lisa\icons_hidpi.png" />
+    <Content Include="Scripts\ckeditor\skins\moono-lisa\images\arrow.png" />
+    <Content Include="Scripts\ckeditor\skins\moono-lisa\images\close.png" />
+    <Content Include="Scripts\ckeditor\skins\moono-lisa\images\hidpi\close.png" />
+    <Content Include="Scripts\ckeditor\skins\moono-lisa\images\hidpi\lock-open.png" />
+    <Content Include="Scripts\ckeditor\skins\moono-lisa\images\hidpi\lock.png" />
+    <Content Include="Scripts\ckeditor\skins\moono-lisa\images\hidpi\refresh.png" />
+    <Content Include="Scripts\ckeditor\skins\moono-lisa\images\lock-open.png" />
+    <Content Include="Scripts\ckeditor\skins\moono-lisa\images\lock.png" />
+    <Content Include="Scripts\ckeditor\skins\moono-lisa\images\refresh.png" />
+    <Content Include="Scripts\ckeditor\skins\moono-lisa\images\spinner.gif" />
+    <Content Include="Scripts\ckeditor\styles.js" />
+    <Content Include="Scripts\operation\OperationGameCtrl.js" />
+    <Content Include="Scripts\operation\Word2LogicItemError.js" />
+    <Content Include="Scripts\operation\OperationNotify.js" />
+    <Content Include="Scripts\operation\PolarLightsPush.js" />
+    <Content Include="Scripts\operation\OperationPlayerRichesRank.js" />
+    <Content Include="Scripts\service\ServiceBindUnbindPhone.js" />
+    <Content Include="Scripts\service\ServiceSelectTheLossOfPlayers.js" />
+    <Content Include="Scripts\service\ServiceChannelOpenCloseGame.js" />
+    <Content Include="Scripts\SiteMaster.js" />
+    <Content Include="Scripts\stat\ActivityPanicBuyingCfg.js" />
+    <Content Include="Scripts\stat\BzSpecilListSet.js" />
+    <Content Include="Scripts\stat\cdkeyNew.js" />
+    <Content Include="Scripts\stat\CowsCardSpecilList.js" />
+    <Content Include="Scripts\stat\CrocodileSpecilListSet.js" />
+    <Content Include="Scripts\stat\FishControlNew.js" />
+    <Content Include="Scripts\stat\FishlordAdvancedRoomCtrl.js" />
+    <Content Include="Scripts\stat\FishlordBaojinScoreAlter.js" />
+    <Content Include="Scripts\stat\FishlordBulletHead.js" />
+    <Content Include="Scripts\stat\FishPlayerScorePool.js" />
+    <Content Include="Scripts\stat\FruitSpecilListSet.js" />
+    <Content Include="Scripts\stat\highcharts.js" />
+    <Content Include="Scripts\stat\ShcdCardsSpecilList.js" />
+    <Content Include="Scripts\stat\ShuihzPlayerScorePool.js" />
+    <Content Include="Scripts\stat\StatAirdropSysCtrl.js" />
+    <Content Include="Scripts\stat\StatSignByMonth.js" />
+    <Content Include="Scripts\stat\StatWjlwDefRechargeReward.js" />
+    <Content Include="Scripts\stat\StatWorldCup.js" />
+    <Content Include="Scripts\stat\StatDragonScaleControl.js" />
+    <Content Include="Scripts\stat\StatJinQiuNationalDayActCtrl.js" />
+    <Content Include="Scripts\stat\FishControlNewSingle.js" />
+    <Content Include="Scripts\tool\FileSaver.min.js" />
+    <Content Include="Scripts\GameStandingBook.js" />
+    <Content Include="Scripts\global.js" />
+    <Content Include="Scripts\HoverDropdown.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\LogViewer.js" />
+    <Content Include="Scripts\operation\OperationRank.js" />
+    <Content Include="Scripts\operation\OperationViewInformHead.js" />
+    <Content Include="Scripts\operation\OperationRechargePoint.js" />
+    <Content Include="Scripts\stat\FishControl.js" />
+    <Content Include="Scripts\stat\PlayerGameBet.js" />
+    <Content Include="Scripts\stat\StatServerEarnings.js" />
+    <Content Include="Scripts\td\TdFirstRechargePointDistribution.js" />
+    <Content Include="data\channel.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="data\dbserver.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="data\fishpark\Fish_FishCFG.xml" />
+    <Content Include="data\format.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="data\image\crocodile\AnimalIcon_1.png" />
+    <Content Include="data\image\crocodile\AnimalIcon_2.png" />
+    <Content Include="data\image\crocodile\AnimalIcon_3.png" />
+    <Content Include="data\image\crocodile\AnimalIcon_4.png" />
+    <Content Include="data\image\crocodile\bg_Green.png" />
+    <Content Include="data\image\crocodile\bg_Red.png" />
+    <Content Include="data\image\crocodile\bg_Yellow.png" />
+    <Content Include="data\image\dice\Dice_num_1.png" />
+    <Content Include="data\image\dice\Dice_num_2.png" />
+    <Content Include="data\image\dice\Dice_num_3.png" />
+    <Content Include="data\image\dice\Dice_num_4.png" />
+    <Content Include="data\image\dice\Dice_num_5.png" />
+    <Content Include="data\image\dice\Dice_num_6.png" />
+    <Content Include="data\image\poker\club_1.png" />
+    <Content Include="data\image\poker\club_10.png" />
+    <Content Include="data\image\poker\club_11.png" />
+    <Content Include="data\image\poker\club_12.png" />
+    <Content Include="data\image\poker\club_13.png" />
+    <Content Include="data\image\poker\club_2.png" />
+    <Content Include="data\image\poker\club_3.png" />
+    <Content Include="data\image\poker\club_4.png" />
+    <Content Include="data\image\poker\club_5.png" />
+    <Content Include="data\image\poker\club_6.png" />
+    <Content Include="data\image\poker\club_7.png" />
+    <Content Include="data\image\poker\club_8.png" />
+    <Content Include="data\image\poker\club_9.png" />
+    <Content Include="data\image\poker\diamond_1.png" />
+    <Content Include="data\image\poker\diamond_10.png" />
+    <Content Include="data\image\poker\diamond_11.png" />
+    <Content Include="data\image\poker\diamond_12.png" />
+    <Content Include="data\image\poker\diamond_13.png" />
+    <Content Include="data\image\poker\diamond_2.png" />
+    <Content Include="data\image\poker\diamond_3.png" />
+    <Content Include="data\image\poker\diamond_4.png" />
+    <Content Include="data\image\poker\diamond_5.png" />
+    <Content Include="data\image\poker\diamond_6.png" />
+    <Content Include="data\image\poker\diamond_7.png" />
+    <Content Include="data\image\poker\diamond_8.png" />
+    <Content Include="data\image\poker\diamond_9.png" />
+    <Content Include="data\image\poker\heart_1.png" />
+    <Content Include="data\image\poker\heart_10.png" />
+    <Content Include="data\image\poker\heart_11.png" />
+    <Content Include="data\image\poker\heart_12.png" />
+    <Content Include="data\image\poker\heart_13.png" />
+    <Content Include="data\image\poker\heart_2.png" />
+    <Content Include="data\image\poker\heart_3.png" />
+    <Content Include="data\image\poker\heart_4.png" />
+    <Content Include="data\image\poker\heart_5.png" />
+    <Content Include="data\image\poker\heart_6.png" />
+    <Content Include="data\image\poker\heart_7.png" />
+    <Content Include="data\image\poker\heart_8.png" />
+    <Content Include="data\image\poker\heart_9.png" />
+    <Content Include="data\image\poker\spade_1.png" />
+    <Content Include="data\image\poker\spade_10.png" />
+    <Content Include="data\image\poker\spade_11.png" />
+    <Content Include="data\image\poker\spade_12.png" />
+    <Content Include="data\image\poker\spade_13.png" />
+    <Content Include="data\image\poker\spade_2.png" />
+    <Content Include="data\image\poker\spade_3.png" />
+    <Content Include="data\image\poker\spade_4.png" />
+    <Content Include="data\image\poker\spade_5.png" />
+    <Content Include="data\image\poker\spade_6.png" />
+    <Content Include="data\image\poker\spade_7.png" />
+    <Content Include="data\image\poker\spade_8.png" />
+    <Content Include="data\image\poker\spade_9.png" />
+    <Content Include="data\money_reason.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="data\opres.xml" />
+    <Content Include="data\OpRight.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="data\right.xml" />
+    <Content Include="data\RightList.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="dll\Enyim.Caching.dll" />
+    <Content Include="dll\ExitGamesLibs.dll" />
+    <Content Include="image\icon.jpg" />
+    <Content Include="image\notify.png" />
+    <Content Include="Scripts\AddAccount.js" />
+    <Content Include="Scripts\cdata.js" />
+    <Content Include="Scripts\common.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\datepicker\daterangepicker.css" />
+    <Content Include="Scripts\datepicker\daterangepicker.js" />
+    <Content Include="Scripts\datepicker\moment.min.js" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="Scripts\DateRange\css\redmond\jquery-ui-1.7.1.custom.css" />
+    <Content Include="Scripts\DateRange\css\ui.daterangepicker.css" />
+    <Content Include="Scripts\DateRange\images\217bc0_256x240_icons_icons.png" />
+    <Content Include="Scripts\DateRange\images\2e83ff_256x240_icons_icons.png" />
+    <Content Include="Scripts\DateRange\images\469bdd_256x240_icons_icons.png" />
+    <Content Include="Scripts\DateRange\images\5c9ccc_500x100_textures_12_gloss_wave_55.png" />
+    <Content Include="Scripts\DateRange\images\6da8d5_256x240_icons_icons.png" />
+    <Content Include="Scripts\DateRange\images\aaaaaa_40x100_textures_01_flat_0.png" />
+    <Content Include="Scripts\DateRange\images\cd0a0a_256x240_icons_icons.png" />
+    <Content Include="Scripts\DateRange\images\d0e5f5_40x100_textures_02_glass_75.png" />
+    <Content Include="Scripts\DateRange\images\d8e7f3_256x240_icons_icons.png" />
+    <Content Include="Scripts\DateRange\images\dfeffc_40x100_textures_02_glass_85.png" />
+    <Content Include="Scripts\DateRange\images\f5f8f9_40x100_textures_06_inset_hard_100.png" />
+    <Content Include="Scripts\DateRange\images\f9bd01_256x240_icons_icons.png" />
+    <Content Include="Scripts\DateRange\images\fbec88_40x100_textures_01_flat_55.png" />
+    <Content Include="Scripts\DateRange\images\fcfdfd_40x100_textures_06_inset_hard_100.png" />
+    <Content Include="Scripts\DateRange\images\fef1ec_40x100_textures_02_glass_95.png" />
+    <Content Include="Scripts\DateRange\js\daterangepicker.jQuery.js" />
+    <Content Include="Scripts\DateRange\js\jquery-1.3.1.min.js" />
+    <Content Include="Scripts\DateRange\js\jquery-1.3.2.min.js" />
+    <Content Include="Scripts\DateRange\js\jquery-ui-1.7.1.custom.min.js" />
+    <Content Include="Scripts\forbid_key.js" />
+    <Content Include="Scripts\GmTypeEdit.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\module\runtime-debug.js" />
+    <Content Include="Scripts\module\runtime.js" />
+    <Content Include="Scripts\module\sea-debug.js" />
+    <Content Include="Scripts\module\sea.js" />
+    <Content Include="Scripts\module\standalone-debug.js" />
+    <Content Include="Scripts\module\standalone.js" />
+    <Content Include="Scripts\operation\OperationPlayerOp.js" />
+    <Content Include="Scripts\operation\OperationWeekChampionSetting.js" />
+    <Content Include="Scripts\operation\OperationWishCurse.js" />
+    <Content Include="Scripts\RightEdit.js" />
+    <Content Include="Scripts\service\ServiceMail.js" />
+    <Content Include="Scripts\stat\ShcdControl.js" />
+    <Content Include="Scripts\stat\StatLobby.js" />
+    <Content Include="Scripts\td\TdFirstRechargeGameTimeDistribution.js" />
+    <Content Include="Scripts\td\TdGameTimeDistribution.js" />
+    <Content Include="Scripts\td\TdGameTimePlayerFavor.js" />
+    <Content Include="Scripts\td\TdNewPlayerAnalyze.js" />
+    <Content Include="Scripts\td\TdRechargePerHour.js" />
+    <Content Include="Scripts\td\TdOnlinePerHour.js" />
+    <Content Include="Scripts\tool\jqPaginator.min.js" />
+    <Content Include="Scripts\tool\jquery-1.8.3.js" />
+    <Content Include="Scripts\cdkey.js" />
+    <Content Include="Scripts\tool\jquery.base64.js" />
+    <Content Include="style\bootstrap.min.css" />
+    <Content Include="style\font-awesome\css\font-awesome.css" />
+    <Content Include="style\font-awesome\css\font-awesome.min.css" />
+    <Content Include="style\page.css" />
+    <Content Include="Site.css" />
+    <Content Include="style\game_detail.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\cdkey.aspx.cs">
+      <DependentUpon>cdkey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\cdkey.aspx.designer.cs">
+      <DependentUpon>cdkey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\cdkeyNew.aspx.cs">
+      <DependentUpon>cdkeyNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\cdkeyNew.aspx.designer.cs">
+      <DependentUpon>cdkeyNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\fishing\fishingRoomInfo.aspx.cs">
+      <DependentUpon>fishingRoomInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\fishing\fishingRoomInfo.aspx.designer.cs">
+      <DependentUpon>fishingRoomInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\GameStandingBook.aspx.cs">
+      <DependentUpon>GameStandingBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\GameStandingBook.aspx.designer.cs">
+      <DependentUpon>GameStandingBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\GmTypeEdit.aspx.cs">
+      <DependentUpon>GmTypeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\GmTypeEdit.aspx.designer.cs">
+      <DependentUpon>GmTypeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\ModifyLoginPwd.aspx.cs">
+      <DependentUpon>ModifyLoginPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\ModifyLoginPwd.aspx.designer.cs">
+      <DependentUpon>ModifyLoginPwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\AddAccount.aspx.cs">
+      <DependentUpon>AddAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\AddAccount.aspx.designer.cs">
+      <DependentUpon>AddAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\Exit.aspx.cs">
+      <DependentUpon>Exit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\Exit.aspx.designer.cs">
+      <DependentUpon>Exit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\LogViewer.aspx.cs">
+      <DependentUpon>LogViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\LogViewer.aspx.designer.cs">
+      <DependentUpon>LogViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operationNew\OperationNewGameActive.aspx.cs">
+      <DependentUpon>OperationNewGameActive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operationNew\OperationNewGameActive.aspx.designer.cs">
+      <DependentUpon>OperationNewGameActive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operationNew\OperationNewGameIncome.aspx.cs">
+      <DependentUpon>OperationNewGameIncome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operationNew\OperationNewGameIncome.aspx.designer.cs">
+      <DependentUpon>OperationNewGameIncome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operationNew\OperationNewPlayerRecharge.aspx.cs">
+      <DependentUpon>OperationNewPlayerRecharge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operationNew\OperationNewPlayerRecharge.aspx.designer.cs">
+      <DependentUpon>OperationNewPlayerRecharge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operationNew\OperationNewTurretTimes.aspx.cs">
+      <DependentUpon>OperationNewTurretTimes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operationNew\OperationNewTurretTimes.aspx.designer.cs">
+      <DependentUpon>OperationNewTurretTimes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationChannelEdit.aspx.cs">
+      <DependentUpon>OperationChannelEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationChannelEdit.aspx.designer.cs">
+      <DependentUpon>OperationChannelEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationCommon.master.cs">
+      <DependentUpon>OperationCommon.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationCommon.master.designer.cs">
+      <DependentUpon>OperationCommon.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationForceUpdateReward.aspx.cs">
+      <DependentUpon>OperationForceUpdateReward.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationForceUpdateReward.aspx.designer.cs">
+      <DependentUpon>OperationForceUpdateReward.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationFreezeHead.aspx.cs">
+      <DependentUpon>OperationFreezeHead.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationFreezeHead.aspx.designer.cs">
+      <DependentUpon>OperationFreezeHead.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationGameCtrl.aspx.cs">
+      <DependentUpon>OperationGameCtrl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationGameCtrl.aspx.designer.cs">
+      <DependentUpon>OperationGameCtrl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationGameDailyTotalLoseWinRank.aspx.cs">
+      <DependentUpon>OperationGameDailyTotalLoseWinRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationGameDailyTotalLoseWinRank.aspx.designer.cs">
+      <DependentUpon>OperationGameDailyTotalLoseWinRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationGamesRealTimeLoseWinList.aspx.cs">
+      <DependentUpon>OperationGamesRealTimeLoseWinList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationGamesRealTimeLoseWinList.aspx.designer.cs">
+      <DependentUpon>OperationGamesRealTimeLoseWinList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationGetPlayerIdByOrderId.aspx.cs">
+      <DependentUpon>OperationGetPlayerIdByOrderId.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationGetPlayerIdByOrderId.aspx.designer.cs">
+      <DependentUpon>OperationGetPlayerIdByOrderId.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationMaintenanceNotice.aspx.cs">
+      <DependentUpon>OperationMaintenanceNotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationMaintenanceNotice.aspx.designer.cs">
+      <DependentUpon>OperationMaintenanceNotice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationMaxOnline.aspx.cs">
+      <DependentUpon>OperationMaxOnline.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationMaxOnline.aspx.designer.cs">
+      <DependentUpon>OperationMaxOnline.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationMoneyQueryDetail.aspx.cs">
+      <DependentUpon>OperationMoneyQueryDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationMoneyQueryDetail.aspx.designer.cs">
+      <DependentUpon>OperationMoneyQueryDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationMoneyWarn.aspx.cs">
+      <DependentUpon>OperationMoneyWarn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationMoneyWarn.aspx.designer.cs">
+      <DependentUpon>OperationMoneyWarn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationNotify.aspx.cs">
+      <DependentUpon>OperationNotify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationNotify.aspx.designer.cs">
+      <DependentUpon>OperationNotify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationOnlinePlayerCount.aspx.cs">
+      <DependentUpon>OperationOnlinePlayerCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationOnlinePlayerCount.aspx.designer.cs">
+      <DependentUpon>OperationOnlinePlayerCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationPlayerActTurret.aspx.cs">
+      <DependentUpon>OperationPlayerActTurret.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationPlayerActTurret.aspx.designer.cs">
+      <DependentUpon>OperationPlayerActTurret.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationPlayerActTurretBySingle.aspx.cs">
+      <DependentUpon>OperationPlayerActTurretBySingle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationPlayerActTurretBySingle.aspx.designer.cs">
+      <DependentUpon>OperationPlayerActTurretBySingle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationPlayerBankrupt.aspx.cs">
+      <DependentUpon>OperationPlayerBankrupt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationPlayerBankrupt.aspx.designer.cs">
+      <DependentUpon>OperationPlayerBankrupt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationPlayerBankruptDetail.aspx.cs">
+      <DependentUpon>OperationPlayerBankruptDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationPlayerBankruptDetail.aspx.designer.cs">
+      <DependentUpon>OperationPlayerBankruptDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationPlayerMoneyRep.aspx.cs">
+      <DependentUpon>OperationPlayerMoneyRep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationPlayerMoneyRep.aspx.designer.cs">
+      <DependentUpon>OperationPlayerMoneyRep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationPlayerOp.aspx.cs">
+      <DependentUpon>OperationPlayerOp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationPlayerOp.aspx.designer.cs">
+      <DependentUpon>OperationPlayerOp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationPlayerOpenRateBankruptList.aspx.cs">
+      <DependentUpon>OperationPlayerOpenRateBankruptList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationPlayerOpenRateBankruptList.aspx.designer.cs">
+      <DependentUpon>OperationPlayerOpenRateBankruptList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationPlayerRichesRank.aspx.cs">
+      <DependentUpon>OperationPlayerRichesRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationPlayerRichesRank.aspx.designer.cs">
+      <DependentUpon>OperationPlayerRichesRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationPlayerTotalMoney.aspx.cs">
+      <DependentUpon>OperationPlayerTotalMoney.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationPlayerTotalMoney.aspx.designer.cs">
+      <DependentUpon>OperationPlayerTotalMoney.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationPolarLightsPush.aspx.cs">
+      <DependentUpon>OperationPolarLightsPush.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationPolarLightsPush.aspx.designer.cs">
+      <DependentUpon>OperationPolarLightsPush.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationRank.aspx.cs">
+      <DependentUpon>OperationRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationRank.aspx.designer.cs">
+      <DependentUpon>OperationRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationRecharge.aspx.cs">
+      <DependentUpon>OperationRecharge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationRecharge.aspx.designer.cs">
+      <DependentUpon>OperationRecharge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationRechargePoint.aspx.cs">
+      <DependentUpon>OperationRechargePoint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationRechargePoint.aspx.designer.cs">
+      <DependentUpon>OperationRechargePoint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationSpeaker.aspx.cs">
+      <DependentUpon>OperationSpeaker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationSpeaker.aspx.designer.cs">
+      <DependentUpon>OperationSpeaker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationViewInformHead.aspx.cs">
+      <DependentUpon>OperationViewInformHead.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationViewInformHead.aspx.designer.cs">
+      <DependentUpon>OperationViewInformHead.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationWeekChampionSetting.aspx.cs">
+      <DependentUpon>OperationWeekChampionSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationWeekChampionSetting.aspx.designer.cs">
+      <DependentUpon>OperationWeekChampionSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationWishCurse.aspx.cs">
+      <DependentUpon>OperationWishCurse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationWishCurse.aspx.designer.cs">
+      <DependentUpon>OperationWishCurse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\PlayerItemRecord.aspx.cs">
+      <DependentUpon>PlayerItemRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\PlayerItemRecord.aspx.designer.cs">
+      <DependentUpon>PlayerItemRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\word2LogicItemError.aspx.cs">
+      <DependentUpon>word2LogicItemError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\word2LogicItemError.aspx.designer.cs">
+      <DependentUpon>word2LogicItemError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\player\PlayerBasicInfo.aspx.cs">
+      <DependentUpon>PlayerBasicInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\player\PlayerBasicInfo.aspx.designer.cs">
+      <DependentUpon>PlayerBasicInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\Right.aspx.cs">
+      <DependentUpon>Right.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\Right.aspx.designer.cs">
+      <DependentUpon>Right.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\SelectMachine.aspx.cs">
+      <DependentUpon>SelectMachine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\SelectMachine.aspx.designer.cs">
+      <DependentUpon>SelectMachine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceAccountBeibao.aspx.cs">
+      <DependentUpon>ServiceAccountBeibao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceAccountBeibao.aspx.designer.cs">
+      <DependentUpon>ServiceAccountBeibao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceBindOrUnbindPhone.aspx.cs">
+      <DependentUpon>ServiceBindOrUnbindPhone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceBindOrUnbindPhone.aspx.designer.cs">
+      <DependentUpon>ServiceBindOrUnbindPhone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceBlockId.aspx.cs">
+      <DependentUpon>ServiceBlockId.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceBlockId.aspx.designer.cs">
+      <DependentUpon>ServiceBlockId.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceChannelOpenCloseGame.aspx.cs">
+      <DependentUpon>ServiceChannelOpenCloseGame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceChannelOpenCloseGame.aspx.designer.cs">
+      <DependentUpon>ServiceChannelOpenCloseGame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceCheckMail.aspx.cs">
+      <DependentUpon>ServiceCheckMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceCheckMail.aspx.designer.cs">
+      <DependentUpon>ServiceCheckMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceExcelDownLoad.aspx.cs">
+      <DependentUpon>ServiceExcelDownLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceExcelDownLoad.aspx.designer.cs">
+      <DependentUpon>ServiceExcelDownLoad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceAccountQuery.aspx.cs">
+      <DependentUpon>ServiceAccountQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceAccountQuery.aspx.designer.cs">
+      <DependentUpon>ServiceAccountQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceCommon.master.cs">
+      <DependentUpon>ServiceCommon.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceCommon.master.designer.cs">
+      <DependentUpon>ServiceCommon.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceExchange.aspx.cs">
+      <DependentUpon>ServiceExchange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceExchange.aspx.designer.cs">
+      <DependentUpon>ServiceExchange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceGuideLostPlayers.aspx.cs">
+      <DependentUpon>ServiceGuideLostPlayers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceGuideLostPlayers.aspx.designer.cs">
+      <DependentUpon>ServiceGuideLostPlayers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceInfo.aspx.cs">
+      <DependentUpon>ServiceInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceInfo.aspx.designer.cs">
+      <DependentUpon>ServiceInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceMail.aspx.cs">
+      <DependentUpon>ServiceMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceMail.aspx.designer.cs">
+      <DependentUpon>ServiceMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceMainQuery.aspx.cs">
+      <DependentUpon>ServiceMainQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceMainQuery.aspx.designer.cs">
+      <DependentUpon>ServiceMainQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceModifyPwd.aspx.cs">
+      <DependentUpon>ServiceModifyPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceModifyPwd.aspx.designer.cs">
+      <DependentUpon>ServiceModifyPwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServicePlayerChatQuery.aspx.cs">
+      <DependentUpon>ServicePlayerChatQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServicePlayerChatQuery.aspx.designer.cs">
+      <DependentUpon>ServicePlayerChatQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceRechargeQuery.aspx.cs">
+      <DependentUpon>ServiceRechargeQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceRechargeQuery.aspx.designer.cs">
+      <DependentUpon>ServiceRechargeQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceRechargeQueryNew.aspx.cs">
+      <DependentUpon>ServiceRechargeQueryNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceRechargeQueryNew.aspx.designer.cs">
+      <DependentUpon>ServiceRechargeQueryNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceReplacementOrder.aspx.cs">
+      <DependentUpon>ServiceReplacementOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceReplacementOrder.aspx.designer.cs">
+      <DependentUpon>ServiceReplacementOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceSelectTheLossOfPlayers.aspx.cs">
+      <DependentUpon>ServiceSelectTheLossOfPlayers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceSelectTheLossOfPlayers.aspx.designer.cs">
+      <DependentUpon>ServiceSelectTheLossOfPlayers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceUnBlockId.aspx.cs">
+      <DependentUpon>ServiceUnBlockId.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceUnBlockId.aspx.designer.cs">
+      <DependentUpon>ServiceUnBlockId.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\5dragons\DragonControl.aspx.cs">
+      <DependentUpon>DragonControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\5dragons\DragonControl.aspx.designer.cs">
+      <DependentUpon>DragonControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\5dragons\DragonViewGameModeEarning.aspx.cs">
+      <DependentUpon>DragonViewGameModeEarning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\5dragons\DragonViewGameModeEarning.aspx.designer.cs">
+      <DependentUpon>DragonViewGameModeEarning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\5dragons\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\5dragons\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\ActivityPanicBuyingCFG.aspx.cs">
+      <DependentUpon>ActivityPanicBuyingCFG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\ActivityPanicBuyingCFG.aspx.designer.cs">
+      <DependentUpon>ActivityPanicBuyingCFG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\baccarat\BaccaratControl.aspx.cs">
+      <DependentUpon>BaccaratControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\baccarat\BaccaratControl.aspx.designer.cs">
+      <DependentUpon>BaccaratControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\baccarat\BaccaratPlayerBanker.aspx.cs">
+      <DependentUpon>BaccaratPlayerBanker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\baccarat\BaccaratPlayerBanker.aspx.designer.cs">
+      <DependentUpon>BaccaratPlayerBanker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\baccarat\BaccaratResult.aspx.cs">
+      <DependentUpon>BaccaratResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\baccarat\BaccaratResult.aspx.designer.cs">
+      <DependentUpon>BaccaratResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\baccarat\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\baccarat\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\bz\bzResult.aspx.cs">
+      <DependentUpon>bzResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\bz\bzResult.aspx.designer.cs">
+      <DependentUpon>bzResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\bz\BzSpecilListSet.aspx.cs">
+      <DependentUpon>BzSpecilListSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\bz\BzSpecilListSet.aspx.designer.cs">
+      <DependentUpon>BzSpecilListSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\bz\StatBz.aspx.cs">
+      <DependentUpon>StatBz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\bz\StatBz.aspx.designer.cs">
+      <DependentUpon>StatBz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\bz\StatIndependentBz.aspx.cs">
+      <DependentUpon>StatIndependentBz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\bz\StatIndependentBz.aspx.designer.cs">
+      <DependentUpon>StatIndependentBz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\calfroping\CalfRopingClass.aspx.cs">
+      <DependentUpon>CalfRopingClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\calfroping\CalfRopingClass.aspx.designer.cs">
+      <DependentUpon>CalfRopingClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\calfroping\CalfRopingControl.aspx.cs">
+      <DependentUpon>CalfRopingControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\calfroping\CalfRopingControl.aspx.designer.cs">
+      <DependentUpon>CalfRopingControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\calfroping\CalfRopingIndependent.aspx.cs">
+      <DependentUpon>CalfRopingIndependent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\calfroping\CalfRopingIndependent.aspx.designer.cs">
+      <DependentUpon>CalfRopingIndependent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\calfroping\CalfRopingLevel.aspx.cs">
+      <DependentUpon>CalfRopingLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\calfroping\CalfRopingLevel.aspx.designer.cs">
+      <DependentUpon>CalfRopingLevel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\CowsCardCtrlList.aspx.cs">
+      <DependentUpon>CowsCardCtrlList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\CowsCardCtrlList.aspx.designer.cs">
+      <DependentUpon>CowsCardCtrlList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\CowsCardsDetail.aspx.cs">
+      <DependentUpon>CowsCardsDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\CowsCardsDetail.aspx.designer.cs">
+      <DependentUpon>CowsCardsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\CowsCardSpecilListSet.aspx.cs">
+      <DependentUpon>CowsCardSpecilListSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\CowsCardSpecilListSet.aspx.designer.cs">
+      <DependentUpon>CowsCardSpecilListSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\CowsCardsPlayerList.aspx.cs">
+      <DependentUpon>CowsCardsPlayerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\CowsCardsPlayerList.aspx.designer.cs">
+      <DependentUpon>CowsCardsPlayerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\CowsCardsQuery.aspx.cs">
+      <DependentUpon>CowsCardsQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\CowsCardsQuery.aspx.designer.cs">
+      <DependentUpon>CowsCardsQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\CowsCardType.aspx.cs">
+      <DependentUpon>CowsCardType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\CowsCardType.aspx.designer.cs">
+      <DependentUpon>CowsCardType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\CowsControl.aspx.cs">
+      <DependentUpon>CowsControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\CowsControl.aspx.designer.cs">
+      <DependentUpon>CowsControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\CowsPlayerBanker.aspx.cs">
+      <DependentUpon>CowsPlayerBanker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\CowsPlayerBanker.aspx.designer.cs">
+      <DependentUpon>CowsPlayerBanker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\StatIndependentCows.aspx.cs">
+      <DependentUpon>StatIndependentCows.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\StatIndependentCows.aspx.designer.cs">
+      <DependentUpon>StatIndependentCows.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\crocodile\CrocodileResult.aspx.cs">
+      <DependentUpon>CrocodileResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\crocodile\CrocodileResult.aspx.designer.cs">
+      <DependentUpon>CrocodileResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\crocodile\CrocodileSpecilListSet.aspx.cs">
+      <DependentUpon>CrocodileSpecilListSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\crocodile\CrocodileSpecilListSet.aspx.designer.cs">
+      <DependentUpon>CrocodileSpecilListSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\crocodile\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\crocodile\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\dice\DiceResult.aspx.cs">
+      <DependentUpon>DiceResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\dice\DiceResult.aspx.designer.cs">
+      <DependentUpon>DiceResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\dice\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\dice\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\fish\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\fish\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\fish\FishBoss.aspx.cs">
+      <DependentUpon>FishBoss.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\fish\FishBoss.aspx.designer.cs">
+      <DependentUpon>FishBoss.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\fish\FishBossControl.aspx.cs">
+      <DependentUpon>FishBossControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\fish\FishBossControl.aspx.designer.cs">
+      <DependentUpon>FishBossControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\fish\FishlordBaojinRankDetail.aspx.cs">
+      <DependentUpon>FishlordBaojinRankDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\fish\FishlordBaojinRankDetail.aspx.designer.cs">
+      <DependentUpon>FishlordBaojinRankDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\fish\FishlordBulletHeadStat.aspx.cs">
+      <DependentUpon>FishlordBulletHeadStat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\fish\FishlordBulletHeadStat.aspx.designer.cs">
+      <DependentUpon>FishlordBulletHeadStat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\fish\FishPlayerScorePool.aspx.cs">
+      <DependentUpon>FishPlayerScorePool.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\fish\FishPlayerScorePool.aspx.designer.cs">
+      <DependentUpon>FishPlayerScorePool.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\fish\GrandPrixMatchDay.aspx.cs">
+      <DependentUpon>GrandPrixMatchDay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\fish\GrandPrixMatchDay.aspx.designer.cs">
+      <DependentUpon>GrandPrixMatchDay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\fish\GrandPrixWeekChampion.aspx.cs">
+      <DependentUpon>GrandPrixWeekChampion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\fish\GrandPrixWeekChampion.aspx.designer.cs">
+      <DependentUpon>GrandPrixWeekChampion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\fish\StatFishlordConsume.aspx.cs">
+      <DependentUpon>StatFishlordConsume.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\fish\StatFishlordConsume.aspx.designer.cs">
+      <DependentUpon>StatFishlordConsume.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\fruit\fruitResult.aspx.cs">
+      <DependentUpon>fruitResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\fruit\fruitResult.aspx.designer.cs">
+      <DependentUpon>fruitResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\fruit\FruitSpecilListSet.aspx.cs">
+      <DependentUpon>FruitSpecilListSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\fruit\FruitSpecilListSet.aspx.designer.cs">
+      <DependentUpon>FruitSpecilListSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\fruit\StatFruit.aspx.cs">
+      <DependentUpon>StatFruit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\fruit\StatFruit.aspx.designer.cs">
+      <DependentUpon>StatFruit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\fruit\StatIndependentFruit.aspx.cs">
+      <DependentUpon>StatIndependentFruit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\fruit\StatIndependentFruit.aspx.designer.cs">
+      <DependentUpon>StatIndependentFruit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailBaccarat.aspx.cs">
+      <DependentUpon>GameDetailBaccarat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailBaccarat.aspx.designer.cs">
+      <DependentUpon>GameDetailBaccarat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailBz.aspx.cs">
+      <DependentUpon>GameDetailBz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailBz.aspx.designer.cs">
+      <DependentUpon>GameDetailBz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailCows.aspx.cs">
+      <DependentUpon>GameDetailCows.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailCows.aspx.designer.cs">
+      <DependentUpon>GameDetailCows.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailCrocodile.aspx.cs">
+      <DependentUpon>GameDetailCrocodile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailCrocodile.aspx.designer.cs">
+      <DependentUpon>GameDetailCrocodile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailDice.aspx.cs">
+      <DependentUpon>GameDetailDice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailDice.aspx.designer.cs">
+      <DependentUpon>GameDetailDice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailDragon.aspx.cs">
+      <DependentUpon>GameDetailDragon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailDragon.aspx.designer.cs">
+      <DependentUpon>GameDetailDragon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailFishPark.aspx.cs">
+      <DependentUpon>GameDetailFishPark.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailFishPark.aspx.designer.cs">
+      <DependentUpon>GameDetailFishPark.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailFruit.aspx.cs">
+      <DependentUpon>GameDetailFruit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailFruit.aspx.designer.cs">
+      <DependentUpon>GameDetailFruit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailJewel.aspx.cs">
+      <DependentUpon>GameDetailJewel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailJewel.aspx.designer.cs">
+      <DependentUpon>GameDetailJewel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailShcd.aspx.cs">
+      <DependentUpon>GameDetailShcd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailShcd.aspx.designer.cs">
+      <DependentUpon>GameDetailShcd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailShuihz.aspx.cs">
+      <DependentUpon>GameDetailShuihz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailShuihz.aspx.designer.cs">
+      <DependentUpon>GameDetailShuihz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailViewer.aspx.cs">
+      <DependentUpon>GameDetailViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailViewer.aspx.designer.cs">
+      <DependentUpon>GameDetailViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\PumpNewGuide.aspx.cs">
+      <DependentUpon>PumpNewGuide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\PumpNewGuide.aspx.designer.cs">
+      <DependentUpon>PumpNewGuide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\shcd\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\shcd\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\shcd\ShcdCardsCtrlList.aspx.cs">
+      <DependentUpon>ShcdCardsCtrlList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\shcd\ShcdCardsCtrlList.aspx.designer.cs">
+      <DependentUpon>ShcdCardsCtrlList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\shcd\ShcdCardsDetail.aspx.cs">
+      <DependentUpon>ShcdCardsDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\shcd\ShcdCardsDetail.aspx.designer.cs">
+      <DependentUpon>ShcdCardsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\shcd\ShcdCardsPlayerList.aspx.cs">
+      <DependentUpon>ShcdCardsPlayerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\shcd\ShcdCardsPlayerList.aspx.designer.cs">
+      <DependentUpon>ShcdCardsPlayerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\shcd\ShcdCardsQuery.aspx.cs">
+      <DependentUpon>ShcdCardsQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\shcd\ShcdCardsQuery.aspx.designer.cs">
+      <DependentUpon>ShcdCardsQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\shcd\ShcdCardsSpecilListSet.aspx.cs">
+      <DependentUpon>ShcdCardsSpecilListSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\shcd\ShcdCardsSpecilListSet.aspx.designer.cs">
+      <DependentUpon>ShcdCardsSpecilListSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\shcd\ShcdControl.aspx.cs">
+      <DependentUpon>ShcdControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\shcd\ShcdControl.aspx.designer.cs">
+      <DependentUpon>ShcdControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\shcd\ShcdIndependent.aspx.cs">
+      <DependentUpon>ShcdIndependent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\shcd\ShcdIndependent.aspx.designer.cs">
+      <DependentUpon>ShcdIndependent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\shcd\ShcdResult.aspx.cs">
+      <DependentUpon>ShcdResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\shcd\ShcdResult.aspx.designer.cs">
+      <DependentUpon>ShcdResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\shuihz\ShuihzDailyState.aspx.cs">
+      <DependentUpon>ShuihzDailyState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\shuihz\ShuihzDailyState.aspx.designer.cs">
+      <DependentUpon>ShuihzDailyState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\shuihz\ShuihzPlayerScorePool.aspx.cs">
+      <DependentUpon>ShuihzPlayerScorePool.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\shuihz\ShuihzPlayerScorePool.aspx.designer.cs">
+      <DependentUpon>ShuihzPlayerScorePool.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\shuihz\ShuihzReachLimit.aspx.cs">
+      <DependentUpon>ShuihzReachLimit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\shuihz\ShuihzReachLimit.aspx.designer.cs">
+      <DependentUpon>ShuihzReachLimit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\shuihz\ShuihzSingleEarning.aspx.cs">
+      <DependentUpon>ShuihzSingleEarning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\shuihz\ShuihzSingleEarning.aspx.designer.cs">
+      <DependentUpon>ShuihzSingleEarning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\shuihz\ShuihzTotalEarning.aspx.cs">
+      <DependentUpon>ShuihzTotalEarning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\shuihz\ShuihzTotalEarning.aspx.designer.cs">
+      <DependentUpon>ShuihzTotalEarning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatAirdropSys.aspx.cs">
+      <DependentUpon>StatAirdropSys.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatAirdropSys.aspx.designer.cs">
+      <DependentUpon>StatAirdropSys.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatBulletHeadGift.aspx.cs">
+      <DependentUpon>StatBulletHeadGift.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatBulletHeadGift.aspx.designer.cs">
+      <DependentUpon>StatBulletHeadGift.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatBulletHeadGiftPlayer.aspx.cs">
+      <DependentUpon>StatBulletHeadGiftPlayer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatBulletHeadGiftPlayer.aspx.designer.cs">
+      <DependentUpon>StatBulletHeadGiftPlayer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatBulletHeadRank.aspx.cs">
+      <DependentUpon>StatBulletHeadRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatBulletHeadRank.aspx.designer.cs">
+      <DependentUpon>StatBulletHeadRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatBulletHeadRankCheat.aspx.cs">
+      <DependentUpon>StatBulletHeadRankCheat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatBulletHeadRankCheat.aspx.designer.cs">
+      <DependentUpon>StatBulletHeadRankCheat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatBuyuLog.aspx.cs">
+      <DependentUpon>StatBuyuLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatBuyuLog.aspx.designer.cs">
+      <DependentUpon>StatBuyuLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatChristmasAndYuandan.aspx.cs">
+      <DependentUpon>StatChristmasAndYuandan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatChristmasAndYuandan.aspx.designer.cs">
+      <DependentUpon>StatChristmasAndYuandan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCollectPuppet.aspx.cs">
+      <DependentUpon>StatCollectPuppet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCollectPuppet.aspx.designer.cs">
+      <DependentUpon>StatCollectPuppet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommon.master.cs">
+      <DependentUpon>StatCommon.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommon.master.designer.cs">
+      <DependentUpon>StatCommon.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonBaccarat.master.cs">
+      <DependentUpon>StatCommonBaccarat.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonBaccarat.master.designer.cs">
+      <DependentUpon>StatCommonBaccarat.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonCalfRoping.master.cs">
+      <DependentUpon>StatCommonCalfRoping.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonCalfRoping.master.designer.cs">
+      <DependentUpon>StatCommonCalfRoping.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonCows.master.cs">
+      <DependentUpon>StatCommonCows.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonCows.master.designer.cs">
+      <DependentUpon>StatCommonCows.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonCrocodile.master.cs">
+      <DependentUpon>StatCommonCrocodile.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonCrocodile.master.designer.cs">
+      <DependentUpon>StatCommonCrocodile.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonDice.master.cs">
+      <DependentUpon>StatCommonDice.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonDice.master.designer.cs">
+      <DependentUpon>StatCommonDice.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonDragon.master.cs">
+      <DependentUpon>StatCommonDragon.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonDragon.master.designer.cs">
+      <DependentUpon>StatCommonDragon.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonFishlord.master.cs">
+      <DependentUpon>StatCommonFishlord.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonFishlord.master.designer.cs">
+      <DependentUpon>StatCommonFishlord.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonFishPark.master.cs">
+      <DependentUpon>StatCommonFishPark.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonFishPark.master.designer.cs">
+      <DependentUpon>StatCommonFishPark.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonShcd.master.cs">
+      <DependentUpon>StatCommonShcd.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonShcd.master.designer.cs">
+      <DependentUpon>StatCommonShcd.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCrocodile.aspx.cs">
+      <DependentUpon>StatCrocodile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCrocodile.aspx.designer.cs">
+      <DependentUpon>StatCrocodile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatDailyGift.aspx.cs">
+      <DependentUpon>StatDailyGift.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatDailyGift.aspx.designer.cs">
+      <DependentUpon>StatDailyGift.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatDailyGiftDetail.aspx.cs">
+      <DependentUpon>StatDailyGiftDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatDailyGiftDetail.aspx.designer.cs">
+      <DependentUpon>StatDailyGiftDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatDailyMaterialGiftRecharge.aspx.cs">
+      <DependentUpon>StatDailyMaterialGiftRecharge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatDailyMaterialGiftRecharge.aspx.designer.cs">
+      <DependentUpon>StatDailyMaterialGiftRecharge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatDailySign.aspx.cs">
+      <DependentUpon>StatDailySign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatDailySign.aspx.designer.cs">
+      <DependentUpon>StatDailySign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatDailySignReward.aspx.cs">
+      <DependentUpon>StatDailySignReward.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatDailySignReward.aspx.designer.cs">
+      <DependentUpon>StatDailySignReward.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatDailyTask.aspx.cs">
+      <DependentUpon>StatDailyTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatDailyTask.aspx.designer.cs">
+      <DependentUpon>StatDailyTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatDailyWeekTask.aspx.cs">
+      <DependentUpon>StatDailyWeekTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatDailyWeekTask.aspx.designer.cs">
+      <DependentUpon>StatDailyWeekTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatDialLottery.aspx.cs">
+      <DependentUpon>StatDialLottery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatDialLottery.aspx.designer.cs">
+      <DependentUpon>StatDialLottery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatDice.aspx.cs">
+      <DependentUpon>StatDice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatDice.aspx.designer.cs">
+      <DependentUpon>StatDice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatDragonScaleControl.aspx.cs">
+      <DependentUpon>StatDragonScaleControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatDragonScaleControl.aspx.designer.cs">
+      <DependentUpon>StatDragonScaleControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatDragonScaleRank.aspx.cs">
+      <DependentUpon>StatDragonScaleRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatDragonScaleRank.aspx.designer.cs">
+      <DependentUpon>StatDragonScaleRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatExchange.aspx.cs">
+      <DependentUpon>StatExchange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatExchange.aspx.designer.cs">
+      <DependentUpon>StatExchange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFestivalActivity.aspx.cs">
+      <DependentUpon>StatFestivalActivity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFestivalActivity.aspx.designer.cs">
+      <DependentUpon>StatFestivalActivity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFish.aspx.cs">
+      <DependentUpon>StatFish.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFish.aspx.designer.cs">
+      <DependentUpon>StatFish.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordAdvancedRoomAct.aspx.cs">
+      <DependentUpon>StatFishlordAdvancedRoomAct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordAdvancedRoomAct.aspx.designer.cs">
+      <DependentUpon>StatFishlordAdvancedRoomAct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordAdvancedRoomActDetail.aspx.cs">
+      <DependentUpon>StatFishlordAdvancedRoomActDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordAdvancedRoomActDetail.aspx.designer.cs">
+      <DependentUpon>StatFishlordAdvancedRoomActDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordAdvancedRoomCheatCtrl.aspx.cs">
+      <DependentUpon>StatFishlordAdvancedRoomCheatCtrl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordAdvancedRoomCheatCtrl.aspx.designer.cs">
+      <DependentUpon>StatFishlordAdvancedRoomCheatCtrl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordAdvancedRoomCtrl.aspx.cs">
+      <DependentUpon>StatFishlordAdvancedRoomCtrl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordAdvancedRoomCtrl.aspx.designer.cs">
+      <DependentUpon>StatFishlordAdvancedRoomCtrl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishLordBaojin.aspx.cs">
+      <DependentUpon>StatFishLordBaojin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishLordBaojin.aspx.designer.cs">
+      <DependentUpon>StatFishLordBaojin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordBaojinControl.aspx.cs">
+      <DependentUpon>StatFishlordBaojinControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordBaojinControl.aspx.designer.cs">
+      <DependentUpon>StatFishlordBaojinControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordBaojinScoreControl.aspx.cs">
+      <DependentUpon>StatFishlordBaojinScoreControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordBaojinScoreControl.aspx.designer.cs">
+      <DependentUpon>StatFishlordBaojinScoreControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordControl.aspx.cs">
+      <DependentUpon>StatFishlordControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordControl.aspx.designer.cs">
+      <DependentUpon>StatFishlordControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordControlNew.aspx.cs">
+      <DependentUpon>StatFishlordControlNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordControlNew.aspx.designer.cs">
+      <DependentUpon>StatFishlordControlNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordControlNewDetail.aspx.cs">
+      <DependentUpon>StatFishlordControlNewDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordControlNewDetail.aspx.designer.cs">
+      <DependentUpon>StatFishlordControlNewDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFIshlordCtrolNewSingle.aspx.cs">
+      <DependentUpon>StatFIshlordCtrolNewSingle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFIshlordCtrolNewSingle.aspx.designer.cs">
+      <DependentUpon>StatFIshlordCtrolNewSingle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordDeskEarningsRate.aspx.cs">
+      <DependentUpon>StatFishlordDeskEarningsRate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordDeskEarningsRate.aspx.designer.cs">
+      <DependentUpon>StatFishlordDeskEarningsRate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordDragonPalaceData.aspx.cs">
+      <DependentUpon>StatFishlordDragonPalaceData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordDragonPalaceData.aspx.designer.cs">
+      <DependentUpon>StatFishlordDragonPalaceData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordFeastBasicData.aspx.cs">
+      <DependentUpon>StatFishlordFeastBasicData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordFeastBasicData.aspx.designer.cs">
+      <DependentUpon>StatFishlordFeastBasicData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishLordJingjiData.aspx.cs">
+      <DependentUpon>StatFishLordJingjiData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishLordJingjiData.aspx.designer.cs">
+      <DependentUpon>StatFishLordJingjiData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordLotteryExchange.aspx.cs">
+      <DependentUpon>StatFishlordLotteryExchange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordLotteryExchange.aspx.designer.cs">
+      <DependentUpon>StatFishlordLotteryExchange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordMiddleRoomAct.aspx.cs">
+      <DependentUpon>StatFishlordMiddleRoomAct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordMiddleRoomAct.aspx.designer.cs">
+      <DependentUpon>StatFishlordMiddleRoomAct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordMiddleRoomActExchangeDetail.aspx.cs">
+      <DependentUpon>StatFishlordMiddleRoomActExchangeDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordMiddleRoomActExchangeDetail.aspx.designer.cs">
+      <DependentUpon>StatFishlordMiddleRoomActExchangeDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordMiddleRoomCtrl.aspx.cs">
+      <DependentUpon>StatFishlordMiddleRoomCtrl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordMiddleRoomCtrl.aspx.designer.cs">
+      <DependentUpon>StatFishlordMiddleRoomCtrl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordSharkRoomAct.aspx.cs">
+      <DependentUpon>StatFishlordSharkRoomAct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordSharkRoomAct.aspx.designer.cs">
+      <DependentUpon>StatFishlordSharkRoomAct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordSharkRoomCheatCtrl.aspx.cs">
+      <DependentUpon>StatFishlordSharkRoomCheatCtrl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordSharkRoomCheatCtrl.aspx.designer.cs">
+      <DependentUpon>StatFishlordSharkRoomCheatCtrl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordSharkRoomIncomeDetail.aspx.cs">
+      <DependentUpon>StatFishlordSharkRoomIncomeDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordSharkRoomIncomeDetail.aspx.designer.cs">
+      <DependentUpon>StatFishlordSharkRoomIncomeDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordSharkRoomLotteryDetail.aspx.cs">
+      <DependentUpon>StatFishlordSharkRoomLotteryDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordSharkRoomLotteryDetail.aspx.designer.cs">
+      <DependentUpon>StatFishlordSharkRoomLotteryDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordStage.aspx.cs">
+      <DependentUpon>StatFishlordStage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordStage.aspx.designer.cs">
+      <DependentUpon>StatFishlordStage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatGeneralPlayerLost.aspx.cs">
+      <DependentUpon>StatGeneralPlayerLost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatGeneralPlayerLost.aspx.designer.cs">
+      <DependentUpon>StatGeneralPlayerLost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatGoldFishLottery.aspx.cs">
+      <DependentUpon>StatGoldFishLottery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatGoldFishLottery.aspx.designer.cs">
+      <DependentUpon>StatGoldFishLottery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatGoldFishLotteryDetail.aspx.cs">
+      <DependentUpon>StatGoldFishLotteryDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatGoldFishLotteryDetail.aspx.designer.cs">
+      <DependentUpon>StatGoldFishLotteryDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatGoldOnPlayer.aspx.cs">
+      <DependentUpon>StatGoldOnPlayer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatGoldOnPlayer.aspx.designer.cs">
+      <DependentUpon>StatGoldOnPlayer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatHallowmasActivity.aspx.cs">
+      <DependentUpon>StatHallowmasActivity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatHallowmasActivity.aspx.designer.cs">
+      <DependentUpon>StatHallowmasActivity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatIncomeExpensesError.aspx.cs">
+      <DependentUpon>StatIncomeExpensesError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatIncomeExpensesError.aspx.designer.cs">
+      <DependentUpon>StatIncomeExpensesError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatIndependentCrocodile.aspx.cs">
+      <DependentUpon>StatIndependentCrocodile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatIndependentCrocodile.aspx.designer.cs">
+      <DependentUpon>StatIndependentCrocodile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatIndependentDice.aspx.cs">
+      <DependentUpon>StatIndependentDice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatIndependentDice.aspx.designer.cs">
+      <DependentUpon>StatIndependentDice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatIndependentFishlord.aspx.cs">
+      <DependentUpon>StatIndependentFishlord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatIndependentFishlord.aspx.designer.cs">
+      <DependentUpon>StatIndependentFishlord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatJinQiuNationalDayAct.aspx.cs">
+      <DependentUpon>StatJinQiuNationalDayAct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatJinQiuNationalDayAct.aspx.designer.cs">
+      <DependentUpon>StatJinQiuNationalDayAct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatJinQiuNationalDayActCtrl.aspx.cs">
+      <DependentUpon>StatJinQiuNationalDayActCtrl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatJinQiuNationalDayActCtrl.aspx.designer.cs">
+      <DependentUpon>StatJinQiuNationalDayActCtrl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatJinQiuNationalDayActDetail.aspx.cs">
+      <DependentUpon>StatJinQiuNationalDayActDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatJinQiuNationalDayActDetail.aspx.designer.cs">
+      <DependentUpon>StatJinQiuNationalDayActDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatJinQiuNationalDayActTask.aspx.cs">
+      <DependentUpon>StatJinQiuNationalDayActTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatJinQiuNationalDayActTask.aspx.designer.cs">
+      <DependentUpon>StatJinQiuNationalDayActTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatJinQiuRechargeLottery.aspx.cs">
+      <DependentUpon>StatJinQiuRechargeLottery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatJinQiuRechargeLottery.aspx.designer.cs">
+      <DependentUpon>StatJinQiuRechargeLottery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatKdActivityRank.aspx.cs">
+      <DependentUpon>StatKdActivityRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatKdActivityRank.aspx.designer.cs">
+      <DependentUpon>StatKdActivityRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatKdActivityRankEdit.aspx.cs">
+      <DependentUpon>StatKdActivityRankEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatKdActivityRankEdit.aspx.designer.cs">
+      <DependentUpon>StatKdActivityRankEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatKillCrabAct.aspx.cs">
+      <DependentUpon>StatKillCrabAct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatKillCrabAct.aspx.designer.cs">
+      <DependentUpon>StatKillCrabAct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatKillCrabActLotteryDetail.aspx.cs">
+      <DependentUpon>StatKillCrabActLotteryDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatKillCrabActLotteryDetail.aspx.designer.cs">
+      <DependentUpon>StatKillCrabActLotteryDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatLabaLottery.aspx.cs">
+      <DependentUpon>StatLabaLottery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatLabaLottery.aspx.designer.cs">
+      <DependentUpon>StatLabaLottery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatLobby.aspx.cs">
+      <DependentUpon>StatLobby.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatLobby.aspx.designer.cs">
+      <DependentUpon>StatLobby.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatMainlyTask.aspx.cs">
+      <DependentUpon>StatMainlyTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatMainlyTask.aspx.designer.cs">
+      <DependentUpon>StatMainlyTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatMiddleRoomExchange.aspx.cs">
+      <DependentUpon>StatMiddleRoomExchange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatMiddleRoomExchange.aspx.designer.cs">
+      <DependentUpon>StatMiddleRoomExchange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatMonthCard.aspx.cs">
+      <DependentUpon>StatMonthCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatMonthCard.aspx.designer.cs">
+      <DependentUpon>StatMonthCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatNationalDayAct.aspx.cs">
+      <DependentUpon>StatNationalDayAct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatNationalDayAct.aspx.designer.cs">
+      <DependentUpon>StatNationalDayAct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatNationalDayActivity.aspx.cs">
+      <DependentUpon>StatNationalDayActivity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatNationalDayActivity.aspx.designer.cs">
+      <DependentUpon>StatNationalDayActivity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatNationalDayActLotteryDetail.aspx.cs">
+      <DependentUpon>StatNationalDayActLotteryDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatNationalDayActLotteryDetail.aspx.designer.cs">
+      <DependentUpon>StatNationalDayActLotteryDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatNewGuildLosePoint.aspx.cs">
+      <DependentUpon>StatNewGuildLosePoint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatNewGuildLosePoint.aspx.designer.cs">
+      <DependentUpon>StatNewGuildLosePoint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatNewPlayerOpenRate.aspx.cs">
+      <DependentUpon>StatNewPlayerOpenRate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatNewPlayerOpenRate.aspx.designer.cs">
+      <DependentUpon>StatNewPlayerOpenRate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatNewPlayerTask.aspx.cs">
+      <DependentUpon>StatNewPlayerTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatNewPlayerTask.aspx.designer.cs">
+      <DependentUpon>StatNewPlayerTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatNewSevenDay.aspx.cs">
+      <DependentUpon>StatNewSevenDay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatNewSevenDay.aspx.designer.cs">
+      <DependentUpon>StatNewSevenDay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatNYAccRecharge.aspx.cs">
+      <DependentUpon>StatNYAccRecharge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatNYAccRecharge.aspx.designer.cs">
+      <DependentUpon>StatNYAccRecharge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatNYAdventure.aspx.cs">
+      <DependentUpon>StatNYAdventure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatNYAdventure.aspx.designer.cs">
+      <DependentUpon>StatNYAdventure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatNYGift.aspx.cs">
+      <DependentUpon>StatNYGift.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatNYGift.aspx.designer.cs">
+      <DependentUpon>StatNYGift.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatOldEarningsRate.aspx.cs">
+      <DependentUpon>StatOldEarningsRate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatOldEarningsRate.aspx.designer.cs">
+      <DependentUpon>StatOldEarningsRate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatOnlineReward.aspx.cs">
+      <DependentUpon>StatOnlineReward.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatOnlineReward.aspx.designer.cs">
+      <DependentUpon>StatOnlineReward.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPanicBox.aspx.cs">
+      <DependentUpon>StatPanicBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPanicBox.aspx.designer.cs">
+      <DependentUpon>StatPanicBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPanicBoxPlayer.aspx.cs">
+      <DependentUpon>StatPanicBoxPlayer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPanicBoxPlayer.aspx.designer.cs">
+      <DependentUpon>StatPanicBoxPlayer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPlayAd.aspx.cs">
+      <DependentUpon>StatPlayAd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPlayAd.aspx.designer.cs">
+      <DependentUpon>StatPlayAd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPlayerBw.aspx.cs">
+      <DependentUpon>StatPlayerBw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPlayerBw.aspx.designer.cs">
+      <DependentUpon>StatPlayerBw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPlayerFavor.aspx.cs">
+      <DependentUpon>StatPlayerFavor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPlayerFavor.aspx.designer.cs">
+      <DependentUpon>StatPlayerFavor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPlayerGameBet.aspx.cs">
+      <DependentUpon>StatPlayerGameBet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPlayerGameBet.aspx.designer.cs">
+      <DependentUpon>StatPlayerGameBet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPlayerIconCustom.aspx.cs">
+      <DependentUpon>StatPlayerIconCustom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPlayerIconCustom.aspx.designer.cs">
+      <DependentUpon>StatPlayerIconCustom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPlayerItemRecharge.aspx.cs">
+      <DependentUpon>StatPlayerItemRecharge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPlayerItemRecharge.aspx.designer.cs">
+      <DependentUpon>StatPlayerItemRecharge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPlayerMail.aspx.cs">
+      <DependentUpon>StatPlayerMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPlayerMail.aspx.designer.cs">
+      <DependentUpon>StatPlayerMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPlayerOpenRateTask.aspx.cs">
+      <DependentUpon>StatPlayerOpenRateTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPlayerOpenRateTask.aspx.designer.cs">
+      <DependentUpon>StatPlayerOpenRateTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPumpChipFish.aspx.cs">
+      <DependentUpon>StatPumpChipFish.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPumpChipFish.aspx.designer.cs">
+      <DependentUpon>StatPumpChipFish.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPumpGrowFund.aspx.cs">
+      <DependentUpon>StatPumpGrowFund.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPumpGrowFund.aspx.designer.cs">
+      <DependentUpon>StatPumpGrowFund.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPumpVipGift.aspx.cs">
+      <DependentUpon>StatPumpVipGift.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPumpVipGift.aspx.designer.cs">
+      <DependentUpon>StatPumpVipGift.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPumpVipRecord.aspx.cs">
+      <DependentUpon>StatPumpVipRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPumpVipRecord.aspx.designer.cs">
+      <DependentUpon>StatPumpVipRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatRebateGift.aspx.cs">
+      <DependentUpon>StatRebateGift.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatRebateGift.aspx.designer.cs">
+      <DependentUpon>StatRebateGift.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatReloadTable.aspx.cs">
+      <DependentUpon>StatReloadTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatReloadTable.aspx.designer.cs">
+      <DependentUpon>StatReloadTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatScratchAct.aspx.cs">
+      <DependentUpon>StatScratchAct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatScratchAct.aspx.designer.cs">
+      <DependentUpon>StatScratchAct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatSdAct.aspx.cs">
+      <DependentUpon>StatSdAct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatSdAct.aspx.designer.cs">
+      <DependentUpon>StatSdAct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatSdActLottery.aspx.cs">
+      <DependentUpon>StatSdActLottery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatSdActLottery.aspx.designer.cs">
+      <DependentUpon>StatSdActLottery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatSdLotteryActDetail.aspx.cs">
+      <DependentUpon>StatSdLotteryActDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatSdLotteryActDetail.aspx.designer.cs">
+      <DependentUpon>StatSdLotteryActDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatServerEarnings.aspx.cs">
+      <DependentUpon>StatServerEarnings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatServerEarnings.aspx.designer.cs">
+      <DependentUpon>StatServerEarnings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatServiceDumpTime.aspx.cs">
+      <DependentUpon>StatServiceDumpTime.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatServiceDumpTime.aspx.designer.cs">
+      <DependentUpon>StatServiceDumpTime.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatSevenDayActivity.aspx.cs">
+      <DependentUpon>StatSevenDayActivity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatSevenDayActivity.aspx.designer.cs">
+      <DependentUpon>StatSevenDayActivity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatSpittorSnatchActivity.aspx.cs">
+      <DependentUpon>StatSpittorSnatchActivity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatSpittorSnatchActivity.aspx.designer.cs">
+      <DependentUpon>StatSpittorSnatchActivity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatStarLottery.aspx.cs">
+      <DependentUpon>StatStarLottery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatStarLottery.aspx.designer.cs">
+      <DependentUpon>StatStarLottery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatTomorrowGift.aspx.cs">
+      <DependentUpon>StatTomorrowGift.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatTomorrowGift.aspx.designer.cs">
+      <DependentUpon>StatTomorrowGift.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatTotalConsume.aspx.cs">
+      <DependentUpon>StatTotalConsume.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatTotalConsume.aspx.designer.cs">
+      <DependentUpon>StatTotalConsume.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatGameRecharge.aspx.cs">
+      <DependentUpon>StatGameRecharge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatGameRecharge.aspx.designer.cs">
+      <DependentUpon>StatGameRecharge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatTreasureHunt.aspx.cs">
+      <DependentUpon>StatTreasureHunt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatTreasureHunt.aspx.designer.cs">
+      <DependentUpon>StatTreasureHunt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatTreasureHuntDetail.aspx.cs">
+      <DependentUpon>StatTreasureHuntDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatTreasureHuntDetail.aspx.designer.cs">
+      <DependentUpon>StatTreasureHuntDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatTurnTableFishAct.aspx.cs">
+      <DependentUpon>StatTurnTableFishAct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatTurnTableFishAct.aspx.designer.cs">
+      <DependentUpon>StatTurnTableFishAct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatTurnTableFishDetail.aspx.cs">
+      <DependentUpon>StatTurnTableFishDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatTurnTableFishDetail.aspx.designer.cs">
+      <DependentUpon>StatTurnTableFishDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatTurretChip.aspx.cs">
+      <DependentUpon>StatTurretChip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatTurretChip.aspx.designer.cs">
+      <DependentUpon>StatTurretChip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatTurretItemsOnPlayer.aspx.cs">
+      <DependentUpon>StatTurretItemsOnPlayer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatTurretItemsOnPlayer.aspx.designer.cs">
+      <DependentUpon>StatTurretItemsOnPlayer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatWjlwDefRechargeReward.aspx.cs">
+      <DependentUpon>StatWjlwDefRechargeReward.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatWjlwDefRechargeReward.aspx.designer.cs">
+      <DependentUpon>StatWjlwDefRechargeReward.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatWjlwGoldBetPlayerList.aspx.cs">
+      <DependentUpon>StatWjlwGoldBetPlayerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatWjlwGoldBetPlayerList.aspx.designer.cs">
+      <DependentUpon>StatWjlwGoldBetPlayerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatWjlwGoldEarn.aspx.cs">
+      <DependentUpon>StatWjlwGoldEarn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatWjlwGoldEarn.aspx.designer.cs">
+      <DependentUpon>StatWjlwGoldEarn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatWjlwGoldEarnTurnInfo.aspx.cs">
+      <DependentUpon>StatWjlwGoldEarnTurnInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatWjlwGoldEarnTurnInfo.aspx.designer.cs">
+      <DependentUpon>StatWjlwGoldEarnTurnInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatWjlwRechargeBetPlayer.aspx.cs">
+      <DependentUpon>StatWjlwRechargeBetPlayer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatWjlwRechargeBetPlayer.aspx.designer.cs">
+      <DependentUpon>StatWjlwRechargeBetPlayer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatWjlwRechargeEarn.aspx.cs">
+      <DependentUpon>StatWjlwRechargeEarn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatWjlwRechargeEarn.aspx.designer.cs">
+      <DependentUpon>StatWjlwRechargeEarn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatWjlwRechargeWinInfo.aspx.cs">
+      <DependentUpon>StatWjlwRechargeWinInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatWjlwRechargeWinInfo.aspx.designer.cs">
+      <DependentUpon>StatWjlwRechargeWinInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatWorldCup.aspx.cs">
+      <DependentUpon>StatWorldCup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatWorldCup.aspx.designer.cs">
+      <DependentUpon>StatWorldCup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatWorldCupMatchPlayerJoin.aspx.cs">
+      <DependentUpon>StatWorldCupMatchPlayerJoin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatWorldCupMatchPlayerJoin.aspx.designer.cs">
+      <DependentUpon>StatWorldCupMatchPlayerJoin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatWpActivity.aspx.cs">
+      <DependentUpon>StatWpActivity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatWpActivity.aspx.designer.cs">
+      <DependentUpon>StatWpActivity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatWuyiRewardResult.aspx.cs">
+      <DependentUpon>StatWuyiRewardResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatWuyiRewardResult.aspx.designer.cs">
+      <DependentUpon>StatWuyiRewardResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\td\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\td\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\td\TdActivation.aspx.cs">
+      <DependentUpon>TdActivation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\td\TdActivation.aspx.designer.cs">
+      <DependentUpon>TdActivation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\td\TdCommon.master.cs">
+      <DependentUpon>TdCommon.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\td\TdCommon.master.designer.cs">
+      <DependentUpon>TdCommon.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\td\TdDragonBallDaily.aspx.cs">
+      <DependentUpon>TdDragonBallDaily.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\td\TdDragonBallDaily.aspx.designer.cs">
+      <DependentUpon>TdDragonBallDaily.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\td\TdFirstRechargeGameTimeDistribution.aspx.cs">
+      <DependentUpon>TdFirstRechargeGameTimeDistribution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\td\TdFirstRechargeGameTimeDistribution.aspx.designer.cs">
+      <DependentUpon>TdFirstRechargeGameTimeDistribution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\td\TdFirstRechargePointDistribution.aspx.cs">
+      <DependentUpon>TdFirstRechargePointDistribution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\td\TdFirstRechargePointDistribution.aspx.designer.cs">
+      <DependentUpon>TdFirstRechargePointDistribution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\td\TdGameTimeDistribution.aspx.cs">
+      <DependentUpon>TdGameTimeDistribution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\td\TdGameTimeDistribution.aspx.designer.cs">
+      <DependentUpon>TdGameTimeDistribution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\td\TdGameTimePlayerFavor.aspx.cs">
+      <DependentUpon>TdGameTimePlayerFavor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\td\TdGameTimePlayerFavor.aspx.designer.cs">
+      <DependentUpon>TdGameTimePlayerFavor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\td\TdLose.aspx.cs">
+      <DependentUpon>TdLose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\td\TdLose.aspx.designer.cs">
+      <DependentUpon>TdLose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\td\TdLTV.aspx.cs">
+      <DependentUpon>TdLTV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\td\TdLTV.aspx.designer.cs">
+      <DependentUpon>TdLTV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\td\TdNewPlayerAnalyze.aspx.cs">
+      <DependentUpon>TdNewPlayerAnalyze.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\td\TdNewPlayerAnalyze.aspx.designer.cs">
+      <DependentUpon>TdNewPlayerAnalyze.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\td\TdNewPlayerRechargeMonitor.aspx.cs">
+      <DependentUpon>TdNewPlayerRechargeMonitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\td\TdNewPlayerRechargeMonitor.aspx.designer.cs">
+      <DependentUpon>TdNewPlayerRechargeMonitor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\td\TdOnlinePerHour.aspx.cs">
+      <DependentUpon>TdOnlinePerHour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\td\TdOnlinePerHour.aspx.designer.cs">
+      <DependentUpon>TdOnlinePerHour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\td\TdPlayerDragonBall.aspx.cs">
+      <DependentUpon>TdPlayerDragonBall.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\td\TdPlayerDragonBall.aspx.designer.cs">
+      <DependentUpon>TdPlayerDragonBall.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\td\TdPlayerIncomeExpenses.aspx.cs">
+      <DependentUpon>TdPlayerIncomeExpenses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\td\TdPlayerIncomeExpenses.aspx.designer.cs">
+      <DependentUpon>TdPlayerIncomeExpenses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\td\TdRechargePerHour.aspx.cs">
+      <DependentUpon>TdRechargePerHour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\td\TdRechargePerHour.aspx.designer.cs">
+      <DependentUpon>TdRechargePerHour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\td\TdRechargePlayer.aspx.cs">
+      <DependentUpon>TdRechargePlayer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\td\TdRechargePlayer.aspx.designer.cs">
+      <DependentUpon>TdRechargePlayer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\td\TdRechargePlayerMonitor.aspx.cs">
+      <DependentUpon>TdRechargePlayerMonitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\td\TdRechargePlayerMonitor.aspx.designer.cs">
+      <DependentUpon>TdRechargePlayerMonitor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\WechatRecvRewardStat.aspx.cs">
+      <DependentUpon>WechatRecvRewardStat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\WechatRecvRewardStat.aspx.designer.cs">
+      <DependentUpon>WechatRecvRewardStat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appcode\accdb.cs" />
+    <Compile Include="appcode\account_mgr.cs" />
+    <Compile Include="appcode\common.cs" />
+    <Compile Include="appcode\count_mgr.cs" />
+    <Compile Include="appcode\db.cs" />
+    <Compile Include="appcode\def.cs" />
+    <Compile Include="appcode\dyop.cs" />
+    <Compile Include="appcode\export_excel.cs" />
+    <Compile Include="appcode\game_detail.cs" />
+    <Compile Include="appcode\menu_mgr.cs" />
+    <Compile Include="appcode\notice_mgr.cs" />
+    <Compile Include="appcode\oplog.cs" />
+    <Compile Include="appcode\oplog_mgr.cs" />
+    <Compile Include="appcode\opres_mgr.cs" />
+    <Compile Include="appcode\page_foot.cs" />
+    <Compile Include="appcode\query.cs" />
+    <Compile Include="appcode\querypay.cs" />
+    <Compile Include="appcode\query_td.cs" />
+    <Compile Include="appcode\RefreshPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appcode\remote_mgr.cs" />
+    <Compile Include="appcode\res.cs" />
+    <Compile Include="appcode\right_mgr.cs" />
+    <Compile Include="appcode\stat_mgr.cs" />
+    <Compile Include="appcode\sys_base.cs" />
+    <Compile Include="appcode\table.cs" />
+    <Compile Include="appcode\user.cs" />
+    <Compile Include="appcode\query_game.cs" />
+    <Compile Include="appcode\bufmgr.cs" />
+    <Compile Include="appcode\command.cs" />
+    <Compile Include="appcode\graph.cs" />
+    <Compile Include="ashx\ActivityPanicBuyingCfg.ashx.cs">
+      <DependentUpon>ActivityPanicBuyingCfg.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\AddAccount.ashx.cs">
+      <DependentUpon>AddAccount.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\BzSpecilList.ashx.cs">
+      <DependentUpon>BzSpecilList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\CDKEY.ashx.cs">
+      <DependentUpon>CDKEY.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\cdkeyNew.ashx.cs">
+      <DependentUpon>cdkeyNew.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\ChampionSetting.ashx.cs">
+      <DependentUpon>ChampionSetting.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\ChannelOpenCloseGame.ashx.cs">
+      <DependentUpon>ChannelOpenCloseGame.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\CowsCardSpecilList.ashx.cs">
+      <DependentUpon>CowsCardSpecilList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\CrocodileSpecilList.ashx.cs">
+      <DependentUpon>CrocodileSpecilList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\DragonScaleControl.ashx.cs">
+      <DependentUpon>DragonScaleControl.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\FirstRechargeGameTimeDistribution.ashx.cs">
+      <DependentUpon>FirstRechargeGameTimeDistribution.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\FishControl.ashx.cs">
+      <DependentUpon>FishControl.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\FishControlNew.ashx.cs">
+      <DependentUpon>FishControlNew.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\FishControlNewSingle.ashx.cs">
+      <DependentUpon>FishControlNewSingle.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\FishlordBaojinScoreAlter.ashx.cs">
+      <DependentUpon>FishlordBaojinScoreAlter.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\FishlordBulletHead.ashx.cs">
+      <DependentUpon>FishlordBulletHead.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\FishScorePool.ashx.cs">
+      <DependentUpon>FishScorePool.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\FruitSpecilList.ashx.cs">
+      <DependentUpon>FruitSpecilList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\GameStandingBook.ashx.cs">
+      <DependentUpon>GameStandingBook.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\GameTimeDistribution.ashx.cs">
+      <DependentUpon>GameTimeDistribution.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\GameTimePlayerFavor.ashx.cs">
+      <DependentUpon>GameTimePlayerFavor.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\GmTypeEdit.ashx.cs">
+      <DependentUpon>GmTypeEdit.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\JinQiuNationalDayActCtrl.ashx.cs">
+      <DependentUpon>JinQiuNationalDayActCtrl.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\LogViewer.ashx.cs">
+      <DependentUpon>LogViewer.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\OnlinePerHour.ashx.cs">
+      <DependentUpon>OnlinePerHour.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\OPerationGameCtrl.ashx.cs">
+      <DependentUpon>OPerationGameCtrl.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\OperationNotify.ashx.cs">
+      <DependentUpon>OperationNotify.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\OperationPlayerRichesRank.ashx.cs">
+      <DependentUpon>OperationPlayerRichesRank.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\OperationRank.ashx.cs">
+      <DependentUpon>OperationRank.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\OperationViewInformHead.ashx.cs">
+      <DependentUpon>OperationViewInformHead.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\PlayerGameBet.ashx.cs">
+      <DependentUpon>PlayerGameBet.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\PlayerOp.ashx.cs">
+      <DependentUpon>PlayerOp.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\PolarLightsPush.ashx.cs">
+      <DependentUpon>PolarLightsPush.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\RechargePerHour.ashx.cs">
+      <DependentUpon>RechargePerHour.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\RightEdit.ashx.cs">
+      <DependentUpon>RightEdit.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\ServiceBindUnbindPhone.ashx.cs">
+      <DependentUpon>ServiceBindUnbindPhone.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\ShcdCardsSpecilList.ashx.cs">
+      <DependentUpon>ShcdCardsSpecilList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\ShcdControl.ashx.cs">
+      <DependentUpon>ShcdControl.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\ShuihzScorePool.ashx.cs">
+      <DependentUpon>ShuihzScorePool.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\SignByMonth.ashx.cs">
+      <DependentUpon>SignByMonth.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\SiteMaster.ashx.cs">
+      <DependentUpon>SiteMaster.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\StatAirdropSysCtrl.ashx.cs">
+      <DependentUpon>StatAirdropSysCtrl.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\StatFishlordAdvancedRoomCtrl.ashx.cs">
+      <DependentUpon>StatFishlordAdvancedRoomCtrl.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\StatServerEarnings.ashx.cs">
+      <DependentUpon>StatServerEarnings.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\StatWjlwDefRechargeReward.ashx.cs">
+      <DependentUpon>StatWjlwDefRechargeReward.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\TdNewPlayerAnalyze.ashx.cs">
+      <DependentUpon>TdNewPlayerAnalyze.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\WishCurse.ashx.cs">
+      <DependentUpon>WishCurse.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\Word2LogicItemError.ashx.cs">
+      <DependentUpon>Word2LogicItemError.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\WorldCupMatch.ashx.cs">
+      <DependentUpon>WorldCupMatch.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.csproj">
+      <Project>{ea3d98dd-533c-4a9a-93a3-39f3035ed717}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\libcommon\libcommon.csproj">
+      <Project>{5c624ef3-6680-40af-a4c6-17b0f7f57146}</Project>
+      <Name>libcommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\libRRD\libRRD.csproj">
+      <Project>{fafba4ba-a6be-43df-ac87-585be65acee4}</Project>
+      <Name>libRRD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RemoteCommon\RemoteCommon.csproj">
+      <Project>{8fcaeeea-e7db-4e5c-815e-ae1465a5276f}</Project>
+      <Name>RemoteCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appaspx\stat\StatCommon.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appaspx\operation\OperationCommon.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appaspx\service\ServiceCommon.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\map_reduce.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appaspx\stat\StatCommonFishlord.master" />
+    <Content Include="appaspx\stat\StatCommonCrocodile.master" />
+    <Content Include="appaspx\stat\StatCommonDice.master" />
+    <Content Include="appaspx\stat\StatCommonBaccarat.master" />
+    <Content Include="appaspx\stat\StatCommonCows.master" />
+    <Content Include="appaspx\stat\StatCommonDragon.master" />
+    <Content Include="appaspx\stat\StatCommonFishPark.master" />
+    <Content Include="appaspx\td\TdCommon.master" />
+    <Content Include="appaspx\stat\StatCommonShcd.master" />
+    <Content Include="appaspx\stat\StatCommonCalfRoping.master" />
+    <Content Include="ashx\ChampionSetting.ashx" />
+    <Content Include="ashx\PlayerOp.ashx" />
+    <Content Include="ashx\ShcdControl.ashx" />
+    <Content Include="ashx\WishCurse.ashx" />
+    <Content Include="ashx\RechargePerHour.ashx" />
+    <Content Include="ashx\OnlinePerHour.ashx" />
+    <Content Include="ashx\GmTypeEdit.ashx" />
+    <Content Include="ashx\RightEdit.ashx" />
+    <Content Include="ashx\AddAccount.ashx" />
+    <Content Include="ashx\GameTimeDistribution.ashx" />
+    <Content Include="ashx\GameTimePlayerFavor.ashx" />
+    <Content Include="ashx\FirstRechargeGameTimeDistribution.ashx" />
+    <Content Include="ashx\StatServerEarnings.ashx" />
+    <Content Include="ashx\PlayerGameBet.ashx" />
+    <Content Include="ashx\OperationRank.ashx" />
+    <Content Include="ashx\OperationViewInformHead.ashx" />
+    <Content Include="ashx\GameStandingBook.ashx" />
+    <Content Include="ashx\LogViewer.ashx" />
+    <Content Include="ashx\TdNewPlayerAnalyze.ashx" />
+    <Content Include="ashx\CDKEY.ashx" />
+    <Content Include="ashx\FishControl.ashx" />
+    <Content Include="ashx\ActivityPanicBuyingCfg.ashx" />
+    <Content Include="ashx\FishlordBaojinScoreAlter.ashx" />
+    <Content Include="ashx\ShcdCardsSpecilList.ashx" />
+    <Content Include="ashx\SignByMonth.ashx" />
+    <Content Include="ashx\FishScorePool.ashx" />
+    <Content Include="ashx\CowsCardSpecilList.ashx" />
+    <Content Include="ashx\ChannelOpenCloseGame.ashx" />
+    <Content Include="ashx\CrocodileSpecilList.ashx" />
+    <Content Include="ashx\BzSpecilList.ashx" />
+    <Content Include="ashx\ShuihzScorePool.ashx" />
+    <Content Include="ashx\PolarLightsPush.ashx" />
+    <Content Include="ashx\FishlordBulletHead.ashx" />
+    <Content Include="ashx\FruitSpecilList.ashx" />
+    <Content Include="ashx\OperationNotify.ashx" />
+    <Content Include="ashx\Word2LogicItemError.ashx" />
+    <Content Include="ashx\cdkeyNew.ashx" />
+    <Content Include="ashx\WorldCupMatch.ashx" />
+    <Content Include="ashx\SiteMaster.ashx" />
+    <Content Include="ashx\DragonScaleControl.ashx" />
+    <Content Include="ashx\JinQiuNationalDayActCtrl.ashx" />
+    <Content Include="ashx\OperationPlayerRichesRank.ashx" />
+    <Content Include="ashx\StatWjlwDefRechargeReward.ashx" />
+    <Content Include="ashx\FishControlNew.ashx" />
+    <Content Include="ashx\FishControlNewSingle.ashx" />
+    <Content Include="ashx\StatAirdropSysCtrl.ashx" />
+    <Content Include="ashx\StatFishlordAdvancedRoomCtrl.ashx" />
+    <Content Include="ashx\ServiceBindUnbindPhone.ashx" />
+    <Content Include="ashx\OPerationGameCtrl.ashx" />
+    <None Include="Properties\PublishProfiles\publish.pubxml" />
+    <None Include="Properties\PublishProfiles\webmgr.pubxml" />
+    <Content Include="Scripts\ckeditor\CHANGES.md" />
+    <Content Include="Scripts\ckeditor\LICENSE.md" />
+    <Content Include="Scripts\ckeditor\plugins\scayt\CHANGELOG.md" />
+    <Content Include="Scripts\ckeditor\plugins\scayt\LICENSE.md" />
+    <Content Include="Scripts\ckeditor\plugins\scayt\README.md" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\LICENSE.md" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\README.md" />
+    <Content Include="Scripts\ckeditor\README.md" />
+    <Content Include="Scripts\ckeditor\samples\old\assets\posteddata.php" />
+    <Content Include="Scripts\ckeditor\samples\old\htmlwriter\assets\outputforflash\outputforflash.fla" />
+    <Content Include="Scripts\ckeditor\samples\old\sample_posteddata.php" />
+    <Content Include="Scripts\ckeditor\samples\toolbarconfigurator\font\config.json" />
+    <Content Include="Scripts\ckeditor\samples\toolbarconfigurator\font\fontello.eot" />
+    <Content Include="Scripts\ckeditor\samples\toolbarconfigurator\font\fontello.ttf" />
+    <Content Include="Scripts\ckeditor\samples\toolbarconfigurator\font\fontello.woff" />
+    <Content Include="Scripts\ckeditor\samples\toolbarconfigurator\lib\codemirror\LICENSE" />
+    <Content Include="Scripts\ckeditor\skins\moono-lisa\readme.md" />
+    <Content Include="style\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="style\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="style\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="style\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="style\font-awesome\fonts\fontawesome-webfont.woff2" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>37653</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>copy ..\..\..\..\..\branches\fishlord\bin\Config\Fish_BaseInfo.xml ..\data\
+copy ..\..\..\..\..\branches\fishlord\bin\Config\Fish_FishCFG.xml ..\data\
+copy ..\..\..\..\..\branches\fishlord\bin\Config\Fish_LuckyDrawCFG.xml ..\data\
+copy ..\..\..\..\..\branches\fishlord\bin\Config\Fish_TurretLevelCFG.xml ..\data\
+copy ..\..\..\..\..\branches\fishlord\bin\Config\M_DailyQuestCFG.xml ..\data\
+copy ..\..\..\..\..\branches\fishlord\bin\Config\M_ExchangeCFG.xml ..\data\
+copy ..\..\..\..\..\branches\fishlord\bin\Config\M_ItemCFG.xml ..\data\
+copy ..\..\..\..\..\branches\fishlord\bin\Config\M_MainTaskCFG.xml ..\data\
+copy ..\..\..\..\..\branches\fishlord\bin\Config\M_NewPlayerQuestCFG.xml ..\data\
+copy ..\..\..\..\..\branches\fishlord\bin\Config\M_RechangeCFG.xml ..\data\
+copy ..\..\..\..\..\branches\fishlord\bin\Config\M_WeekQuestCFG.xml  ..\data\
+
+
+
+
+
+
+
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

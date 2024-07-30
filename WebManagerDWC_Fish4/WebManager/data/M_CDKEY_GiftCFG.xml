@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data GiftId="1" GiftName="至尊豪华礼包" Gold="25000" Gem="25" DragbonBall="0" Item="" />
+	<Data GiftId="2" GiftName="贵族钻石礼包" Gold="10000" Gem="10" DragbonBall="0" Item="" />
+	<Data GiftId="3" GiftName="新手黄金礼包" Gold="5000" Gem="5" DragbonBall="0" Item="" />
+	<Data GiftId="4" GiftName="测试用礼包" Gold="0" Gem="0" DragbonBall="0" Item="106,10" />
+	<Data GiftId="5" GiftName="圣诞豪华礼包" Gold="20000" Gem="20" DragbonBall="0" Item="" />
+</Root>

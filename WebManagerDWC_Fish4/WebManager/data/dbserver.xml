@@ -1,0 +1,89 @@
+﻿<?xml version="1.0"?>
+
+<configuration>
+	<add key="server" type="table" >
+		<elem>
+			<add key="serverIp" value="192.168.1.49" type="string" />   <!-- 服务器IP， 主IP -->
+			<add key="serverId" value="4" type="string" />              <!-- 服务器ID -->
+			<add key="serverName" value="chenlongfei" type="string" />       <!-- 服务器名称 -->
+			<add key="logDbIp" value="192.168.1.49" type="string" />     <!-- logdb服务器ip -->
+			
+			<add key="playerDbSlave" value="192.168.1.49" type="string" />  
+			<add key="logDbSlave" value="192.168.1.49" type="string" /> 
+		</elem>	
+    
+		<elem>
+			<add key="serverIp" value="192.168.1.54" type="string" />   <!-- 服务器IP -->
+			<add key="serverId" value="6" type="string" />              <!-- 服务器ID -->
+			<add key="serverName" value="shenyoujun" type="string" />       <!-- 服务器名称 -->
+		    <add key="logDbIp" value="192.168.1.54" type="string" />     <!-- logdb服务器ip -->
+			
+			<add key="playerDbSlave" value="192.168.1.54" type="string" />  
+			<add key="logDbSlave" value="192.168.1.54" type="string" /> 
+		</elem>	
+		
+		<elem>
+			<add key="serverIp" value="192.168.1.204" type="string" />   <!-- 服务器IP -->
+			<add key="serverId" value="7" type="string" />              <!-- 服务器ID -->
+			<add key="serverName" value="Xuhanwen" type="string" />       <!-- 服务器名称 -->
+			<add key="logDbIp" value="192.168.1.204" type="string" />   <!-- logdb服务器ip -->
+			
+			<add key="playerDbSlave" value="192.168.1.204" type="string" />  
+			<add key="logDbSlave" value="192.168.1.204" type="string" />
+		</elem>	
+				
+		<elem>
+		  <add key="serverIp" value="192.168.1.115" type="string" />
+		  <add key="serverId" value="30" type="string" />
+		  <add key="serverName" value="lujia" type="string" />
+		  <add key="logDbIp" value="192.168.1.115" type="string" />
+		  
+		  <add key="playerDbSlave" value="192.168.1.115" type="string" />  
+		  <add key="logDbSlave" value="192.168.1.115" type="string" />
+		</elem>
+		
+		 <elem>
+		  <add key="serverIp" value="192.168.1.251" type="string" />
+		  <add key="serverId" value="31" type="string" />
+		  <add key="serverName" value="yanghuihui" type="string" />
+		  <add key="logDbIp" value="192.168.1.251" type="string" />
+		  
+		  <add key="playerDbSlave" value="192.168.1.251" type="string" />  
+		  <add key="logDbSlave" value="192.168.1.251" type="string" />
+		</elem>
+		
+		 <elem>
+		  <add key="serverIp" value="192.168.1.171" type="string" />
+		  <add key="serverId" value="55" type="string" />
+		  <add key="serverName" value="huhaohao" type="string" />
+		  <add key="logDbIp" value="192.168.1.171" type="string" />
+		  
+		  <add key="playerDbSlave" value="192.168.1.171" type="string" />  
+		  <add key="logDbSlave" value="192.168.1.171" type="string" />
+		</elem>
+
+    <elem>
+      <add key="serverIp" value="192.168.1.177" type="string" />
+      <add key="serverId" value="77" type="string" />
+      <add key="serverName" value="韩" type="string" />
+      <add key="logDbIp" value="192.168.1.177" type="string" />
+
+      <add key="playerDbSlave" value="192.168.1.177" type="string" />
+      <add key="logDbSlave" value="192.168.1.177" type="string" />
+    </elem>
+		
+		<elem>
+		  <add key="serverIp" value="192.168.1.101" type="string" />
+		  <!-- 服务器IP -->
+		  <add key="serverId" value="15" type="string" />
+		  <!-- 服务器ID -->
+		  <add key="serverName" value="H5" type="string" />
+		  <!-- 服务器名称 -->
+		  <add key="logDbIp" value="192.168.1.101" type="string" />
+		 
+		  <add key="playerDbSlave" value="192.168.1.101" type="string" />  
+		  <add key="logDbSlave" value="192.168.1.101" type="string" />
+		</elem>
+  </add>
+</configuration>
+

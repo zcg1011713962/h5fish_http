@@ -1,0 +1,24 @@
+﻿<?xml version="1.0"?>
+<!-- redis整体配置 -->
+<configuration>
+	<add key="server" type="table" >
+		<elem>
+      <!-- 大奖赛 -->
+		<!--	<add key="redisName" value="grand_prix" type="string" /> 
+		      <add key="redisIP" value="192.168.1.12:6159, defaultDatabase=0, password=qwer1234" type="string" /> -->
+
+      <add key="redisName" value="" type="string" />
+      <add key="redisIP" value="" type="string" />
+		</elem>
+
+    <elem>
+      <!-- 排位赛 -->
+      <!--	 <add key="redisName" value="qualify_prix" type="string" />
+      <add key="redisIP" value="192.168.1.12:6157, defaultDatabase=0, password=qwer1234" type="string" /> -->
+
+      <add key="redisName" value="" type="string" />
+      <add key="redisIP" value="" type="string" />
+    </elem>
+  </add>
+</configuration>
+

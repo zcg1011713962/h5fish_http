@@ -1,0 +1,16 @@
+F:\DM\fishlord_h5\trunk\Http\HttpServiceFish5\obj\Debug\HttpServiceFish5.csprojResolveAssemblyReference.cache
+D:\coding\h5fish\h5fish\h5fish_http\HttpServiceFish5\bin\AccountCheck.dll.config
+D:\coding\h5fish\h5fish\h5fish_http\HttpServiceFish5\bin\AccountCheck.dll
+D:\coding\h5fish\h5fish\h5fish_http\HttpServiceFish5\bin\AccountCheck.pdb
+D:\coding\h5fish\h5fish\h5fish_http\HttpServiceFish5\bin\Common.dll
+D:\coding\h5fish\h5fish\h5fish_http\HttpServiceFish5\bin\MongoDB.Bson.dll
+D:\coding\h5fish\h5fish\h5fish_http\HttpServiceFish5\bin\MongoDB.Driver.dll
+D:\coding\h5fish\h5fish\h5fish_http\HttpServiceFish5\bin\PayCommon.dll
+D:\coding\h5fish\h5fish\h5fish_http\HttpServiceFish5\bin\Newtonsoft.Json.dll
+D:\coding\h5fish\h5fish\h5fish_http\HttpServiceFish5\bin\Common.pdb
+D:\coding\h5fish\h5fish\h5fish_http\HttpServiceFish5\bin\PayCommon.pdb
+D:\coding\h5fish\h5fish\h5fish_http\HttpServiceFish5\obj\Debug\HttpServiceFish5.csproj.AssemblyReference.cache
+D:\coding\h5fish\h5fish\h5fish_http\HttpServiceFish5\obj\Debug\HttpServiceFish5.csproj.CoreCompileInputs.cache
+D:\coding\h5fish\h5fish\h5fish_http\HttpServiceFish5\obj\Debug\HttpServ.6B6FEB0B.Up2Date
+D:\coding\h5fish\h5fish\h5fish_http\HttpServiceFish5\obj\Debug\AccountCheck.dll
+D:\coding\h5fish\h5fish\h5fish_http\HttpServiceFish5\obj\Debug\AccountCheck.pdb

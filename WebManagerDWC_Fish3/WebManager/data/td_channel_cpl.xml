@@ -1,0 +1,13 @@
+<Root>
+  <add channelNo="100003" channelName="闲玩"/>
+  <add channelNo="100009" channelName="蛋蛋赚"/>
+  <add channelNo="100010" channelName="葫芦星球"/>
+  <add channelNo="100011" channelName="有赚"/>
+  <add channelNo="100012" channelName="聚享游"/>
+  <add channelNo="100013" channelName="麦子赚"/>
+ <add channelNo="100014" channelName="小啄"/>
+ <add channelNo="100015" channelName="泡泡赚"/>
+ <add channelNo="100016" channelName="豆豆赚"/>
+ <add channelNo="000971" channelName="街机疯狂捕鱼-多游" />
+ <add channelNo="100006" channelName="街机疯狂捕鱼-多游ios" />
+</Root>

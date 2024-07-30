@@ -1,0 +1,4 @@
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\VSWinNHawk\bin\Release\VSWinNHawk.dll
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\VSWinNHawk\bin\Release\VSWinNHawk.pdb
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\VSWinNHawk\obj\Release\VSWinNHawk.dll
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\VSWinNHawk\obj\Release\VSWinNHawk.pdb

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>G:\h5fish\fishlord\Http\HttpApi\bin\app.publish\</_PublishTargetUrl>
+    <History>True|2022-06-01T07:19:58.3288265Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Common.dll">
+      <publishTime>06/01/2022 14:56:31</publishTime>
+    </File>
+    <File Include="bin/Common.pdb">
+      <publishTime>06/01/2022 14:56:31</publishTime>
+    </File>
+    <File Include="bin/HttpApi.dll">
+      <publishTime>06/01/2022 15:19:58</publishTime>
+    </File>
+    <File Include="bin/HttpApi.pdb">
+      <publishTime>06/01/2022 15:19:58</publishTime>
+    </File>
+    <File Include="bin/MongoDB.Bson.dll">
+      <publishTime>04/26/2022 04:22:19</publishTime>
+    </File>
+    <File Include="bin/MongoDB.Driver.dll">
+      <publishTime>04/26/2022 04:22:19</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/26/2022 04:22:19</publishTime>
+    </File>
+    <File Include="bin/PayCommon.dll">
+      <publishTime>06/01/2022 14:56:32</publishTime>
+    </File>
+    <File Include="bin/PayCommon.pdb">
+      <publishTime>06/01/2022 14:56:32</publishTime>
+    </File>
+    <File Include="channel/QueryChannelWanYou.ashx">
+      <publishTime>04/26/2022 04:22:17</publishTime>
+    </File>
+    <File Include="channel/QueryChannelWanYouRegInfo.ashx">
+      <publishTime>04/26/2022 04:22:17</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>04/26/2022 04:22:18</publishTime>
+    </File>
+    <File Include="openapi/DanDanZhuanQueryGameInfo.ashx">
+      <publishTime>04/26/2022 04:22:17</publishTime>
+    </File>
+    <File Include="openapi/DanDanZhuanQueryReg.ashx">
+      <publishTime>04/26/2022 04:22:18</publishTime>
+    </File>
+    <File Include="openapi/DDQWQueryGameInfo.ashx">
+      <publishTime>04/26/2022 04:22:17</publishTime>
+    </File>
+    <File Include="openapi/DDQWQueryReg.ashx">
+      <publishTime>04/26/2022 04:22:17</publishTime>
+    </File>
+    <File Include="openapi/HuluQueryGameInfo.ashx">
+      <publishTime>04/26/2022 04:22:17</publishTime>
+    </File>
+    <File Include="openapi/HuluQueryReg.ashx">
+      <publishTime>04/26/2022 04:22:17</publishTime>
+    </File>
+    <File Include="openapi/JuXiangWanQueryGameInfo.ashx">
+      <publishTime>04/26/2022 04:22:17</publishTime>
+    </File>
+    <File Include="openapi/JuXiangWanQueryReg.ashx">
+      <publishTime>04/26/2022 04:22:17</publishTime>
+    </File>
+    <File Include="openapi/MaiziZhuanQueryGameInfo.ashx">
+      <publishTime>04/26/2022 04:22:17</publishTime>
+    </File>
+    <File Include="openapi/MaiziZhuanQueryReg.ashx">
+      <publishTime>04/26/2022 04:22:17</publishTime>
+    </File>
+    <File Include="openapi/PaoPaoZhuanQueryGameInfo.ashx">
+      <publishTime>04/26/2022 04:22:17</publishTime>
+    </File>
+    <File Include="openapi/PaoPaoZhuanQueryReg.ashx">
+      <publishTime>04/26/2022 04:22:17</publishTime>
+    </File>
+    <File Include="openapi/roleinfo.ashx">
+      <publishTime>04/26/2022 04:22:18</publishTime>
+    </File>
+    <File Include="openapi/XianWanQueryGameInfo.ashx">
+      <publishTime>04/26/2022 04:22:18</publishTime>
+    </File>
+    <File Include="openapi/XianWanQueryReg.ashx">
+      <publishTime>04/26/2022 04:22:18</publishTime>
+    </File>
+    <File Include="openapi/XiaoZhuoQueryGameInfo.ashx">
+      <publishTime>04/26/2022 04:22:17</publishTime>
+    </File>
+    <File Include="openapi/XiaoZhuoQueryReg.ashx">
+      <publishTime>04/26/2022 04:22:17</publishTime>
+    </File>
+    <File Include="openapi/YouZhuanQueryGameInfo.ashx">
+      <publishTime>04/26/2022 04:22:17</publishTime>
+    </File>
+    <File Include="openapi/YouZhuanQueryReg.ashx">
+      <publishTime>04/26/2022 04:22:17</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/26/2022 04:22:17</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

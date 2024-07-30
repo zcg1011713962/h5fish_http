@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data ChangeId="1" ItemName="青铜鱼雷" CostTicket="1500" ItemId="24" Vip="0" ItemCount="1" Icon="M_BronzeTorpedo" ExchangeMaxLimit="500" DeductionChip="0" Type="1" />
+	<Data ChangeId="2" ItemName="金币x100000" CostTicket="1300" ItemId="1" Vip="0" ItemCount="100000" Icon="M_Gold4" ExchangeMaxLimit="999" DeductionChip="0" Type="1" />
+	<Data ChangeId="3" ItemName="钻石x150" CostTicket="1500" ItemId="2" Vip="0" ItemCount="150" Icon="M_Diamond4" ExchangeMaxLimit="999" DeductionChip="0" Type="1" />
+	<Data ChangeId="4" ItemName="白银鱼雷" CostTicket="6000" ItemId="25" Vip="0" ItemCount="1" Icon="M_SilverTorpedo" ExchangeMaxLimit="200" DeductionChip="0" Type="1" />
+	<Data ChangeId="5" ItemName="黄金鱼雷" CostTicket="15000" ItemId="26" Vip="0" ItemCount="1" Icon="M_GoldTorpedo" ExchangeMaxLimit="50" DeductionChip="0" Type="1" />
+	<Data ChangeId="6" ItemName="钻石鱼雷" CostTicket="60000" ItemId="27" Vip="0" ItemCount="1" Icon="M_DiamondsTorpedo" ExchangeMaxLimit="20" DeductionChip="0" Type="1" />
+	<Data ChangeId="7" ItemName="30元话费" CostTicket="3000" ItemId="1002" Vip="0" ItemCount="1" Icon="Card_30huafei" ExchangeMaxLimit="10" DeductionChip="0" Type="2" />
+	<Data ChangeId="8" ItemName="50元话费" CostTicket="5000" ItemId="1003" Vip="0" ItemCount="1" Icon="Card_50huafei" ExchangeMaxLimit="5" DeductionChip="0" Type="2" />
+	<Data ChangeId="9" ItemName="100元京东卡" CostTicket="11000" ItemId="1004" Vip="0" ItemCount="1" Icon="Card_jingdong" ExchangeMaxLimit="5" DeductionChip="0" Type="2" />
+</Root>

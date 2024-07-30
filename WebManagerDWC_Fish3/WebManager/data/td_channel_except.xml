@@ -1,0 +1,4 @@
+<Root>
+  <add channelNo="100001" channelName="微信" />
+  <add channelNo="100002" channelName="QQ" />
+</Root>

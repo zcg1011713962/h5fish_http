@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\coding\h5fish\h5fish\h5fish_http\HttpServiceFish5\bin\app.publish\</_PublishTargetUrl>
+    <History>True|2024-07-30T06:37:35.9616403Z||;True|2022-06-01T15:23:20.9666640+08:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AbroadCheck.aspx">
+      <publishTime>04/26/2022 04:22:18</publishTime>
+    </File>
+    <File Include="AccCheck.aspx">
+      <publishTime>04/26/2022 04:22:18</publishTime>
+    </File>
+    <File Include="bin/AccountCheck.dll">
+      <publishTime>07/30/2024 14:37:35</publishTime>
+    </File>
+    <File Include="bin/AccountCheck.pdb">
+      <publishTime>07/30/2024 14:37:35</publishTime>
+    </File>
+    <File Include="bin/Common.dll">
+      <publishTime>07/30/2024 14:37:34</publishTime>
+    </File>
+    <File Include="bin/Common.pdb">
+      <publishTime>07/30/2024 14:37:34</publishTime>
+    </File>
+    <File Include="bin/MongoDB.Bson.dll">
+      <publishTime>04/26/2022 04:22:19</publishTime>
+    </File>
+    <File Include="bin/MongoDB.Driver.dll">
+      <publishTime>04/26/2022 04:22:19</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/26/2022 04:22:19</publishTime>
+    </File>
+    <File Include="bin/PayCommon.dll">
+      <publishTime>07/30/2024 14:37:35</publishTime>
+    </File>
+    <File Include="bin/PayCommon.pdb">
+      <publishTime>07/30/2024 14:37:35</publishTime>
+    </File>
+    <File Include="BindPhone.aspx">
+      <publishTime>04/26/2022 04:22:18</publishTime>
+    </File>
+    <File Include="CheckApple.aspx">
+      <publishTime>04/26/2022 04:22:18</publishTime>
+    </File>
+    <File Include="CheckCode.aspx">
+      <publishTime>04/26/2022 04:22:18</publishTime>
+    </File>
+    <File Include="CheckIcon.aspx">
+      <publishTime>04/26/2022 04:22:18</publishTime>
+    </File>
+    <File Include="CheckRecharge.aspx">
+      <publishTime>04/26/2022 04:22:18</publishTime>
+    </File>
+    <File Include="ClearFailedLoginCount.aspx">
+      <publishTime>04/26/2022 04:22:18</publishTime>
+    </File>
+    <File Include="FixRecharge.aspx">
+      <publishTime>04/26/2022 04:22:18</publishTime>
+    </File>
+    <File Include="JPushSingle.aspx">
+      <publishTime>04/26/2022 04:22:18</publishTime>
+    </File>
+    <File Include="MoveAcc.aspx">
+      <publishTime>04/26/2022 04:22:18</publishTime>
+    </File>
+    <File Include="PaymentOnce.aspx">
+      <publishTime>04/26/2022 04:22:18</publishTime>
+    </File>
+    <File Include="ServerCrashWarn.aspx">
+      <publishTime>04/26/2022 04:22:18</publishTime>
+    </File>
+    <File Include="ServerMonitor.aspx">
+      <publishTime>04/26/2022 04:22:18</publishTime>
+    </File>
+    <File Include="th_pay_check.aspx">
+      <publishTime>04/26/2022 04:22:18</publishTime>
+    </File>
+    <File Include="th_pay_process.aspx">
+      <publishTime>04/26/2022 04:22:18</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/30/2024 14:29:42</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

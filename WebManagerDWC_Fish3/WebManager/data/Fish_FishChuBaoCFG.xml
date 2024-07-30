@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data ID="1" FishId="311" TurretMin="100" TurretMax="10000" Score="300" Weight="50" Gold="0" GivenReward="26,25,24" GearName="鱼雷礼包" />
+	<Data ID="2" FishId="311" TurretMin="100" TurretMax="10000" Score="200" Weight="100" Gold="100" GivenReward="" GearName="200倍" />
+	<Data ID="3" FishId="311" TurretMin="10000" TurretMax="10000" Score="500" Weight="200" Gold="0" GivenReward="1,1,16,5,17,2,1,2,5,17,3,96,1,5,17,4,94,1,5,17" GearName="神秘大奖" />
+	<Data ID="4" FishId="311" TurretMin="100" TurretMax="10000" Score="800" Weight="50" Gold="100" GivenReward="" GearName="800倍" />
+	<Data ID="5" FishId="311" TurretMin="100" TurretMax="10000" Score="500" Weight="50" Gold="80" GivenReward="45,44" GearName="400倍" />
+	<Data ID="6" FishId="311" TurretMin="100" TurretMax="10000" Score="500" Weight="100" Gold="100" GivenReward="" GearName="500倍" />
+	<Data ID="7" FishId="312" TurretMin="100" TurretMax="10000" Score="500" Weight="50" Gold="0" GivenReward="26,25,24" GearName="鱼雷礼包" />
+	<Data ID="8" FishId="312" TurretMin="100" TurretMax="10000" Score="600" Weight="100" Gold="100" GivenReward="" GearName="600倍" />
+	<Data ID="9" FishId="312" TurretMin="1000" TurretMax="10000" Score="1000" Weight="200" Gold="0" GivenReward="1,1,16,5,17,2,1,2,5,17,3,96,1,5,17,4,94,1,5,17" GearName="神秘大奖" />
+	<Data ID="10" FishId="312" TurretMin="100" TurretMax="10000" Score="1500" Weight="50" Gold="100" GivenReward="" GearName="1500倍" />
+	<Data ID="11" FishId="312" TurretMin="100" TurretMax="10000" Score="1300" Weight="50" Gold="80" GivenReward="26,25,24" GearName="1200倍+鱼雷" />
+	<Data ID="12" FishId="312" TurretMin="100" TurretMax="10000" Score="1000" Weight="100" Gold="100" GivenReward="" GearName="1000倍" />
+</Root>

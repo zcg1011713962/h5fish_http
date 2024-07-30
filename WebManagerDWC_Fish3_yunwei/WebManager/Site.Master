@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebManager.SiteMaster" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <link rel="stylesheet" href="/style/bootstrap.min.css" />
+    <script src="/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="/Scripts/bootstrap.min.js" type="text/javascript"></script>
+    <link href="Site.css?ver=3" rel="stylesheet" type="text/css" />
+    <script src="<%= ResolveUrl("~/Scripts/global.js") %>"></script>
+    <script src="<%= ResolveUrl("~/Scripts/HoverDropdown.js") %>"></script>
+    <script src="<%= ResolveUrl("~/Scripts/module/sea.js") %>"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.dropdown-toggle').dropdownHover();
+        })
+        seajs.use("/Scripts/SiteMaster.js");
+    </script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+        <div class="Page" style="margin-bottom:100px;">
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="padding-top:10px;" id="topNavMenu">
+                <div class="container-fluid">
+                    <div class="row" style="padding-bottom:30px; position:relative">
+                        <%--<asp:Label ID="Label1" style="font-size:1.6em;" runat="server" Text="请选择要操作的数据库地址" CssClass="label label-success"></asp:Label>--%>
+                        <%--<div id="btn_changeMenu" style="position:absolute;right:0;top:-10px;height:20px;width:50px;cursor:default;"></div>--%>
+                    </div>
+                    <div>
+                        <%--<ul id="NavigationMenu" runat="server" class="nav nav-pills" role="tablist"></ul>--%>
+                    </div>
+                </div>
+                <div class="container-fluid" style="margin-bottom:30px;">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/About.aspx" style="color:#0094ff;font-size:24px;">捕鱼H5管理后台</a>
+                        <div id="userMenu" runat="server" style="display:inline-block;"></div>
+                    </div>
+                </div>
+            </nav>
+            <div style="min-height:800px">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+            </div>
+           <div class="clear"></div>
+        </div>
+    </form>
+</body>
+</html>

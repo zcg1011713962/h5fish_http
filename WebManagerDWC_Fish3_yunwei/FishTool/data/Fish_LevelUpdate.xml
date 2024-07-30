@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+   <!-- 老的ID 变成 新的ID -->
+	<Data ID="22" NewID="21" Reward="1,150000,1,60000,5,20,16,25"/>
+	<Data ID="23" NewID="22"/>
+	<Data ID="24" NewID="22" Reward="1,70000"/>
+	<Data ID="25" NewID="23"/>
+	<Data ID="26" NewID="23" Reward="1,80000"/>
+	<Data ID="27" NewID="24"/>
+	<Data ID="28" NewID="24" Reward="1,90000"/>
+	<Data ID="29" NewID="25"/>
+	<Data ID="30" NewID="25" Reward="1,170000,1,100000,5,25,16,30"/>
+	<Data ID="31" NewID="26"/>
+	<Data ID="32" NewID="27"/>
+	<Data ID="33" NewID="28"/>
+	<Data ID="34" NewID="29"/>
+	<Data ID="35" NewID="30"/>
+	<Data ID="36" NewID="31"/>
+	<Data ID="37" NewID="32"/>
+	<Data ID="38" NewID="33"/>
+	<Data ID="39" NewID="34"/>
+	<Data ID="40" NewID="35"/>
+	<Data ID="41" NewID="36"/>
+	<Data ID="42" NewID="37"/>
+	<Data ID="43" NewID="38"/>
+</Root>

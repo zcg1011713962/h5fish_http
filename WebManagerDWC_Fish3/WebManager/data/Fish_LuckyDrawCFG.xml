@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data Index="1" PinValue="0,1000,2000,10000" StarLvl="0" ItemType="1" ItemCount="200" ItemValue="200" NormalProb="30,20,10,0" NoChipProb="30,20,10,0" />
+	<Data Index="2" PinValue="0,1000,2000,10000" StarLvl="0" ItemType="1" ItemCount="500" ItemValue="500" NormalProb="60,40,20,10" NoChipProb="60,40,20,10" />
+	<Data Index="3" PinValue="0,1000,2000,10000" StarLvl="0" ItemType="1" ItemCount="1000" ItemValue="1000" NormalProb="8,25,40,50" NoChipProb="8,25,40,50" />
+	<Data Index="4" PinValue="0,1000,2000,10000" StarLvl="0" ItemType="16" ItemCount="5" ItemValue="10000" NormalProb="2,10,20,30" NoChipProb="2,10,20,30" />
+	<Data Index="5" PinValue="0,1000,2000,10000" StarLvl="0" ItemType="16" ItemCount="10" ItemValue="20000" NormalProb="0,5,10,10" NoChipProb="0,5,10,10" />
+	<Data Index="6" PinValue="0,1000,2000,10000" StarLvl="0" ItemType="3" ItemCount="30" ItemValue="30000" NormalProb="3,4,5,6" NoChipProb="0,0,0,0" />
+	<Data Index="7" PinValue="100000,200000,300000,400000" StarLvl="1" ItemType="1" ItemCount="40000" ItemValue="40000" NormalProb="30,10,0,0" NoChipProb="30,10,0,0" />
+	<Data Index="8" PinValue="100000,200000,300000,400000" StarLvl="1" ItemType="1" ItemCount="120000" ItemValue="120000" NormalProb="60,35,10,5" NoChipProb="60,35,10,5" />
+	<Data Index="9" PinValue="100000,200000,300000,400000" StarLvl="1" ItemType="1" ItemCount="240000" ItemValue="240000" NormalProb="8,30,40,30" NoChipProb="8,30,40,30" />
+	<Data Index="10" PinValue="100000,200000,300000,400000" StarLvl="1" ItemType="16" ItemCount="150" ItemValue="300000" NormalProb="0,20,30,30" NoChipProb="0,20,30,30" />
+	<Data Index="11" PinValue="100000,200000,300000,400000" StarLvl="1" ItemType="24" ItemCount="3" ItemValue="450000" NormalProb="2,5,20,35" NoChipProb="2,5,20,35" />
+	<Data Index="12" PinValue="100000,200000,300000,400000" StarLvl="1" ItemType="3" ItemCount="200" ItemValue="200000" NormalProb="3,4,5,6" NoChipProb="0,0,0,0" />
+	<Data Index="13" PinValue="500000,750000,1000000,1500000" StarLvl="2" ItemType="1" ItemCount="200000" ItemValue="200000" NormalProb="30,20,10,0" NoChipProb="30,20,10,0" />
+	<Data Index="14" PinValue="500000,750000,1000000,1500000" StarLvl="2" ItemType="1" ItemCount="600000" ItemValue="600000" NormalProb="60,50,40,15" NoChipProb="60,50,40,15" />
+	<Data Index="15" PinValue="500000,750000,1000000,1500000" StarLvl="2" ItemType="1" ItemCount="1200000" ItemValue="1200000" NormalProb="8,20,30,55" NoChipProb="8,20,30,55" />
+	<Data Index="16" PinValue="500000,750000,1000000,1500000" StarLvl="2" ItemType="2" ItemCount="400" ItemValue="2000000" NormalProb="0,5,10,15" NoChipProb="0,5,10,15" />
+	<Data Index="17" PinValue="500000,750000,1000000,1500000" StarLvl="2" ItemType="25" ItemCount="3" ItemValue="3000000" NormalProb="2,5,10,15" NoChipProb="2,5,10,15" />
+	<Data Index="18" PinValue="500000,750000,1000000,1500000" StarLvl="2" ItemType="3" ItemCount="1000" ItemValue="1000000" NormalProb="3,4,5,6" NoChipProb="0,0,0,0" />
+	<Data Index="19" PinValue="1000000,1500000,2000000,3000000" StarLvl="3" ItemType="1" ItemCount="400000" ItemValue="400000" NormalProb="30,20,10,0" NoChipProb="30,20,10,0" />
+	<Data Index="20" PinValue="1000000,1500000,2000000,3000000" StarLvl="3" ItemType="1" ItemCount="1200000" ItemValue="1200000" NormalProb="60,50,40,15" NoChipProb="60,50,40,15" />
+	<Data Index="21" PinValue="1000000,1500000,2000000,3000000" StarLvl="3" ItemType="1" ItemCount="2400000" ItemValue="2400000" NormalProb="8,20,30,55" NoChipProb="8,20,30,55" />
+	<Data Index="22" PinValue="1000000,1500000,2000000,3000000" StarLvl="3" ItemType="2" ItemCount="800" ItemValue="4000000" NormalProb="0,5,10,15" NoChipProb="0,5,10,15" />
+	<Data Index="23" PinValue="1000000,1500000,2000000,3000000" StarLvl="3" ItemType="26" ItemCount="3" ItemValue="6000000" NormalProb="2,5,10,15" NoChipProb="2,5,10,15" />
+	<Data Index="24" PinValue="1000000,1500000,2000000,3000000" StarLvl="3" ItemType="3" ItemCount="2000" ItemValue="2000000" NormalProb="3,4,5,6" NoChipProb="0,0,0,0" />
+	<Data Index="25" PinValue="2000000,4000000,6000000,8000000" StarLvl="4" ItemType="1" ItemCount="800000" ItemValue="800000" NormalProb="30,10,0,0" NoChipProb="30,10,0,0" />
+	<Data Index="26" PinValue="2000000,4000000,6000000,8000000" StarLvl="4" ItemType="1" ItemCount="2400000" ItemValue="2400000" NormalProb="60,50,25,10" NoChipProb="60,50,25,10" />
+	<Data Index="27" PinValue="2000000,4000000,6000000,8000000" StarLvl="4" ItemType="1" ItemCount="4800000" ItemValue="4800000" NormalProb="8,30,50,50" NoChipProb="8,30,50,50" />
+	<Data Index="28" PinValue="2000000,4000000,6000000,8000000" StarLvl="4" ItemType="2" ItemCount="2000" ItemValue="10000000" NormalProb="0,5,10,15" NoChipProb="0,5,10,15" />
+	<Data Index="29" PinValue="2000000,4000000,6000000,8000000" StarLvl="4" ItemType="27" ItemCount="2" ItemValue="12000000" NormalProb="2,5,15,25" NoChipProb="2,5,15,25" />
+	<Data Index="30" PinValue="2000000,4000000,6000000,8000000" StarLvl="4" ItemType="3" ItemCount="5000" ItemValue="5000000" NormalProb="3,4,5,6" NoChipProb="0,0,0,0" />
+	<Data Index="31" PinValue="10000000,15000000,20000000,30000000" StarLvl="5" ItemType="1" ItemCount="4000000" ItemValue="4000000" NormalProb="30,22,12,0" NoChipProb="30,22,12,0" />
+	<Data Index="32" PinValue="10000000,15000000,20000000,30000000" StarLvl="5" ItemType="1" ItemCount="12000000" ItemValue="12000000" NormalProb="60,50,30,20" NoChipProb="60,50,30,20" />
+	<Data Index="33" PinValue="10000000,15000000,20000000,30000000" StarLvl="5" ItemType="1" ItemCount="24000000" ItemValue="24000000" NormalProb="8,21,45,60" NoChipProb="8,21,45,60" />
+	<Data Index="34" PinValue="10000000,15000000,20000000,30000000" StarLvl="5" ItemType="2" ItemCount="10000" ItemValue="50000000" NormalProb="0,2,3,10" NoChipProb="0,2,3,10" />
+	<Data Index="35" PinValue="10000000,15000000,20000000,30000000" StarLvl="5" ItemType="96" ItemCount="2" ItemValue="42000000" NormalProb="2,5,10,10" NoChipProb="2,5,10,10" />
+	<Data Index="36" PinValue="10000000,15000000,20000000,30000000" StarLvl="5" ItemType="3" ItemCount="10000" ItemValue="10000000" NormalProb="3,4,5,6" NoChipProb="0,0,0,0" />
+</Root>

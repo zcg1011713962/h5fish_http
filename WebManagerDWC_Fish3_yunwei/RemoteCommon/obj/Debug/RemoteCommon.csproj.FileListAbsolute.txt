@@ -1,0 +1,5 @@
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\RemoteCommon\bin\Debug\RemoteCommon.dll
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\RemoteCommon\bin\Debug\RemoteCommon.pdb
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\RemoteCommon\obj\Debug\RemoteCommon.csprojResolveAssemblyReference.cache
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\RemoteCommon\obj\Debug\RemoteCommon.dll
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\RemoteCommon\obj\Debug\RemoteCommon.pdb

@@ -1,0 +1,4 @@
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\RemoteCommon\bin\Release\RemoteCommon.dll
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\RemoteCommon\bin\Release\RemoteCommon.pdb
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\RemoteCommon\obj\Release\RemoteCommon.dll
+F:\DM\fishlord_h5\trunk\Http\WebManagerDWC_Fish3_yunwei\RemoteCommon\obj\Release\RemoteCommon.pdb

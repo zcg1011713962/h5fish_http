@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data ID="1" StartRank="1" EndRank="1" RewardList="27,3" RewardCount="5,20000" />
+	<Data ID="2" StartRank="2" EndRank="2" RewardList="27,3" RewardCount="3,10000" />
+	<Data ID="3" StartRank="3" EndRank="3" RewardList="27,3" RewardCount="2,5000" />
+	<Data ID="4" StartRank="4" EndRank="6" RewardList="27,2" RewardCount="1,50" />
+	<Data ID="5" StartRank="7" EndRank="10" RewardList="26,2" RewardCount="2,30" />
+</Root>

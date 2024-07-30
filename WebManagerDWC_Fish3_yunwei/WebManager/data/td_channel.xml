@@ -1,0 +1,21 @@
+<Root>
+  <add channelNo="100001" channelName="街机疯狂捕鱼-微信" />
+  <add channelNo="100002" channelName="街机疯狂捕鱼-QQ" />
+  <add channelNo="100003" channelName="街机疯狂捕鱼-闲玩" />
+  <add channelNo="100004" channelName="街机疯狂捕鱼-官方包" />
+  <add channelNo="100005" channelName="深海街机捕鱼-拼多多" />
+  <add channelNo="000023" channelName="街机疯狂捕鱼-oppo" />
+  <add channelNo="001334" channelName="街机疯狂捕鱼-oppo广告" />  
+  <add channelNo="000017" channelName="街机疯狂捕鱼-vivo" />  
+  <add channelNo="025083" channelName="街机疯狂捕鱼-vivo广告" />  
+  <add channelNo="000032" channelName="街机疯狂捕鱼-应用宝" />  
+  <add channelNo="025102" channelName="街机疯狂捕鱼-应用宝广告" />   
+  <add channelNo="000024" channelName="街机疯狂捕鱼-华为" />
+  <add channelNo="000015" channelName="深海街机捕鱼-小米" />  
+  <add channelNo="025131" channelName="深海街机捕鱼-应用宝" />  
+  <add channelNo="025162" channelName="深海街机捕鱼-vivo" />  
+  <add channelNo="025163" channelName="深海街机捕鱼-vivo广告" />
+  <add channelNo="025164" channelName="开心街机捕鱼-oppo" />
+  <add channelNo="000971" channelName="街机疯狂捕鱼-武汉多游" />
+  <add channelNo="000000" channelName="default" />  
+</Root>

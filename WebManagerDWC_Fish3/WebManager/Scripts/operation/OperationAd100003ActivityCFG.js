@@ -1,0 +1,92 @@
+﻿define(function (require, exports, module) {
+    $(function () {
+        var oExpTable = $('#MainContent_m_result');
+        var oModifyUI = $('#divModifyNewParam');
+        var oStartTime = $('#m_startTime');
+        var oEndTime = $('#m_endTime');
+        var oCode = $('#MainContent_m_code');
+        var opResInfo = $('#opRes');
+
+        var cdataJs = require('../cdata.js');
+
+        //修改参数
+        oExpTable.find('a').click(function () {
+
+            var _this = $(this);
+            var index = _this.parent().parent().index();
+            var param = findCurParam(_this);
+            showModifyUI(param);
+        });
+
+        oModifyUI.find('h2').click(function () {
+            oModifyUI.hide();
+            window.location.reload();
+        });
+
+        //新增
+        $('#MainContent_m_AddAdTime').click(function () {
+            oModifyUI.show();
+        });
+
+        $('#btnModifyParam').click(function () {
+            opResInfo.html('正在操作...');
+            var itemId = $(this).attr('itemId');
+            var code = $(this).attr('qihao');
+
+            //如果为定义就是新增
+            if (typeof (itemId) == "undefined") {
+                itemId = $("#MainContent_m_channel").get(0).selectedIndex + 1;
+                code = oCode.val();
+            }
+
+            reqOp(0, {
+                'itemId': itemId,
+                'qihao': code,
+                'startTime': oStartTime.val(),
+                'endTime': oEndTime.val()
+            }, function (data) {
+                opResInfo.html(data);
+            })
+        });
+
+        function showModifyUI(curParam) {
+            oModifyUI.show();
+            oModifyUI.find('#btnModifyParam').attr("itemId", curParam.itemId);
+            init();
+
+            function init() {
+                oStartTime.val(curParam.startTime);
+                oEndTime.val(curParam.endTime);
+            }
+        }
+
+        function reqOp(op, jsonParam, callBack) {
+
+            var jd = {};
+            $.extend(jd, jsonParam);
+            jd.op = op;
+
+            $.ajax({
+                type: "POST",
+                url: "/ashx/OperationAd100003ActivityCFG.ashx",
+                data: jd,
+
+                success: function (data) {
+                    callBack(data);
+                }
+            });
+        }
+
+        function findCurParam($obj) {
+            var result = {};
+
+            var tds = $obj.parent().parent().find('td');
+
+            result.itemId = $obj.attr("itemId");
+            result.qihao = $obj.attr("qihao");
+            result.startTime = $obj.attr("startTime");
+            result.endTime = $obj.attr("endTime");
+            return result;
+        }
+    });
+});

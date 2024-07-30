@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data ID="1" Group="1" CannonFold="12,43" Name="累积签到5天" CompleteType="5" CompleteParam="0" CompleteCount="1" Days="5" AwardItemIDs="6,1" AwardItemCounts="50,10000" GoType="2" ShowChangeType="0" />
+	<Data ID="2" Group="1" CannonFold="12,43" Name="捕获任意鱼1500条" CompleteType="4" CompleteParam="0" CompleteCount="1500" Days="0" AwardItemIDs="6,1" AwardItemCounts="40,10000" GoType="1" ShowChangeType="0" />
+	<Data ID="3" Group="1" CannonFold="12,43" Name="使用锁定50次" CompleteType="1" CompleteParam="5" CompleteCount="50" Days="0" AwardItemIDs="6,1" AwardItemCounts="30,30000" GoType="1" ShowChangeType="" />
+	<Data ID="4" Group="1" CannonFold="12,43" Name="深海巨鳄场进行35次花色兑换" CompleteType="14" CompleteParam="0" CompleteCount="30" Days="0" AwardItemIDs="6,1" AwardItemCounts="20,20000" GoType="6" ShowChangeType="0" />
+	<Data ID="5" Group="1" CannonFold="12,43" Name="累积捕鱼时长达到150分钟" CompleteType="13" CompleteParam="2" CompleteCount="150" Days="0" AwardItemIDs="6,1" AwardItemCounts="20,15000" GoType="1" ShowChangeType="0" />
+	<Data ID="6" Group="1" CannonFold="12,43" Name="龙王传说场魔石兑换15次" CompleteType="50" CompleteParam="0" CompleteCount="15" Days="0" AwardItemIDs="6,1" AwardItemCounts="40,20000" GoType="8" ShowChangeType="0" />
+	<Data ID="7" Group="1" CannonFold="12,43" Name="武装巨鲨场普通轰炸或黄金轰炸10次" CompleteType="54" CompleteParam="0" CompleteCount="10" Days="0" AwardItemIDs="6,1" AwardItemCounts="60,10000" GoType="9" ShowChangeType="0" />
+	<Data ID="8" Group="1" CannonFold="12,43" Name="使用2次普通鱼雷，达到4天" CompleteType="25" CompleteParam="23" CompleteCount="2" Days="4" AwardItemIDs="6,1" AwardItemCounts="40,10000" GoType="1" ShowChangeType="0" />
+	<Data ID="9" Group="1" CannonFold="12,43" Name="龙宫场累计魔石大于等于5000个" CompleteType="53" CompleteParam="0" CompleteCount="5000" Days="0" AwardItemIDs="6,1" AwardItemCounts="50,10000" GoType="8" ShowChangeType="0" />
+	<Data ID="10" Group="1" CannonFold="12,43" Name="大圣下凡场捕获大圣5次" CompleteType="3" CompleteParam="703" CompleteCount="5" Days="0" AwardItemIDs="6,1" AwardItemCounts="60,20000" GoType="7" ShowChangeType="0" />
+	<Data ID="11" Group="1" CannonFold="12,43" Name="武装巨鲨场获得1次豹子元素" CompleteType="54" CompleteParam="0" CompleteCount="1" Days="0" AwardItemIDs="6,1" AwardItemCounts="40,30000" GoType="9" ShowChangeType="0" />
+	<Data ID="12" Group="1" CannonFold="12,43" Name="完成每日任务累积400点活跃" CompleteType="16" CompleteParam="0" CompleteCount="400" Days="0" AwardItemIDs="6,1" AwardItemCounts="80,10000" GoType="1" ShowChangeType="0" />
+	<Data ID="13" Group="1" CannonFold="12,43" Name="累计充值金额达到20元" CompleteType="55" CompleteParam="0" CompleteCount="20" Days="0" AwardItemIDs="6,1" AwardItemCounts="80,20000" GoType="4" ShowChangeType="0" />
+</Root>

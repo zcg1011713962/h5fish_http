@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\coding\h5fish\h5fish\h5fish_http\HttpLoginFish5\bin\app.publish\</_PublishTargetUrl>
+    <History>True|2024-07-30T06:14:21.7629549Z||;True|2022-06-02T10:25:32.6633882+08:00||;True|2022-06-01T15:17:57.2863058+08:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/AopSdk.dll">
+      <publishTime>04/26/2022 04:22:19</publishTime>
+    </File>
+    <File Include="bin/Common.dll">
+      <publishTime>07/27/2024 14:12:55</publishTime>
+    </File>
+    <File Include="bin/Common.pdb">
+      <publishTime>07/27/2024 14:12:55</publishTime>
+    </File>
+    <File Include="bin/HttpLogin.dll">
+      <publishTime>07/30/2024 14:14:20</publishTime>
+    </File>
+    <File Include="bin/HttpLogin.pdb">
+      <publishTime>07/30/2024 14:14:20</publishTime>
+    </File>
+    <File Include="bin/libWeiXinQR.dll">
+      <publishTime>07/30/2024 14:14:20</publishTime>
+    </File>
+    <File Include="bin/libWeiXinQR.pdb">
+      <publishTime>07/30/2024 14:14:20</publishTime>
+    </File>
+    <File Include="bin/LitJson.dll">
+      <publishTime>04/26/2022 04:22:19</publishTime>
+    </File>
+    <File Include="bin/MongoDB.Bson.dll">
+      <publishTime>04/26/2022 04:22:19</publishTime>
+    </File>
+    <File Include="bin/MongoDB.Driver.dll">
+      <publishTime>04/26/2022 04:22:19</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/26/2022 04:22:19</publishTime>
+    </File>
+    <File Include="bin/OpenApiV3.dll">
+      <publishTime>07/27/2024 14:12:55</publishTime>
+    </File>
+    <File Include="bin/OpenApiV3.pdb">
+      <publishTime>07/27/2024 14:12:55</publishTime>
+    </File>
+    <File Include="bin/PayCommon.dll">
+      <publishTime>07/30/2024 14:14:20</publishTime>
+    </File>
+    <File Include="bin/PayCommon.pdb">
+      <publishTime>07/30/2024 14:14:20</publishTime>
+    </File>
+    <File Include="bin/ThoughtWorks.QRCode.dll">
+      <publishTime>04/26/2022 04:22:19</publishTime>
+    </File>
+    <File Include="Default/ActivationInfo.aspx">
+      <publishTime>04/26/2022 04:22:15</publishTime>
+    </File>
+    <File Include="Default/PhoneCode.aspx">
+      <publishTime>04/26/2022 04:22:15</publishTime>
+    </File>
+    <File Include="Default/UpdatePwd.aspx">
+      <publishTime>04/26/2022 04:22:15</publishTime>
+    </File>
+    <File Include="download/config.js">
+      <publishTime>04/26/2022 04:22:15</publishTime>
+    </File>
+    <File Include="DumpService.aspx">
+      <publishTime>04/26/2022 04:22:15</publishTime>
+    </File>
+    <File Include="ErrorReport.aspx">
+      <publishTime>04/26/2022 04:22:15</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>04/26/2022 04:22:15</publishTime>
+    </File>
+    <File Include="ImageService.aspx">
+      <publishTime>04/26/2022 04:22:15</publishTime>
+    </File>
+    <File Include="libman.json">
+      <publishTime>07/26/2024 17:28:29</publishTime>
+    </File>
+    <File Include="LogService.aspx">
+      <publishTime>04/26/2022 04:22:15</publishTime>
+    </File>
+    <File Include="MaintenanceInfo.aspx">
+      <publishTime>04/26/2022 04:22:15</publishTime>
+    </File>
+    <File Include="newAcc/newAutoRegedit.aspx">
+      <publishTime>04/26/2022 04:22:15</publishTime>
+    </File>
+    <File Include="newAcc/newBindAcc.aspx">
+      <publishTime>04/26/2022 04:22:15</publishTime>
+    </File>
+    <File Include="newAcc/newDefaultLogin.aspx">
+      <publishTime>04/26/2022 04:22:15</publishTime>
+    </File>
+    <File Include="newAcc/newFastLogin.aspx">
+      <publishTime>04/26/2022 04:22:15</publishTime>
+    </File>
+    <File Include="newAcc/newOpVersionCtrl.aspx">
+      <publishTime>04/26/2022 04:22:15</publishTime>
+    </File>
+    <File Include="newAcc/newRegeditAcc.aspx">
+      <publishTime>04/26/2022 04:22:15</publishTime>
+    </File>
+    <File Include="OrderTransition/AiBeiTransition.aspx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="OrderTransition/AiBeiTransition2.aspx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="OrderTransition/AiBeiTransitionSwitch.aspx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="OrderTransition/AliQRCodeTransition.aspx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="OrderTransition/AliTransition.aspx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="OrderTransition/AliTransitionWeb.aspx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="OrderTransition/baidu2_transition.aspx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="OrderTransition/HuaWeiTransition.aspx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="OrderTransition/HuaWeiTransition2.aspx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="OrderTransition/letv_transition.aspx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="OrderTransition/MeizuOnlineRechargeTransition.aspx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="OrderTransition/MeizuRechargeTransition.aspx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="OrderTransition/OppoTransition.aspx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="OrderTransition/QQgameTransition.ashx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="OrderTransition/QQMiniRechargeTransition.aspx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="OrderTransition/TianWangYuLeTransition.aspx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="OrderTransition/WeiXinLoginTransition.aspx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="OrderTransition/WeiXinQRCodeTransition.aspx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="OrderTransition/WeiXinRechargeTransition.aspx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="OrderTransition/WeiXinWebRechargeTransition.aspx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="OrderTransition/WxMiniRechargeTransition.aspx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="Platform/DanDanZhuanLogin.ashx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="Platform/DDQWLogin.ashx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="Platform/DuoyouLogin.ashx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="Platform/DuoyouLoginAndroid.ashx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="Platform/HuaWeiLogin.ashx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="Platform/HuluLogin.ashx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="Platform/JuXiangWanLogin.ashx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="Platform/JuYanLogin.ashx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="Platform/MaiziZhuanLogin.ashx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="Platform/OfficialAccountQuery.ashx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="Platform/OppoLogin.ashx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="Platform/PaoPaoZhuanLogin.ashx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="Platform/QQGameLogin.ashx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="Platform/QQMiniLogin.ashx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="Platform/QuickLogin.ashx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="Platform/WanYouLogin.ashx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="Platform/WeiXinMiniLogin.ashx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="Platform/XianWanLogin.ashx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="Platform/XiaomiLogin.ashx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="Platform/XiaoshuoLogin.ashx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="Platform/XiaoZhuoLogin.ashx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="Platform/YouZhuanLogin.ashx">
+      <publishTime>04/26/2022 04:22:14</publishTime>
+    </File>
+    <File Include="RegeditAccount.aspx">
+      <publishTime>04/26/2022 04:22:15</publishTime>
+    </File>
+    <File Include="ServerList.aspx">
+      <publishTime>04/26/2022 04:22:15</publishTime>
+    </File>
+    <File Include="ServerList2.aspx">
+      <publishTime>04/26/2022 04:22:15</publishTime>
+    </File>
+    <File Include="ServerList3.aspx">
+      <publishTime>04/26/2022 04:22:15</publishTime>
+    </File>
+    <File Include="SwitchLogin.aspx">
+      <publishTime>04/26/2022 04:22:15</publishTime>
+    </File>
+    <File Include="UpdateCheck.aspx">
+      <publishTime>04/26/2022 04:22:15</publishTime>
+    </File>
+    <File Include="vivo/VIVOGetOrderNum.aspx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="vivo/VIVOGetOrderNum2.aspx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="vivo/VIVOGetOrderNum3.aspx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="vivo/VIVOGetOrderNumBaiWan.aspx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="vivo/VIVOGetOrderNumFishingJoy2.aspx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/26/2024 18:13:59</publishTime>
+    </File>
+    <File Include="ysdk/tthy_ysdk_checkpay.aspx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="ysdk/tthy_ysdk_pay.aspx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="ysdk/ysdk_checkpay.aspx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+    <File Include="ysdk/ysdk_pay.aspx">
+      <publishTime>04/26/2022 04:22:16</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

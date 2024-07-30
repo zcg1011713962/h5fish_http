@@ -1,0 +1,11 @@
+F:\DM\fishlord_h5\trunk\Http\OpenApiV3\bin\Debug\OpenApiV3.dll
+F:\DM\fishlord_h5\trunk\Http\OpenApiV3\bin\Debug\OpenApiV3.pdb
+F:\DM\fishlord_h5\trunk\Http\OpenApiV3\obj\Debug\OpenApiV3.csprojResolveAssemblyReference.cache
+F:\DM\fishlord_h5\trunk\Http\OpenApiV3\obj\Debug\OpenApiV3.dll
+F:\DM\fishlord_h5\trunk\Http\OpenApiV3\obj\Debug\OpenApiV3.pdb
+D:\coding\h5fish\h5fish\h5fish_http\OpenApiV3\bin\Debug\OpenApiV3.dll
+D:\coding\h5fish\h5fish\h5fish_http\OpenApiV3\bin\Debug\OpenApiV3.pdb
+D:\coding\h5fish\h5fish\h5fish_http\OpenApiV3\obj\Debug\OpenApiV3.csproj.AssemblyReference.cache
+D:\coding\h5fish\h5fish\h5fish_http\OpenApiV3\obj\Debug\OpenApiV3.csproj.CoreCompileInputs.cache
+D:\coding\h5fish\h5fish\h5fish_http\OpenApiV3\obj\Debug\OpenApiV3.dll
+D:\coding\h5fish\h5fish\h5fish_http\OpenApiV3\obj\Debug\OpenApiV3.pdb

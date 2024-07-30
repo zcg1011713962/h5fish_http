@@ -1,0 +1,17 @@
+F:\DM\fishlord_h5\trunk\Http\OpenApiV3\bin\Release\OpenApiV3.dll
+F:\DM\fishlord_h5\trunk\Http\OpenApiV3\bin\Release\OpenApiV3.pdb
+F:\DM\fishlord_h5\trunk\Http\OpenApiV3\obj\Release\OpenApiV3.csprojResolveAssemblyReference.cache
+F:\DM\fishlord_h5\trunk\Http\OpenApiV3\obj\Release\OpenApiV3.dll
+F:\DM\fishlord_h5\trunk\Http\OpenApiV3\obj\Release\OpenApiV3.pdb
+G:\h5fish\fishlord\Http\OpenApiV3\bin\Release\OpenApiV3.dll
+G:\h5fish\fishlord\Http\OpenApiV3\bin\Release\OpenApiV3.pdb
+G:\h5fish\fishlord\Http\OpenApiV3\obj\Release\OpenApiV3.csproj.AssemblyReference.cache
+G:\h5fish\fishlord\Http\OpenApiV3\obj\Release\OpenApiV3.csproj.CoreCompileInputs.cache
+G:\h5fish\fishlord\Http\OpenApiV3\obj\Release\OpenApiV3.dll
+G:\h5fish\fishlord\Http\OpenApiV3\obj\Release\OpenApiV3.pdb
+D:\coding\h5fish\h5fish\h5fish_http\OpenApiV3\bin\Release\OpenApiV3.dll
+D:\coding\h5fish\h5fish\h5fish_http\OpenApiV3\bin\Release\OpenApiV3.pdb
+D:\coding\h5fish\h5fish\h5fish_http\OpenApiV3\obj\Release\OpenApiV3.csproj.AssemblyReference.cache
+D:\coding\h5fish\h5fish\h5fish_http\OpenApiV3\obj\Release\OpenApiV3.csproj.CoreCompileInputs.cache
+D:\coding\h5fish\h5fish\h5fish_http\OpenApiV3\obj\Release\OpenApiV3.dll
+D:\coding\h5fish\h5fish\h5fish_http\OpenApiV3\obj\Release\OpenApiV3.pdb

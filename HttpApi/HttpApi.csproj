@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{85598B4F-7F66-43FC-A8B6-8481565B3BE6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HttpApi</RootNamespace>
+    <AssemblyName>HttpApi</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\Mongodb\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>..\Mongodb\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Mongodb\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="channel\QueryChannelWanYou.ashx.cs">
+      <DependentUpon>QueryChannelWanYou.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="channel\QueryChannelWanYouRegInfo.ashx.cs">
+      <DependentUpon>QueryChannelWanYouRegInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="code\Cache.cs" />
+    <Compile Include="code\channel.cs" />
+    <Compile Include="code\def.cs" />
+    <Compile Include="code\Mongodb.cs" />
+    <Compile Include="code\process.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="openapi\DanDanZhuanQueryGameInfo.ashx.cs">
+      <DependentUpon>DanDanZhuanQueryGameInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="openapi\DanDanZhuanQueryReg.ashx.cs">
+      <DependentUpon>DanDanZhuanQueryReg.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="openapi\DDQWQueryGameInfo.ashx.cs">
+      <DependentUpon>DDQWQueryGameInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="openapi\DDQWQueryReg.ashx.cs">
+      <DependentUpon>DDQWQueryReg.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="openapi\HuluQueryGameInfo.ashx.cs">
+      <DependentUpon>HuluQueryGameInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="openapi\HuluQueryReg.ashx.cs">
+      <DependentUpon>HuluQueryReg.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="openapi\JuXiangWanQueryGameInfo.ashx.cs">
+      <DependentUpon>JuXiangWanQueryGameInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="openapi\JuXiangWanQueryReg.ashx.cs">
+      <DependentUpon>JuXiangWanQueryReg.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="openapi\MaiziZhuanQueryGameInfo.ashx.cs">
+      <DependentUpon>MaiziZhuanQueryGameInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="openapi\MaiziZhuanQueryReg.ashx.cs">
+      <DependentUpon>MaiziZhuanQueryReg.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="openapi\PaoPaoZhuanQueryGameInfo.ashx.cs">
+      <DependentUpon>PaoPaoZhuanQueryGameInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="openapi\PaoPaoZhuanQueryReg.ashx.cs">
+      <DependentUpon>PaoPaoZhuanQueryReg.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="openapi\roleinfo.ashx.cs">
+      <DependentUpon>roleinfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="openapi\XianWanQueryGameInfo.ashx.cs">
+      <DependentUpon>XianWanQueryGameInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="openapi\XianWanQueryReg.ashx.cs">
+      <DependentUpon>XianWanQueryReg.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="openapi\XiaoZhuoQueryGameInfo.ashx.cs">
+      <DependentUpon>XiaoZhuoQueryGameInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="openapi\XiaoZhuoQueryReg.ashx.cs">
+      <DependentUpon>XiaoZhuoQueryReg.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="openapi\YouZhuanQueryGameInfo.ashx.cs">
+      <DependentUpon>YouZhuanQueryGameInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="openapi\YouZhuanQueryReg.ashx.cs">
+      <DependentUpon>YouZhuanQueryReg.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="openapi\roleinfo.ashx" />
+    <Content Include="openapi\XianWanQueryReg.ashx" />
+    <Content Include="openapi\XianWanQueryGameInfo.ashx" />
+    <Content Include="openapi\DanDanZhuanQueryReg.ashx" />
+    <Content Include="openapi\DanDanZhuanQueryGameInfo.ashx" />
+    <Content Include="openapi\HuluQueryReg.ashx" />
+    <Content Include="openapi\HuluQueryGameInfo.ashx" />
+    <Content Include="openapi\YouZhuanQueryReg.ashx" />
+    <Content Include="openapi\YouZhuanQueryGameInfo.ashx" />
+    <Content Include="openapi\MaiziZhuanQueryReg.ashx" />
+    <Content Include="openapi\MaiziZhuanQueryGameInfo.ashx" />
+    <Content Include="openapi\JuXiangWanQueryReg.ashx" />
+    <Content Include="openapi\JuXiangWanQueryGameInfo.ashx" />
+    <Content Include="openapi\XiaoZhuoQueryReg.ashx" />
+    <Content Include="openapi\XiaoZhuoQueryGameInfo.ashx" />
+    <Content Include="openapi\PaoPaoZhuanQueryReg.ashx" />
+    <Content Include="openapi\PaoPaoZhuanQueryGameInfo.ashx" />
+    <Content Include="openapi\DDQWQueryReg.ashx" />
+    <Content Include="openapi\DDQWQueryGameInfo.ashx" />
+    <Content Include="channel\QueryChannelWanYou.ashx" />
+    <Content Include="channel\QueryChannelWanYouRegInfo.ashx" />
+    <None Include="Properties\PublishProfiles\publish.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{ea3d98dd-533c-4a9a-93a3-39f3035ed717}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PayCommon\PayCommon.csproj">
+      <Project>{d40f03a7-d466-482d-a814-472dccea998d}</Project>
+      <Name>PayCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49175/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

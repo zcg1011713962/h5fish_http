@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>万人牛牛游戏规则</title>
+    <meta name="referrer" content="always">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,minimum-scale=1, user-scalable=no"/>  
+    <meta http-equiv="x-dns-prefetch-control" content="no">
+    <style type="text/css">
+        #box{
+            width:100%;
+        }
+        #header{
+            background-color:#428bac; 
+            text-align: center;
+            padding:5px;
+            height:30px;
+        }
+        #header button{
+            float: left;
+            border-radius: 5px;
+            height:28px;
+        }
+        #header span{
+            font-size: 20px;
+        }
+        #container{
+            border:1px solid #428bac;
+            text-align:center;
+            padding:20px;
+        }
+        #box-container{
+            margin:0 auto;
+            text-align: left; 
+            padding:0 30px;
+            width:90%;
+            border:1px solid #428bac;
+            border-radius: 10px;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+
+        <div id="container">
+            <div id="box-container">
+                <!-- 基本规则 -->
+                <h3>基本规则：</h3>
+                <p>
+                    1. 游戏由一方庄家与四方闲家“黑桃、红心、梅花、方片”组成。
+                </p>
+                <p>
+                    2. 玩家可以在“黑桃、红心、梅花、方片”任意一方或者多方进行下注。
+                </p>
+                <p>
+                    3. 下注结束后，每方发五张牌，开牌后闲家与庄家进行比大小，牌大的赢，闲家之间不发生关系。
+                </p>
+                <p>
+                    4. 结算时赢钱的玩家会从赢取的部分中扣除5%作为手续费。
+                </p>
+                <!-- 牌型介绍 -->
+                <h3>牌型介绍：</h3>
+                <P>
+                    1. 没牛：没有任意三张牌能加起来成为10的倍数（注：JQK花牌算10）。
+                </P>
+                <P>
+                    2. 有牛：从牛1到牛9，任意三张牌相加是10的倍数，剩余2张牌相加不是10的倍数，相加后取个位数，个位数是几（1-9），就是牛几（1-9）。
+                </P>
+                <P>
+                    3. 牛牛：任意三张牌相加是10的倍数，剩余2张相加也是10的倍数。
+                </P>
+                <!-- 牌局大小比较 -->
+                <h3>牌局大小比较：</h3>
+                <P>
+                    1. 单张大小：从大到小为 K、Q、J、10、9、8、7、6、5、4、3、2、A。
+                </P>
+                <P>
+                    2. 花色大小：从大到小为黑桃、红心、梅花、方块。
+                </P>
+                <P>
+                    3. 牌型大小：牛牛、有牛（从牛9到牛1）、没牛。
+                </P>
+                <P>
+                    4. 有牛牌型大小：从大到小为牛9、牛8……牛1。
+                </P>
+                <P>
+                    5. 没牛-牛9：如果牌型相同只比最大张牌，如最大张牌也相同则庄家胜。
+                </P>
+                <P>
+                    6. 牛牛：如果闲家和庄家都是牛牛，且最大张牌也相同，则比最大张牌的花色。
+                </P>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
